@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { Container } from "./layoutComponents"
+import React from 'react';
+import styled from 'styled-components';
+import { Container } from './layoutComponents';
 
 const Footer = ({ className }) => (
   <footer className={className}>
@@ -10,12 +10,12 @@ const Footer = ({ className }) => (
       <a href="https://www.gatsbyjs.org">Gatsby</a>
     </Container>
   </footer>
-)
+);
 
 const StyledFooter = styled(Footer)`
   color: #fffaff;
-  background: var(--primary-color);
+  background: #000;
   padding: 1rem 0;
-`
+`;
 
-export default StyledFooter
+export default StyledFooter;
