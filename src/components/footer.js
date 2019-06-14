@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from './layoutComponents';
 
 const Footer = ({ className }) => (
   <footer className={className}>
-    <Container>
+    <div>
       © {new Date().getFullYear()}, Built with
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a>
-    </Container>
+    </div>
   </footer>
 );
 
