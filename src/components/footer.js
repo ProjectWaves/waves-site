@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
+import styled from '@emotion/styled';
 const Footer = ({ className }) => (
   <footer className={className}>
     <div>

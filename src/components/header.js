@@ -2,14 +2,15 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import VisuallyHidden from '@reach/visually-hidden';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Navbar from './navbar';
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <Link to="/" style={{ textDecoration: 'none' }}>
       <VisuallyHidden>Home</VisuallyHidden>
-      <svg style={{marginTop: 0}}
+      <svg
+        style={{ marginTop: 0 }}
         width="400"
         height="62"
         fill="none"

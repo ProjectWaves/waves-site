@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+import { css, jsx } from '@emotion/core';
 
 const activeStyles = {
   color: '#e96544',
@@ -17,7 +18,7 @@ const Navbar = props => (
           activeStyle={activeStyles}
           to="/blog"
         >
-          Blog
+          About
         </SiteNavLink>
       </SiteNavEntry>
       <SiteNavEntry>
@@ -28,6 +29,11 @@ const Navbar = props => (
       <SiteNavEntry>
         <SiteNavLink activeStyle={activeStyles} to="/donate">
           Donate
+        </SiteNavLink>
+      </SiteNavEntry>
+      <SiteNavEntry>
+        <SiteNavLink activeStyle={activeStyles} to="/research">
+          Research
         </SiteNavLink>
       </SiteNavEntry>
     </SiteNavList>

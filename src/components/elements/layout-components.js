@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from '@emotion/styled';
 export const MainWrapper = styled.div`
   margin: 0;
   display: flex;

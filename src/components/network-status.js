@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+import { css, jsx } from '@emotion/core';
+
 import { FlexRowContainer } from './elements/layout-components';
 
 const NetworkStatus = props => {
@@ -10,8 +12,6 @@ const NetworkStatus = props => {
         <span>Network Status: </span>
         <span> {props.status && props.status}</span>
       </StyledFlexRowContainer>
-
-
     </React.Fragment>
   );
 };

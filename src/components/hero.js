@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+import { css, jsx } from '@emotion/core';
 import NetworkStatus from './network-status';
 import Header from './header';
 import { GhostButton } from './elements/buttons';
