@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import NetworkStatus from './network-status';
 import Header from './header';
 import { GhostButton } from './elements/buttons';
+import VisuallyHidden from '@reach/visually-hidden';
 import heroImg from '../images/waves-hero.jpg';
 
 const Hero = () => {
@@ -18,11 +19,12 @@ const Hero = () => {
         <p>Get access.</p>
         <PrimaryCTAButton>Join the Network</PrimaryCTAButton>
       </CTAContainer>
+      <VisuallyHidden>Scroll Down</VisuallyHidden>
       <svg
+        class="chevron-down"
         width="188"
         height="188"
         viewBox="0 0 188 188"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -62,7 +64,11 @@ const Masthead = styled.div`
     background-position: top 33% bottom 66%;
   }
   svg {
-    margin-top: 8rem;
+    margin: 0;
+    padding: 0;
+  }
+  .chevron-down:hover {
+    fill: red;
   }
 `;
 
@@ -98,4 +104,11 @@ const PrimaryCTAButton = styled(GhostButton)`
     color: #ffffff;
     border-color: #ffffff;
   }
+`;
+
+const ScrollDown = styled.a`
+  background: none;
+  margin-top: 8rem;
+  padding: 0;
+  border: none;
 `;
