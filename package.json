@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
+    "@reach/dialog": "^0.2.9",
     "@reach/visually-hidden": "^0.1.4",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.8.2",

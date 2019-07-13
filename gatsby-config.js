@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Waves Community Mesh`,
+    title: `Waves Community WiFi`,
     description: `Waves is a community-driven project focused on providing high quality, high-availability, transparent internet to the Baltimore community in a scalable, cost-effective manner.`,
     author: `@jonathanprozzi`,
   },
@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Waves Community Mesh`,
-        short_name: `Wavesmesh`,
+        short_name: `Waves`,
         start_url: `/`,
         background_color: `#102A43`,
         theme_color: `#7BA7FF`,
@@ -28,7 +28,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-styled-components`,
     'gatsby-plugin-offline',
   ],
 };
