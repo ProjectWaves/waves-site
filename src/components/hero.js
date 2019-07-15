@@ -72,42 +72,79 @@ const Hero = () => {
           >
             Get access.
           </p> */}
-          <animated.p
-            style={fadeHalfDelay}
+          <div
             css={css`
-              color: #ffffff;
-              font-size: 2rem;
-              line-height: 3rem;
-              margin: 0;
-              padding: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              margin-top: 5vh;
+              @media only screen and (max-width: 1000px) {
+                    span {
+                      font-weight: bolder;
+                    }
+                    p {
+                      font-size: 2.5rem;
+                    }
             `}
           >
-            Connect yourself.
-          </animated.p>
-          <animated.p
-            style={fadeOneDelay}
-            css={css`
-              color: #ffffff;
-              font-size: 2rem;
-              line-height: 3rem;
-              margin: 0;
-              padding: 0;
-            `}
-          >
-            Connect your community.
-          </animated.p>
-          <animated.p
-            style={fadeTwoDelay}
-            css={css`
-              color: #ffffff;
-              font-size: 2rem;
-              line-height: 3rem;
-              margin: 0;
-              padding: 0;
-            `}
-          >
-            Connect the world.
-          </animated.p>
+            <animated.p
+              style={fadeHalfDelay}
+              css={css`
+                color: #ffffff;
+                font-size: 2rem;
+                line-height: 3rem;
+                margin: 0;
+                padding: 0;
+              `}
+            >
+              <span
+                css={css`
+                  color: var(--primary-color);
+                `}
+              >
+                Connect
+              </span>{' '}
+              yourself.
+            </animated.p>
+            <animated.p
+              style={fadeOneDelay}
+              css={css`
+                color: #ffffff;
+                font-size: 2rem;
+                line-height: 3rem;
+                margin: 0;
+                padding: 0;
+              `}
+            >
+              <span
+                css={css`
+                  color: var(--primary-color);
+                `}
+              >
+                Connect
+              </span>{' '}
+              your community.
+            </animated.p>
+            <animated.p
+              style={fadeTwoDelay}
+              css={css`
+                color: #ffffff;
+                font-size: 2rem;
+                line-height: 3rem;
+                margin: 0;
+                padding: 0;
+              `}
+            >
+              <span
+                css={css`
+                  color: var(--primary-color);
+                `}
+              >
+                Connect
+              </span>{' '}
+              the world.
+            </animated.p>
+          </div>
           <PrimaryCTAButton onClick={() => setShowLightbox(true)}>
             Join the Network
           </PrimaryCTAButton>
@@ -275,9 +312,16 @@ const Masthead = styled.div`
   @media only screen and (max-width: 1000px) {
     background: url(${heroImg});
     background-repeat: no-repeat;
-    background-color: #002432;
-    background-size: 100%;
-    background-position: top 33% bottom 66%;
+    background: linear-gradient(
+        90deg,
+        #000000 1.87%,
+        rgba(0, 0, 0, 0.5) 32.85%,
+        rgba(0, 0, 0, 0) 50%
+      ),
+      url(${heroImg});
+    background-size: cover;
+    background-position: 70%;
+    overflow: hidden;
   }
   svg {
     margin: 0;
@@ -294,10 +338,21 @@ const CTAContainer = styled.div`
   justify-content: space-between;
   margin-left: 3vw;
   margin-right: 50vw;
+  @media only screen and (max-width: 1000px) {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
   h2 {
     color: #ffffff;
     font-weight: bold;
     font-size: 4rem;
+    @media only screen and (max-width: 1000px) {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 4rem;
+    }
   }
 `;
 
@@ -309,6 +364,10 @@ const PrimaryCTAButton = styled(GhostButton)`
   padding: 1rem;
   margin-top: 8rem;
   max-width: 200px;
+  @media only screen and (max-width: 1000px) {
+    margin-top: 4rem;
+    max-width: 80%;
+  }
 
   &:hover {
     color: #ffffff;

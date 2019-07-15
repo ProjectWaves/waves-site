@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import VisuallyHidden from '@reach/visually-hidden';
 import styled from '@emotion/styled';
+import { css, jsx } from '@emotion/core';
 import Navbar from './navbar';
 
 const Header = ({ siteTitle }) => (
@@ -10,7 +11,12 @@ const Header = ({ siteTitle }) => (
     <Link to="/" style={{ textDecoration: 'none' }}>
       <VisuallyHidden>Home</VisuallyHidden>
       <svg
-        style={{ marginTop: 0 }}
+        css={css`
+          margin-top: 0;
+          @media only screen and (max-width: 1000px) {
+            display: none;
+          }
+        `}
         width="400"
         height="62"
         fill="none"

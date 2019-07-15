@@ -17,41 +17,41 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <React.Fragment>
-        <div>
-          <Global
-            styles={css`
-              html {
-                width: 100%;
-                height: 100%;
-                font-size: 62.5%;
-                box-sizing: border-box;
-                -ms-text-size-adjust: 100%;
-                -webkit-text-size-adjust: 100%;
-                touch-action: manipulation;
-              }
-              :root {
-                --primary-color: #7ba7ff;
-                --white: #fffaff;
-              }
-              *,
-              *:before,
-              *:after {
-                box-sizing: inherit;
-              }
-              body {
-                margin: 0;
-                padding: 0;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-                  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-                  'Droid Sans', 'Helvetica Neue', sans-serif;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoosthing: grayscale;
-              }
-            `}
-          />
+        <Global
+          styles={css`
+            html {
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              padding: 0;
+              font-size: 62.5%;
+              box-sizing: border-box;
+              -ms-text-size-adjust: 100%;
+              -webkit-text-size-adjust: 100%;
+              touch-action: manipulation;
+            }
+            :root {
+              --primary-color: #7ba7ff;
+              --white: #fffaff;
+            }
+            *,
+            *:before,
+            *:after {
+              box-sizing: inherit;
+            }
+            body {
+              margin: 0;
+              padding: 0;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+                'Droid Sans', 'Helvetica Neue', sans-serif;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoosthing: grayscale;
+            }
+          `}
+        />
 
-          <main>{children}</main>
-        </div>
+        <main>{children}</main>
       </React.Fragment>
     )}
   />
