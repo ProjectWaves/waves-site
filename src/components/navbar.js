@@ -53,13 +53,13 @@ const SiteNavContainer = styled.div`
   @media only screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
-    margin: 1rem 4rem;
+
     width: 100%;
     padding-top: 0;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    /* border-top: 2px solid rgba(0, 0, 0, 0.3); */
   }
 `;
 
@@ -76,8 +76,6 @@ const SiteNavEntry = styled.li`
   @media only screen and (max-width: 1000px) {
     padding-left: 0;
     padding-right: 2rem;
-    display: inline-block;
-    width: 100%;
   }
 `;
 

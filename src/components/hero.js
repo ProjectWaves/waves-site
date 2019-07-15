@@ -342,6 +342,7 @@ const CTAContainer = styled.div`
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    max-width: 90%;
   }
 
   h2 {
@@ -366,7 +367,7 @@ const PrimaryCTAButton = styled(GhostButton)`
   max-width: 200px;
   @media only screen and (max-width: 1000px) {
     margin-top: 4rem;
-    max-width: 80%;
+    max-width: 100%;
   }
 
   &:hover {
