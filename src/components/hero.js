@@ -79,12 +79,13 @@ const Hero = () => {
               align-items: flex-start;
               margin-top: 5vh;
               @media only screen and (max-width: 1000px) {
-                    span {
-                      font-weight: bolder;
-                    }
-                    p {
-                      font-size: 2.5rem;
-                    }
+                span {
+                  font-weight: bolder;
+                }
+                p {
+                  font-size: 2.5rem;
+                }
+              }
             `}
           >
             <animated.p
@@ -177,26 +178,11 @@ const Hero = () => {
           isOpen={showLightbox}
           onDismiss={() => setShowLightbox(false)}
         >
-          <CloseButton onClick={() => setShowLightbox(false)}>
-            <VisuallyHidden>Close</VisuallyHidden>
-            <svg
-              x="0px"
-              y="0px"
-              width="24px"
-              height="24px"
-              viewBox="0 0 31.11 31.11"
-              enableBackground="new 0 0 31.11 31.11"
-            >
-              <polygon
-                fill="#ffffff"
-                points="31.11,1.41 29.7,0 15.56,14.14 1.41,0 0,1.41 14.14,15.56 0,29.7 1.41,31.11 15.56,16.97   29.7,31.11 31.11,29.7 16.97,15.56 "
-              />
-            </svg>
-          </CloseButton>
           <StyledDialogContent>
             <div
               css={css`
                 display: flex;
+                position: fixed;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -204,10 +190,24 @@ const Hero = () => {
                 height: 600px;
                 background: #ffffff;
                 border-radius: 1rem;
-                @media only screen and (max-width: 1000px) {
-                  max-width: 80%;
               `}
             >
+              <CloseButton onClick={() => setShowLightbox(false)}>
+                <VisuallyHidden>Close</VisuallyHidden>
+                <svg
+                  x="0px"
+                  y="0px"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 31.11 31.11"
+                  enableBackground="new 0 0 31.11 31.11"
+                >
+                  <polygon
+                    fill="red"
+                    points="31.11,1.41 29.7,0 15.56,14.14 1.41,0 0,1.41 14.14,15.56 0,29.7 1.41,31.11 15.56,16.97   29.7,31.11 31.11,29.7 16.97,15.56 "
+                  />
+                </svg>
+              </CloseButton>
               <form
                 css={css`
                   max-width: 600px;
