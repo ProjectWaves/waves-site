@@ -9,8 +9,32 @@ const NetworkStatus = props => {
   return (
     <React.Fragment>
       <StyledFlexRowContainer>
-        <span>Network Status: </span>
-        <span> {props.status && props.status}</span>
+        <span
+          css={css`
+            color: #ffffff;
+            font-size: 1.5rem;
+          `}
+        >
+          Network Status:{' '}
+        </span>
+        <span
+          css={css`
+            color: var(--primary-color);
+            font-size: 1.5rem;
+          `}
+        >
+          {' '}
+          {props.status && props.status}
+        </span>
+        <span
+          css={css`
+            color: #ffffff;
+            font-size: 1.5rem;
+          `}
+        >
+          {' '}
+          users online
+        </span>
       </StyledFlexRowContainer>
     </React.Fragment>
   );
@@ -21,7 +45,7 @@ NetworkStatus.propTypes = {
 };
 
 NetworkStatus.defaultProps = {
-  status: 'Engaged!',
+  status: '50',
 };
 
 export default NetworkStatus;
@@ -32,12 +56,4 @@ const StyledFlexRowContainer = styled(FlexRowContainer)`
   justify-content: center;
   padding: 1.5rem 0;
   min-width: 100vw;
-  span :first-of-type {
-    color: #ffffff;
-    font-size: 1.5rem;
-  }
-  span:last-of-type {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-  }
 `;
