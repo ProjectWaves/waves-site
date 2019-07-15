@@ -204,6 +204,8 @@ const Hero = () => {
                 height: 600px;
                 background: #ffffff;
                 border-radius: 1rem;
+                @media only screen and (max-width: 1000px) {
+                  max-width: 80%;
               `}
             >
               <form
@@ -366,7 +368,7 @@ const PrimaryCTAButton = styled(GhostButton)`
   margin-top: 8rem;
   max-width: 200px;
   @media only screen and (max-width: 1000px) {
-    margin-top: 4rem;
+    margin-top: 8rem;
     max-width: 100%;
   }
 
@@ -405,8 +407,7 @@ const StyledDialogContent = styled(DialogContent)`
   z-index: 10;
 
   @media only screen and (max-width: 1000px) {
-    flex-direction: column;
-    width: 100%;
+    width: 93.75%;
   }
   -webkit-overflow-scrolling: touch;
 `;
