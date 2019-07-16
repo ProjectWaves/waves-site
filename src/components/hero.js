@@ -58,7 +58,7 @@ const Hero = () => {
   return (
     <React.Fragment>
       <Masthead>
-        <NetworkStatus status="50" />
+        <NetworkStatus status="5" />
         <Header siteTitle="WAVES" />
         <CTAContainer>
           <h2>Pay What You Can Internet Access</h2>

@@ -15,7 +15,7 @@ const NetworkStatus = props => {
             font-size: 1.5rem;
           `}
         >
-          Network Status:{' '}
+          Network Status: &nbsp;
         </span>
         <span
           css={css`
@@ -23,7 +23,6 @@ const NetworkStatus = props => {
             font-size: 1.5rem;
           `}
         >
-          {' '}
           {props.status && props.status}
         </span>
         <span
@@ -32,8 +31,8 @@ const NetworkStatus = props => {
             font-size: 1.5rem;
           `}
         >
-          {' '}
-          users online
+          &nbsp;
+          {props.status && props.status != '1' ? 'users online' : 'user online'}
         </span>
       </StyledFlexRowContainer>
     </React.Fragment>
