@@ -8,7 +8,7 @@ import { GhostButton } from './elements/buttons';
 import VisuallyHidden from '@reach/visually-hidden';
 import { DialogContent, DialogOverlay } from '@reach/dialog';
 import heroImg from '../images/waves-hero.jpg';
-import { redirectTo } from '@reach/router';
+import WaveSection from './wave-section';
 
 // const pulsing = keyframes`
 //  from, 20%, 53%, 80%, to {
@@ -58,6 +58,7 @@ const Hero = () => {
   return (
     <React.Fragment>
       <Masthead>
+        <WaveSection />
         <NetworkStatus status="5" />
         <Header siteTitle="WAVES" />
         <CTAContainer>

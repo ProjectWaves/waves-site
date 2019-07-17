@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { css, jsx } from '@emotion/core';
 import styled from '@emotion/styled';
 
 const ConnectedSection = () => {
@@ -29,12 +29,14 @@ const SectionContainer = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 20vh;
-  background: #fff;
+  margin-top: -20rem;
+  z-index: 1000;
   h2 {
     font-size: 4rem;
     color: #000;
     padding: 0;
     margin: 0;
+    z-index: 1000;
   }
   p {
     font-size: 2rem;
@@ -42,5 +44,6 @@ const SectionContainer = styled.section`
     color: #000;
     padding: 0;
     margin: 0;
+    z-index: 1000;
   }
 `;
