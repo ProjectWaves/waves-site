@@ -12,10 +12,11 @@ const ConnectedSection = () => {
         css={css`
           width: 100%;
           min-height: 200px;
-          margin-top: 5rem;
-          margin-bottom: 10rem;
+          /* margin-top: 5rem; */
+          margin-bottom: 15rem;
           background: #f0f4f8;
           border-radius: 32px;
+          z-index: 2000;
         `}
       />
     </SectionContainer>
@@ -30,7 +31,7 @@ const SectionContainer = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 20vh;
-  margin-top: -20rem;
+  margin-top: -24rem;
   z-index: 1000;
 
   @media only screen and (max-width: 1000px) {
