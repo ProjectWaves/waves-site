@@ -298,6 +298,7 @@ export default Hero;
 
 const Masthead = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;

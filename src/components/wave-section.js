@@ -7,18 +7,24 @@ const WaveSection = () => (
     css={css`
       position: absolute;
       top: 100vh;
-      left: 0vw;
-      min-width: 800px;
+      left: 0px;
       width: 100vw;
+      max-width: 100vw;
       transform: translateY(-90%);
       margin: 0 auto;
+      @media only screen and (max-width: 1000px) {
+        top: 100vh;
+      }
     `}
   >
     <svg
       css={css`
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 100vw;
         height: 250px;
+        @media only screen and (max-width: 1000px) {
+          height: 50px;
+        }
       `}
       viewBox="400 0 1440 100"
       preserveAspectRatio="none"

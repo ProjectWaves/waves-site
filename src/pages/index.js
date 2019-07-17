@@ -9,6 +9,7 @@ import {
 } from '../components/elements/layout-components';
 import Hero from '../components/hero';
 import ConnectedSection from '../components/connected-section';
+import ResearchSection from '../components/research-section';
 import SEO from '../components/seo';
 
 const IndexPage = () => (
@@ -23,6 +24,7 @@ const IndexPage = () => (
         <ContentWrapper>
           <ConnectedSection />
         </ContentWrapper>
+        <ResearchSection />
       </AppWrapper>
     </Layout>
   </React.Fragment>
