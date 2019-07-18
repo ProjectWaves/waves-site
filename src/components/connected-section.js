@@ -1,13 +1,26 @@
 import React from 'react';
 import { css, jsx } from '@emotion/core';
-
+import { useSpring, animated } from 'react-spring';
 import styled from '@emotion/styled';
 
 const ConnectedSection = () => {
+  const fadeInSection = useSpring({
+    from: { opacity: 0, transform: 'translate3d(0%,50%,0)' },
+    to: { opacity: 1, transform: 'translate3d(0%, 0%, 0%' },
+  });
+
+  const fadeInOneSecond = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay: 1000,
+  });
+
   return (
-    <SectionContainer id="connected-section">
+    <AnimatedSectionContainer style={fadeInSection} id="connected-section">
       <h2>Connecting communities in Baltimore and beyond.</h2>
-      <p>75,000 Baltimore Homes Without Access.</p>
+      <animated.p style={fadeInOneSecond}>
+        75,000 Baltimore homes without access. Let's start connecting people.
+      </animated.p>
       <div
         css={css`
           width: 100%;
@@ -19,7 +32,7 @@ const ConnectedSection = () => {
           z-index: 2000;
         `}
       />
-    </SectionContainer>
+    </AnimatedSectionContainer>
   );
 };
 
@@ -31,7 +44,7 @@ const SectionContainer = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 20vh;
-  margin-top: -24rem;
+  margin-top: -22rem;
   z-index: 1000;
 
   @media only screen and (max-width: 1000px) {
@@ -53,3 +66,5 @@ const SectionContainer = styled.section`
     z-index: 1000;
   }
 `;
+
+const AnimatedSectionContainer = animated(SectionContainer);
