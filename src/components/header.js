@@ -1,17 +1,24 @@
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
 import VisuallyHidden from '@reach/visually-hidden';
 import styled from '@emotion/styled';
 import { css, jsx } from '@emotion/core';
 import { useSpring, animated, config } from 'react-spring';
 import Navbar from './navbar';
+import NavSlider from './nav-slider';
 
 const Header = ({ siteTitle }) => {
+  const [isNavOpen, setNavOpen] = useState(false);
+
   const fadeInLogo = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
     delay: 100,
+  });
+
+  const navAnimation = useSpring({
+    transform: isNavOpen ? `translate3d(50%,0,0)` : `translate3d(100%, 0, 0)`,
   });
 
   return (
@@ -61,7 +68,16 @@ const Header = ({ siteTitle }) => {
           />
         </animated.svg>
       </Link>
-      <Navbar />
+      {/* <Navbar /> */}
+      <button
+        css={css`
+          z-index: 200;
+        `}
+        onClick={() => setNavOpen(!isNavOpen)}
+      >
+        Menu
+      </button>
+      <NavSlider style={navAnimation} />
     </StyledHeader>
   );
 };
