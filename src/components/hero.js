@@ -55,6 +55,17 @@ const Hero = () => {
     delay: 2500,
   });
 
+  const { x } = useSpring({
+    from: {
+      x: -1000,
+    },
+    to: {
+      x: 0,
+    },
+    delay: 100,
+    config: { mass: 1.25, tension: 50, friction: 20 },
+  });
+
   return (
     <React.Fragment>
       <Masthead>
@@ -62,7 +73,13 @@ const Hero = () => {
         <NetworkStatus status="5" />
         <Header siteTitle="WAVES" />
         <CTAContainer>
-          <h2>Pay What You Can Internet Access</h2>
+          <animated.h2
+            style={{
+              transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`),
+            }}
+          >
+            Pay What You Can Internet Access
+          </animated.h2>
           {/* <p
             css={css`
               color: #ffffff;
@@ -90,7 +107,9 @@ const Hero = () => {
             `}
           >
             <animated.p
-              style={fadeHalfDelay}
+              style={{
+                ...fadeHalfDelay,
+              }}
               css={css`
                 color: #ffffff;
                 font-size: 2rem;
