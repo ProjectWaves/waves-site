@@ -1,12 +1,13 @@
 import React from 'react';
 import { css, jsx } from '@emotion/core';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, config } from 'react-spring';
 import styled from '@emotion/styled';
 
 const ConnectedSection = () => {
   const fadeInSection = useSpring({
     from: { opacity: 0, transform: 'translate3d(0%,50%,0)' },
     to: { opacity: 1, transform: 'translate3d(0%, 0%, 0%' },
+    config: { mass: 1, tension: 100, friction: 20 },
   });
 
   const fadeInOneSecond = useSpring({

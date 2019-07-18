@@ -22,8 +22,14 @@ const ResearchSection = () => {
       }
     `
   );
+  const fadeInSection = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay: 1000,
+  });
+
   return (
-    <SectionContainer id="research-section">
+    <AnimatedSectionContainer style={fadeInSection} id="research-section">
       {/* <div
         css={css`
           display: flex;
@@ -104,7 +110,8 @@ const ResearchSection = () => {
       >
         <h2
           css={css`
-            color: #f0f4f8;
+            /* color: #f0f4f8; */
+            color: var(--primary-color);
             font-size: 4rem;
             margin: 0;
             padding-bottom: 5rem;
@@ -148,12 +155,14 @@ const ResearchSection = () => {
             css={css`
               text-transform: none;
               font-size: 2rem;
-              color: #ffffff;
-              border: 2px solid #ffffff;
+              color: var(--primary-color);
+              border: 2px solid;
+              border-color: var(--primary-color);
               background: none;
               border-radius: 16px;
               padding: 1rem 2rem;
               max-width: 800px;
+              transition: all ease-in-out 250ms;
 
               @media only screen and (max-width: 1000px) {
                 margin-top: 8rem;
@@ -162,8 +171,9 @@ const ResearchSection = () => {
 
               &:hover {
                 color: #ffffff;
-                border-color: #ffffff;
+                border: 2px solid #ffffff;
                 cursor: pointer;
+                transform: translate3d() ();
               }
             `}
           >
@@ -171,7 +181,7 @@ const ResearchSection = () => {
           </button>
         </a>
       </div>
-    </SectionContainer>
+    </AnimatedSectionContainer>
   );
 };
 
@@ -189,3 +199,5 @@ const SectionContainer = styled.section`
     margin-top: 0;
   }
 `;
+
+const AnimatedSectionContainer = animated(SectionContainer);
