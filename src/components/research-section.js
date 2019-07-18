@@ -5,7 +5,6 @@ import { css, jsx } from '@emotion/core';
 import styled from '@emotion/styled';
 import { useSpring, animated, config } from 'react-spring';
 import Iframe from 'react-iframe';
-import GatsbyImage from 'gatsby-image';
 
 const ResearchSection = () => {
   const { researchImage } = useStaticQuery(

@@ -12,7 +12,7 @@ const ConnectedSection = () => {
         css={css`
           width: 100%;
           min-height: 200px;
-          /* margin-top: 5rem; */
+          margin-top: 5rem;
           margin-bottom: 15rem;
           background: #f0f4f8;
           border-radius: 32px;
