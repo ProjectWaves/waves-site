@@ -10,24 +10,6 @@ import { DialogContent, DialogOverlay } from '@reach/dialog';
 import heroImg from '../images/waves-hero.jpg';
 import WaveSection from './wave-section';
 
-// const pulsing = keyframes`
-//  from, 20%, 53%, 80%, to {
-//     transform: translate3d(0,0,0);
-//   }
-
-//   40%, 43% {
-//     transform: translate3d(0, -10px, 0);
-//   }
-
-//   70% {
-//     transform: translate3d(0, -6px, 0);
-//   }
-
-//   90% {
-//     transform: translate3d(0,-3px,0);
-//   }
-// `;
-
 const Hero = () => {
   const [showLightbox, setShowLightbox] = useState(false);
 
