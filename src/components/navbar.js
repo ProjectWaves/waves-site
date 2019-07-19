@@ -14,7 +14,7 @@ const Navbar = props => (
       <SiteNavEntry>
         <SiteNavLink
           color={props.color}
-          hoverColor={props.hoverColor}
+          hovercolor={props.hovercolor}
           activeStyle={activeStyles}
           to="/blog"
         >
@@ -90,7 +90,7 @@ const SiteNavLink = styled(Link)`
   transition: color 0.5s ease;
 
   &:hover {
-    color: ${props => props.hoverColor || '#0091c9'};
+    color: ${props => props.hovercolor || '#0091c9'};
     cursor: pointer;
   }
   @media only screen and (max-width: 1000px) {

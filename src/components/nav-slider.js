@@ -23,24 +23,24 @@ const NavSlider = ({ style }) => {
       <SlideNavContainer>
         <SiteNavList>
           <SiteNavEntry>
-            <SiteNavLink color="var(--primary-color)" hoverColor="#fff">
+            <SiteNavLink color="var(--primary-color)" hovercolor="#fff">
               About
             </SiteNavLink>
           </SiteNavEntry>
 
           <SiteNavEntry>
-            <SiteNavLink color="var(--primary-color)" hoverColor="#fff">
+            <SiteNavLink color="var(--primary-color)" hovercolor="#fff">
               Mission
             </SiteNavLink>{' '}
           </SiteNavEntry>
           <SiteNavEntry>
             {' '}
-            <SiteNavLink color="var(--primary-color)" hoverColor="#fff">
+            <SiteNavLink color="var(--primary-color)" hovercolor="#fff">
               Research
             </SiteNavLink>{' '}
           </SiteNavEntry>
           <SiteNavEntry>
-            <SiteNavLink color="var(--primary-color)" hoverColor="#fff">
+            <SiteNavLink color="var(--primary-color)" hovercolor="#fff">
               Donate
             </SiteNavLink>{' '}
           </SiteNavEntry>
@@ -68,7 +68,6 @@ const SlideNavContainer = styled.nav`
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    /* border-top: 2px solid rgba(0, 0, 0, 0.3); */
   }
 `;
 
@@ -98,7 +97,7 @@ const SiteNavLink = styled(Link)`
   transition: color 0.5s ease;
 
   &:hover {
-    color: ${props => props.hoverColor || '#0091c9'};
+    color: ${props => props.hovercolor || '#0091c9'};
     cursor: pointer;
   }
   @media only screen and (max-width: 1000px) {
