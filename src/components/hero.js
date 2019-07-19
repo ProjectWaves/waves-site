@@ -14,9 +14,9 @@ const Hero = () => {
   const [showModal, setShowModal] = useState(false);
 
   const formTransition = useTransition(showModal, null, {
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
+    from: { opacity: 0, background: 'red' },
+    enter: { opacity: 1, background: 'blue' },
+    leave: { opacity: 0, background: 'red' },
   });
 
   const fadeHalfDelay = useSpring({
@@ -154,11 +154,11 @@ const Hero = () => {
           item && (
             <AnimatedStyledDialogOverlay
               key={key}
-              style={props}
+              style={{ opacity: props.opacity }}
               isOpen={showModal}
               onDismiss={() => setShowModal(false)}
             >
-              <StyledDialogContent>
+              <AnimatedStyledDialogContent>
                 <div
                   css={css`
                     display: flex;
@@ -171,6 +171,8 @@ const Hero = () => {
                     background: #ffffff;
                     border-radius: 1rem;
                   `}
+                  key={key}
+                  style={{ background: props.background }}
                 >
                   <CloseButton onClick={() => setShowModal(false)}>
                     <VisuallyHidden>Close</VisuallyHidden>
@@ -268,7 +270,7 @@ const Hero = () => {
                     </div>
                   </form>
                 </div>
-              </StyledDialogContent>
+              </AnimatedStyledDialogContent>
             </AnimatedStyledDialogOverlay>
           )
       )}
@@ -397,6 +399,8 @@ const StyledDialogContent = styled(DialogContent)`
   }
   -webkit-overflow-scrolling: touch;
 `;
+
+const AnimatedStyledDialogContent = animated(StyledDialogContent);
 
 const CloseButton = styled.button`
   position: absolute;
