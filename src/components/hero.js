@@ -1,5 +1,5 @@
-import React, { useState, createContext } from 'react';
-import { useSpring, animated, config } from 'react-spring';
+import React, { useState } from 'react';
+import { useSpring, animated, config, useTransition } from 'react-spring';
 import { css, jsx, keyframes } from '@emotion/core';
 import styled from '@emotion/styled';
 import NetworkStatus from './network-status';
@@ -12,6 +12,12 @@ import WaveSection from './wave-section';
 
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
+
+  const formTransition = useTransition(showModal, null, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+  });
 
   const fadeHalfDelay = useSpring({
     from: {
@@ -138,126 +144,133 @@ const Hero = () => {
               the world.
             </animated.p>
           </div>
-          <PrimaryCTAButton onClick={() => setShowLightbox(true)}>
+          <PrimaryCTAButton onClick={() => setShowModal(true)}>
             Join the Network
           </PrimaryCTAButton>
         </CTAContainer>
       </Masthead>
-      {showModal && (
-        <StyledDialogOverlay
-          isOpen={showModal}
-          onDismiss={() => setShowModal(false)}
-        >
-          <StyledDialogContent>
-            <div
-              css={css`
-                display: flex;
-                position: fixed;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 600px;
-                height: 600px;
-                background: #ffffff;
-                border-radius: 1rem;
-              `}
+      {formTransition.map(
+        ({ item, key, props }) =>
+          item && (
+            <AnimatedStyledDialogOverlay
+              key={key}
+              style={props}
+              isOpen={showModal}
+              onDismiss={() => setShowModal(false)}
             >
-              <CloseButton onClick={() => setShowModal(false)}>
-                <VisuallyHidden>Close</VisuallyHidden>
-                <svg
-                  x="0px"
-                  y="0px"
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 31.11 31.11"
-                  enableBackground="new 0 0 31.11 31.11"
-                >
-                  <polygon
-                    fill="red"
-                    points="31.11,1.41 29.7,0 15.56,14.14 1.41,0 0,1.41 14.14,15.56 0,29.7 1.41,31.11 15.56,16.97   29.7,31.11 31.11,29.7 16.97,15.56 "
-                  />
-                </svg>
-              </CloseButton>
-              <form
-                css={css`
-                  max-width: 600px;
-                  margin: 2rem auto;
-                  label {
-                    font-size: 1.5rem;
-                    margin-bottom: 0.5rem;
-                  }
-                  input,
-                  textarea {
-                    font-size: 1.5rem;
-                    border: 2px solid rgba(0, 0, 0, 0.2);
-                    border-radius: 0.5rem;
-                    padding: 0.5rem;
-                    margin-bottom: 1.5rem;
-                  }
-                  input::placeholder,
-                  textarea::placeholder {
-                    font-size: 1.5rem;
-                    color: #777;
-                  }
-                `}
-              >
+              <StyledDialogContent>
                 <div
                   css={css`
                     display: flex;
+                    position: fixed;
                     flex-direction: column;
+                    align-items: center;
                     justify-content: center;
+                    width: 600px;
+                    height: 600px;
+                    background: #ffffff;
+                    border-radius: 1rem;
                   `}
                 >
-                  <label for="name">Enter your full name:</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="First Last"
-                    required
-                    minlength="4"
-                    maxlength="8"
-                  />
-                  <label for="phone">Enter your phone number:</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="410-555-5555"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    required
-                  />
-                  <label for="address">Enter your street address:</label>
-                  <textarea
-                    id="address"
-                    name="address"
-                    rows="5"
-                    cols="33"
-                    placeholder="1234 Street Baltimore MD, 21202"
-                  />
-                  <label for="phone">Enter your phone number:</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="410-555-5555"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    required
-                  />
-                  <label for="email">Enter your email if you have one:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    size="50"
-                    placeholder="name@email.com"
-                    required
-                  />
-                  <input type="submit" value="SUBMIT" />
+                  <CloseButton onClick={() => setShowModal(false)}>
+                    <VisuallyHidden>Close</VisuallyHidden>
+                    <svg
+                      x="0px"
+                      y="0px"
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 31.11 31.11"
+                      enableBackground="new 0 0 31.11 31.11"
+                    >
+                      <polygon
+                        fill="red"
+                        points="31.11,1.41 29.7,0 15.56,14.14 1.41,0 0,1.41 14.14,15.56 0,29.7 1.41,31.11 15.56,16.97   29.7,31.11 31.11,29.7 16.97,15.56 "
+                      />
+                    </svg>
+                  </CloseButton>
+                  <form
+                    css={css`
+                      max-width: 600px;
+                      margin: 2rem auto;
+                      label {
+                        font-size: 1.5rem;
+                        margin-bottom: 0.5rem;
+                      }
+                      input,
+                      textarea {
+                        font-size: 1.5rem;
+                        border: 2px solid rgba(0, 0, 0, 0.2);
+                        border-radius: 0.5rem;
+                        padding: 0.5rem;
+                        margin-bottom: 1.5rem;
+                      }
+                      input::placeholder,
+                      textarea::placeholder {
+                        font-size: 1.5rem;
+                        color: #777;
+                      }
+                    `}
+                  >
+                    <div
+                      css={css`
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                      `}
+                    >
+                      <label for="name">Enter your full name:</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="First Last"
+                        required
+                        minlength="4"
+                        maxlength="8"
+                      />
+                      <label for="phone">Enter your phone number:</label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="410-555-5555"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required
+                      />
+                      <label for="address">Enter your street address:</label>
+                      <textarea
+                        id="address"
+                        name="address"
+                        rows="5"
+                        cols="33"
+                        placeholder="1234 Street Baltimore MD, 21202"
+                      />
+                      <label for="phone">Enter your phone number:</label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="410-555-5555"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required
+                      />
+                      <label for="email">
+                        Enter your email if you have one:
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        size="50"
+                        placeholder="name@email.com"
+                        required
+                      />
+                      <input type="submit" value="SUBMIT" />
+                    </div>
+                  </form>
                 </div>
-              </form>
-            </div>
-          </StyledDialogContent>
-        </StyledDialogOverlay>
+              </StyledDialogContent>
+            </AnimatedStyledDialogOverlay>
+          )
       )}
     </React.Fragment>
   );
@@ -364,6 +377,8 @@ const StyledDialogOverlay = styled(DialogOverlay)`
     width: 100%;
   }
 `;
+
+const AnimatedStyledDialogOverlay = animated(StyledDialogOverlay);
 
 const StyledDialogContent = styled(DialogContent)`
   display: flex;
