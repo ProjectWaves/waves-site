@@ -11,7 +11,7 @@ import heroImg from '../images/waves-hero.jpg';
 import WaveSection from './wave-section';
 
 const Hero = () => {
-  const [showLightbox, setShowLightbox] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const fadeHalfDelay = useSpring({
     from: {
@@ -143,10 +143,10 @@ const Hero = () => {
           </PrimaryCTAButton>
         </CTAContainer>
       </Masthead>
-      {showLightbox && (
+      {showModal && (
         <StyledDialogOverlay
-          isOpen={showLightbox}
-          onDismiss={() => setShowLightbox(false)}
+          isOpen={showModal}
+          onDismiss={() => setShowModal(false)}
         >
           <StyledDialogContent>
             <div
@@ -162,7 +162,7 @@ const Hero = () => {
                 border-radius: 1rem;
               `}
             >
-              <CloseButton onClick={() => setShowLightbox(false)}>
+              <CloseButton onClick={() => setShowModal(false)}>
                 <VisuallyHidden>Close</VisuallyHidden>
                 <svg
                   x="0px"
