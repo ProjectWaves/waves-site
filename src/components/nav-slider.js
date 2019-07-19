@@ -14,6 +14,7 @@ const NavSlider = ({ style }) => {
         top: 0;
         bottom: 0;
         padding: 100px;
+        max-height: 85vh;
         background: #000000;
         z-index: 100;
       `}

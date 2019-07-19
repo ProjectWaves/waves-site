@@ -18,7 +18,9 @@ const Header = ({ siteTitle }) => {
   });
 
   const navAnimation = useSpring({
-    transform: isNavOpen ? `translate3d(50%,0,0)` : `translate3d(100%, 0, 0)`,
+    transform: isNavOpen ? `translate3d(0,0,0)` : `translate3d(0, -100%, 0)`,
+    opacity: isNavOpen ? 1 : 0,
+    config: { mass: 1, tension: 120, friction: 20 },
   });
 
   return (
