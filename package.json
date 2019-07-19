@@ -25,7 +25,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-iframe": "^1.8.0",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "react-waypoint": "^9.0.2"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
