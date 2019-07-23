@@ -73,6 +73,35 @@ const AccessSection = () => {
           Waves not only stands for Net Neutrality, but is committed to making
           all members of the network aware of any potential changes.{' '}
         </p>
+        <button
+          css={css`
+            text-transform: none;
+            font-size: 2rem;
+            background: var(--primary-color);
+            color: #fafafa;
+            border: 2px solid;
+            border-color: var(--primary-color);
+            border-radius: 16px;
+            padding: 1rem 2rem;
+            max-width: 800px;
+            transition: all ease-in-out 500ms;
+
+            @media only screen and (max-width: 1000px) {
+              margin-top: 8rem;
+              max-width: 100%;
+            }
+
+            &:hover {
+              color: #ffffff;
+              background: #000;
+              border: 2px solid;
+              border-color: #000;
+              cursor: pointer;
+            }
+          `}
+        >
+          Learn More
+        </button>
       </div>
     </SectionContainer>
   );
