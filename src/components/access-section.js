@@ -31,7 +31,8 @@ const AccessSection = () => {
           fluid={accessPointImage.childImageSharp.fluid}
           css={css`
             border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+            box-shadow: 0px 5px 10px rgba(123, 167, 255, 0.4);
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -45,7 +46,6 @@ const AccessSection = () => {
           align-items: center;
           justify-content: center;
           height: 40%;
-          /* background: rgba(0, 0, 0, 0.3); */
           margin: 0 auto;
         `}
       >
@@ -64,7 +64,11 @@ const AccessSection = () => {
         <p
           css={css`
             font-size: 2rem;
-            padding: 0 4rem;
+            padding-top: 0;
+            padding-bottom: 1.5rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            color: #222;
             @media only screen and (max-width: 1000px) {
               padding: 0;
             }
@@ -77,10 +81,12 @@ const AccessSection = () => {
           css={css`
             text-transform: none;
             font-size: 2rem;
-            background: var(--primary-color);
-            color: #fafafa;
+            /* background: var(--primary-color); */
+            background: #000;
+            color: #fff;
             border: 2px solid;
-            border-color: var(--primary-color);
+            border-color: #000;
+            /* border-color: var(--primary-color); */
             border-radius: 16px;
             padding: 1rem 2rem;
             max-width: 800px;
@@ -93,9 +99,10 @@ const AccessSection = () => {
 
             &:hover {
               color: #ffffff;
-              background: #000;
+
+              background: #243b53;
               border: 2px solid;
-              border-color: #000;
+              border-color: #243b53;
               cursor: pointer;
             }
           `}
@@ -115,7 +122,6 @@ const SectionContainer = styled.section`
   align-items: center;
   min-height: 40vh;
   background: #fff;
-  /* background: blue; */
   margin: 4rem 5rem;
 
   @media only screen and (max-width: 1000px) {
