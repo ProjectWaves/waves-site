@@ -19,7 +19,6 @@ const WaveSection = () => (
   >
     <svg
       css={css`
-        /* border: 1px solid red; */
         width: 100vw;
         height: 250px;
         @media only screen and (max-width: 1000px) {

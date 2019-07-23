@@ -12,6 +12,7 @@ import {
 import Hero from '../components/hero';
 import ConnectedSection from '../components/connected-section';
 import ResearchSection from '../components/research-section';
+import AccessSection from '../components/access-section';
 import SEO from '../components/seo';
 
 const IndexPage = () => {
@@ -28,6 +29,7 @@ const IndexPage = () => {
             <ConnectedSection />
           </ContentWrapper>
           <ResearchSection />
+          <AccessSection />
         </AppWrapper>
       </Layout>
     </React.Fragment>

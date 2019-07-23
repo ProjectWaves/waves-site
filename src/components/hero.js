@@ -59,12 +59,12 @@ const Hero = () => {
       <Masthead>
         <WaveSection />
         <NetworkStatus status="5" />
-        <Header siteTitle="WAVES" />
+        <Header siteTitle="Waves" />
         <CTAContainer>
           <animated.h2
-            style={{
-              transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`),
-            }}
+          // style={{
+          //   transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`),
+          // }}
           >
             Pay What You Can Internet Access
           </animated.h2>

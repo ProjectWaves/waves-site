@@ -31,10 +31,10 @@ const ResearchSection = () => {
       }
     `
   );
-  const fadeInSection = useSpring({
+  const { opacity, transform } = useSpring({
     opacity: on ? 1 : 0,
-    background: on ? 'red' : 'blue',
-    transform: on ? `translate3d(0, 0, 0)` : `translate3d(0, 0, 50%)`,
+    transform: on ? `translate3d(0, 0, 0)` : `translate3d(0, 100%, 0)`,
+    config: { mass: 1, tension: 170, friction: 26 },
   });
 
   return (
@@ -46,15 +46,19 @@ const ResearchSection = () => {
         }}
       />
 
-      <AnimatedSectionContainer style={fadeInSection} id="research-section">
-        <div
+      <AnimatedSectionContainer
+        style={{ opacity: opacity }}
+        id="research-section"
+      >
+        <animated.div
           css={css`
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 5rem 10rem;
-            width: 70%;
-            min-height: 600px;
+            width: 60%;
+            min-height: 450px;
+            /* max-height: 70vh; */
             margin-top: -15rem;
             margin-bottom: 15rem;
             border-radius: 32px;
@@ -65,6 +69,7 @@ const ResearchSection = () => {
               margin: 0 auto;
             }
           `}
+          style={{ transform: transform }}
         >
           <h2
             css={css`
@@ -83,7 +88,6 @@ const ResearchSection = () => {
               box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
               width: 100%;
               height: 100%;
-              max-height: 800px;
               object-fit: cover;
             `}
           />
@@ -137,7 +141,7 @@ const ResearchSection = () => {
               View the Report Now
             </button>
           </a>
-        </div>
+        </animated.div>
       </AnimatedSectionContainer>
     </React.Fragment>
   );
