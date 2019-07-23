@@ -23,7 +23,7 @@ const ResearchSection = () => {
           relativePath: { eq: "deutsch-foundation-2017-report.jpg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1000, maxHeight: 400) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -56,13 +56,14 @@ const ResearchSection = () => {
             flex-direction: column;
             align-items: center;
             padding: 5rem 10rem;
+            margin: 0 auto;
             width: 60%;
-            min-height: 450px;
+            min-height: 300px;
             /* max-height: 70vh; */
-            margin-top: -15rem;
-            margin-bottom: 15rem;
+            /* margin-top: -15rem; */
+            /* margin-bottom: 15rem; */
             border-radius: 32px;
-            background: #273041;
+            background: #000;
 
             @media only screen and (max-width: 1000px) {
               width: 90%;
@@ -81,17 +82,23 @@ const ResearchSection = () => {
           >
             Get the Facts
           </h2>
-          <Img
-            fluid={researchImage.childImageSharp.fluid}
+          <div
             css={css`
-              border-radius: 8px;
-              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
               width: 100%;
               height: 100%;
-              object-fit: cover;
             `}
-          />
-
+          >
+            <Img
+              fluid={researchImage.childImageSharp.fluid}
+              css={css`
+                border-radius: 8px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              `}
+            />
+          </div>
           <p
             css={css`
               color: #f0f4f8;
@@ -154,8 +161,20 @@ const SectionContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
-  background: #000000;
+  min-height: 30vh;
+  padding: 5rem 0;
+  /* background: #000000; */
+  background: #73c8a9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #373b44,
+    #73c8a9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #373b44,
+    #73c8a9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   @media only screen and (max-width: 1000px) {
     margin-top: 0;
