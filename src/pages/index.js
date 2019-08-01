@@ -13,6 +13,8 @@ import Hero from '../components/hero';
 import ConnectedSection from '../components/connected-section';
 import ResearchSection from '../components/research-section';
 import AccessSection from '../components/access-section';
+import InfoFooter from '../components/info-footer';
+import Footer from '../components/footer';
 import SEO from '../components/seo';
 
 const IndexPage = () => {
@@ -31,6 +33,8 @@ const IndexPage = () => {
           <ResearchSection />
           <AccessSection />
         </AppWrapper>
+        <InfoFooter />
+        <Footer />
       </Layout>
     </React.Fragment>
   );
