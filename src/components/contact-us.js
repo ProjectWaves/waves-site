@@ -12,8 +12,8 @@ const ContactUs = () => (
       443-681-9384
       <br />
     </ContactCopy>
-    <ContactLink href="mailto:contact@digitalharbor.org" target="_top">
-      contact@digitalharbor.org
+    <ContactLink href="mailto: contact@projectwaves.net" target="_top">
+      contact@projectwaves.net
     </ContactLink>
   </ContactWrapper>
 );
