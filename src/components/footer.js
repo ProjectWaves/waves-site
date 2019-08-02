@@ -7,7 +7,7 @@ const Footer = () => (
       <FooterRights>© 2019</FooterRights>
       <FooterLinkContainer>
         <FooterLink
-          href="https://digitalharbor.org"
+          href="https://projectwaves.net"
           target="_blank"
           rel="noopener"
         >
