@@ -11,7 +11,7 @@
     "@reach/visually-hidden": "^0.1.4",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.8.2",
-    "gatsby-cli": "^2.7.15",
+    "gatsby-cli": "^2.7.26",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-emotion": "^4.1.2",
     "gatsby-plugin-manifest": "^2.1.1",
