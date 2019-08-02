@@ -1,5 +1,5 @@
 import React from 'react';
-import { css, jsx } from '@emotion/core';
+import { css } from '@emotion/core';
 import { useSpring, animated, config } from 'react-spring';
 import styled from '@emotion/styled';
 
