@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Waves Community WiFi`,
-    description: `Waves is a community-driven project focused on providing high quality, high-availability, transparent internet to the Baltimore community in a scalable, cost-effective manner.`,
-    author: `@jonathanprozzi`,
+    title: `Project Waves`,
+    description: `Waves is a community ISP focused on providing high quality, high-availability, transparent internet to the Baltimore community in a scalable, cost-effective manner.`,
+    author: `@wavesmesh`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,10 +15,17 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utilities/typography`
+      }
+    }
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Waves Community Mesh`,
+        name: `Project Waves`,
         short_name: `Waves`,
         start_url: `/`,
         background_color: `#102A43`,
@@ -27,7 +34,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-emotion`,
     'gatsby-plugin-offline',
   ],
 };

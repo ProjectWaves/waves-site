@@ -18,6 +18,7 @@
     "gatsby-plugin-offline": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.1.3",
+    "gatsby-plugin-typography": "^2.3.2",
     "gatsby-source-filesystem": "^2.0.38",
     "gatsby-transformer-sharp": "^2.1.21",
     "prop-types": "^15.7.2",
@@ -26,7 +27,9 @@
     "react-helmet": "^5.2.1",
     "react-iframe": "^1.8.0",
     "react-spring": "^8.0.27",
-    "react-waypoint": "^9.0.2"
+    "react-typography": "^0.16.19",
+    "react-waypoint": "^9.0.2",
+    "typography": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
