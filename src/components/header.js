@@ -71,14 +71,14 @@ const Header = ({ siteTitle }) => {
         </animated.svg>
       </Link>
       {/* <Navbar /> */}
-      <button
+      {/* <button
         css={css`
           z-index: 200;
         `}
         onClick={() => setNavOpen(!isNavOpen)}
       >
         Menu
-      </button>
+      </button> */}
       {/* <NavSlider style={navAnimation} /> */}
     </StyledHeader>
   );
