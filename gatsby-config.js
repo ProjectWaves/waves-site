@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Project Waves`,
+    title: `Waves`,
     description: `Waves is a community ISP focused on providing high quality, high-availability, transparent internet to the Baltimore community in a scalable, cost-effective manner.`,
     author: `@wavesmesh`,
   },
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Project Waves`,
+        name: `Waves`,
         short_name: `Waves`,
         start_url: `/`,
         background_color: `#102A43`,
