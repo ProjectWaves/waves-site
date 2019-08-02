@@ -3,10 +3,10 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import VisuallyHidden from '@reach/visually-hidden';
 import styled from '@emotion/styled';
-import { css, jsx } from '@emotion/core';
+import { css } from '@emotion/core';
 import { useSpring, animated, config } from 'react-spring';
-import Navbar from './navbar';
-import NavSlider from './nav-slider';
+// import Navbar from './navbar';
+// import NavSlider from './nav-slider';
 
 const Header = ({ siteTitle }) => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -17,11 +17,11 @@ const Header = ({ siteTitle }) => {
     delay: 100,
   });
 
-  const navAnimation = useSpring({
-    transform: isNavOpen ? `translate3d(0,0,0)` : `translate3d(0, -100%, 0)`,
-    opacity: isNavOpen ? 1 : 0,
-    config: { mass: 1, tension: 120, friction: 20 },
-  });
+  // const navAnimation = useSpring({
+  //   transform: isNavOpen ? `translate3d(0,0,0)` : `translate3d(0, -100%, 0)`,
+  //   opacity: isNavOpen ? 1 : 0,
+  //   config: { mass: 1, tension: 120, friction: 20 },
+  // });
 
   return (
     <StyledHeader>
@@ -79,7 +79,7 @@ const Header = ({ siteTitle }) => {
       >
         Menu
       </button>
-      <NavSlider style={navAnimation} />
+      {/* <NavSlider style={navAnimation} /> */}
     </StyledHeader>
   );
 };
