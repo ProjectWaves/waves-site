@@ -12,7 +12,6 @@ import {
 import Hero from '../components/hero';
 import ConnectedSection from '../components/connected-section';
 import CardSection from '../components/card-section';
-import ResearchSection from '../components/research-section';
 import AccessSection from '../components/access-section';
 import InfoFooter from '../components/info-footer';
 import Footer from '../components/footer';
@@ -34,7 +33,6 @@ const IndexPage = () => {
           </ContentWrapper>
           <JoinNetworkForm />
           <CardSection />
-          <ResearchSection />
           <AccessSection />
         </AppWrapper>
         <InfoFooter />

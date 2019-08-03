@@ -2,7 +2,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { css } from '@emotion/core';
 
-const Card = ({ fluid, title, copy }) => (
+const Card = ({ fluid, title, copy, featured }) => (
   <div
     css={css`
       display: flex;
@@ -10,7 +10,7 @@ const Card = ({ fluid, title, copy }) => (
       align-items: center;
       background: #ffffff;
       border-radius: 16px;
-      max-width: 440px;
+      min-width: 440px;
     `}
   >
     <div
@@ -36,10 +36,14 @@ const Card = ({ fluid, title, copy }) => (
         />
       )}
     </div>
-    <div css={css``}>
+    <div
+      css={css`
+        margin: 2rem 4rem;
+      `}
+    >
       <h3
         css={css`
-          font-size: 4rem;
+          font-size: 3rem;
         `}
       >
         {title}
@@ -47,7 +51,7 @@ const Card = ({ fluid, title, copy }) => (
       <p
         css={css`
           font-size: 2rem;
-          line-height: 1.5rem;
+          line-height: 3rem;
         `}
       >
         {copy}

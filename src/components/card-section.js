@@ -53,13 +53,16 @@ const CardSection = () => {
         />
         <Card
           fluid={cardOneImage.childImageSharp.fluid}
-          title={'ASDF'}
-          copy={'ADSFASDFADSF'}
+          title={'Get the Facts'}
+          copy={`Comcast is available throughout Baltimore, however their pricing makes them inaccessible to many families. Per the Deutsch Foundation's Digital Access and Equity Report for Baltimore City 2017 report, 75,000 homes lack internet access.`}
+          featured
         />
         <Card
           fluid={cardOneImage.childImageSharp.fluid}
-          title={'ASDF'}
-          copy={'ADSFASDFADSF'}
+          title={'Availability ≠ Accessibility'}
+          copy={
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ut ut curabitur cursus massa gravida praesent nunc.'
+          }
         />
       </div>
     </section>
