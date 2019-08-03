@@ -62,8 +62,8 @@ const JoinNetworkForm = () => {
         {/* <input type="hidden" name="bot-field" /> */}
         <label for="name">Enter your full name:</label>
         <input
-          type="text"
           name="name"
+          type="text"
           // onChange={handleChange}
           // value={input.name}
           placeholder="First Last"
@@ -71,8 +71,8 @@ const JoinNetworkForm = () => {
         />
         <label for="address">Enter your street address:</label>
         <textarea
-          id="address"
           name="address"
+          id="address"
           rows="5"
           cols="33"
           // onChange={handleChange}
@@ -81,9 +81,9 @@ const JoinNetworkForm = () => {
         />
         <label for="phone">Enter your phone number (optional):</label>
         <input
+          name="phone"
           type="tel"
           id="phone"
-          name="phone"
           // onChange={handleChange}
           // value={input.phone}
           placeholder="410-555-5555"
@@ -91,8 +91,8 @@ const JoinNetworkForm = () => {
         />
         <label for="email">Enter your email (optional):</label>
         <input
-          type="email"
           name="email"
+          type="email"
           size="50"
           // onChange={handleChange}
           // value={input.email}
