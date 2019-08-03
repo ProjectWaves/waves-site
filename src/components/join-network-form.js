@@ -29,40 +29,32 @@ const JoinNetworkForm = () => (
       }
     `}
   >
-    <div
-      css={css`
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      `}
-    >
-      <input type="hidden" name="bot-field" />
-      <label>
-        Name
-        <input
-          css={css`
-            color: red;
-          `}
-          type="text"
-          name="name"
-          id="name"
-        />
-      </label>
-      <label>
-        Phone
-        <input type="tel" name="phone" id="phone" />
-      </label>
-      <label>
-        Address
-        <textarea name="address" id="address" rows="5" />
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" id="email" />
-      </label>
-      <button type="submit">Send</button>
-      <input type="reset" value="Clear" />
-    </div>
+    <input type="hidden" name="bot-field" />
+    <label>
+      Name
+      <input
+        css={css`
+          color: red;
+        `}
+        type="text"
+        name="name"
+        id="name"
+      />
+    </label>
+    <label>
+      Phone
+      <input type="tel" name="phone" id="phone" />
+    </label>
+    <label>
+      Address
+      <textarea name="address" id="address" rows="5" />
+    </label>
+    <label>
+      Email
+      <input type="email" name="email" id="email" />
+    </label>
+    <button type="submit">Send</button>
+    <input type="reset" value="Clear" />
   </form>
 );
 
