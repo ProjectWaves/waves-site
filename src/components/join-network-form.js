@@ -8,7 +8,13 @@ const JoinNetworkForm = () => (
     netlify-honeypot="bot-field"
     data-netlify="true"
   >
-    <input type="hidden" name="bot-field" />
+    <input
+      css={css`
+        color: red;
+      `}
+      type="hidden"
+      name="bot-field"
+    />
     <label>
       Name
       <input type="text" name="name" id="name" />
