@@ -20,7 +20,7 @@ const JoinNetworkForm = () => (
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: tomato;
+        background: papayawhip;
         label {
           font-size: 1.5rem;
           margin-bottom: 0.5rem;
@@ -41,29 +41,29 @@ const JoinNetworkForm = () => (
       `}
     >
       <input type="hidden" name="bot-field" />
-      <label>
-        Name
-        <input
-          css={css`
-            color: red;
-          `}
-          type="text"
-          name="name"
-          id="name"
-        />
-      </label>
-      <label>
-        Phone
-        <input type="tel" name="phone" id="phone" />
-      </label>
-      <label>
-        Address
-        <textarea name="address" id="address" rows="5" />
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" id="email" />
-      </label>
+      <label for="name">Enter your full name:</label>
+      <input
+        css={css`
+          color: red;
+        `}
+        type="text"
+        name="name"
+        id="name"
+        placeholder="First Last"
+        required
+      />
+      <label for="address">Enter your street address:</label>
+      <textarea name="address" id="address" rows="5" cols="33" placeholder="1234 Street City, State 11111" required />
+      <label for="phone">Enter your phone number:</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="555-555-5555"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+      <label for="email">Enter your email address if you have one:</label>
+        <input type="email" name="email" id="email" placeholder="name@email.com" size="50"/>
       <button
         css={css`
           color: #121212;
