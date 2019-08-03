@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 const JoinNetworkForm = () => (
   <form
     method="post"
-    name="waves-connected"
+    name="waves-connected-no-css"
     data-netlify="true"
     netlify-honeypot="bot-field"
   >
