@@ -1,9 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import { css, jsx } from '@emotion/core';
+import { css } from '@emotion/core';
 import { useSpring, animated, config } from 'react-spring';
-import styled from '@emotion/styled';
 
 const AccessSection = () => {
   const { accessPointImage } = useStaticQuery(
@@ -20,7 +19,22 @@ const AccessSection = () => {
     `
   );
   return (
-    <SectionContainer id="access-section">
+    <section
+      css={css`
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        min-height: 40vh;
+        background: #fff;
+        margin: 4rem 5rem;
+
+        @media only screen and (max-width: 1000px) {
+          margin-top: 0;
+          grid-template-columns: 1fr;
+        }
+      `}
+      id="access-section"
+    >
       <div
         css={css`
           width: 100%;
@@ -110,22 +124,8 @@ const AccessSection = () => {
           Learn More
         </button>
       </div>
-    </SectionContainer>
+    </section>
   );
 };
 
 export default AccessSection;
-
-const SectionContainer = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  min-height: 40vh;
-  background: #fff;
-  margin: 4rem 5rem;
-
-  @media only screen and (max-width: 1000px) {
-    margin-top: 0;
-    grid-template-columns: 1fr;
-  }
-`;
