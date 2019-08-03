@@ -2,60 +2,97 @@ import React from 'react';
 import { css } from '@emotion/core';
 
 const JoinNetworkForm = () => (
-  <form
-    method="post"
-    name="wavesInterestForm"
-    netlify-honeypot="bot-field"
-    data-netlify="true"
+  <div
     css={css`
-      max-width: 600px;
-      margin: 2rem auto;
-      label {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
-      input,
-      textarea {
-        font-size: 1.5rem;
-        border: 2px solid rgba(0, 0, 0, 0.2);
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        margin-bottom: 1.5rem;
-      }
-      input::placeholder,
-      textarea::placeholder {
-        font-size: 1.5rem;
-        color: #777;
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     `}
   >
-    <input type="hidden" name="bot-field" />
-    <label>
-      Name
-      <input
+    <form
+      method="post"
+      name="wavesInterestForm"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      css={css`
+        max-width: 600px;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: tomato;
+        label {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+        input,
+        textarea {
+          font-size: 1.5rem;
+          border: 2px solid rgba(0, 0, 0, 0.2);
+          border-radius: 0.5rem;
+          padding: 0.5rem;
+          margin-bottom: 1.5rem;
+        }
+        input::placeholder,
+        textarea::placeholder {
+          font-size: 1.5rem;
+          color: #777;
+        }
+      `}
+    >
+      <input type="hidden" name="bot-field" />
+      <label>
+        Name
+        <input
+          css={css`
+            color: red;
+          `}
+          type="text"
+          name="name"
+          id="name"
+        />
+      </label>
+      <label>
+        Phone
+        <input type="tel" name="phone" id="phone" />
+      </label>
+      <label>
+        Address
+        <textarea name="address" id="address" rows="5" />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" id="email" />
+      </label>
+      <button
         css={css`
-          color: red;
+          color: #121212;
+          background: #e5f8ff;
+          padding: 1rem;
+          font-size: 2rem;
+          margin-top: 1rem;
+          border: 2px solid #121212;
+          border-radius: 1rem;
+          transition: all ease 0.3s;
+          text-transform: none;
+
+          &:hover {
+            color: #e5f8ff;
+            background: #121212;
+            border: 2px solid #e5f8ff;
+            cursor: pointer;
+          }
+
+          &:focus {
+            outline: 0.5px dashed #000;
+          }
         `}
-        type="text"
-        name="name"
-        id="name"
-      />
-    </label>
-    <label>
-      Phone
-      <input type="tel" name="phone" id="phone" />
-    </label>
-    <label>
-      Address
-      <textarea name="address" id="address" rows="5" />
-    </label>
-    <label>
-      Email
-      <input type="email" name="email" id="email" />
-    </label>
-    <button type="submit">Send</button>
-    <input type="reset" value="Clear" />
-  </form>
+        type="submit"
+      >
+        Join Now
+      </button>
+    </form>
+  </div>
 );
 
 export default JoinNetworkForm;
