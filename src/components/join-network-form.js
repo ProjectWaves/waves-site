@@ -25,6 +25,7 @@ const JoinNetworkForm = () => {
       data-netlify="true"
       method="POST"
       name="waves-login"
+      action="#"
       css={css`
         max-width: 600px;
         margin: 2rem auto;
