@@ -17,7 +17,14 @@ const JoinNetworkForm = () => (
     />
     <label>
       Name
-      <input type="text" name="name" id="name" />
+      <input
+        css={css`
+          color: red;
+        `}
+        type="text"
+        name="name"
+        id="name"
+      />
     </label>
     <label>
       Email
