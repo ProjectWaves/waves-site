@@ -67,9 +67,19 @@ const Hero = () => {
         <Header siteTitle="Waves" />
         <CTAContainer>
           <animated.h2
-          // style={{
-          //   transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`),
-          // }}
+            // style={{
+            //   transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`),
+            // }}
+            css={css`
+              font-weight: bold;
+              color: tomato;
+              font-size: 4rem;
+              @media only screen and (max-width: 1000px) {
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 4rem;
+              }
+            `}
           >
             Pay What You Can Internet Access
           </animated.h2>
@@ -193,7 +203,7 @@ const Hero = () => {
                       />
                     </svg>
                   </CloseButton>
-                  <h1>TEST</h1>
+                  <JoinNetworkForm />
                 </div>
               </AnimatedStyledDialogContent>
             </AnimatedStyledDialogOverlay>
@@ -258,17 +268,6 @@ const CTAContainer = styled.div`
     align-items: center;
     justify-content: center;
     max-width: 90%;
-  }
-
-  h2 {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 4rem;
-    @media only screen and (max-width: 1000px) {
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 4rem;
-    }
   }
 `;
 
