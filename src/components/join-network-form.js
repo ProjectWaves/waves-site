@@ -7,6 +7,9 @@ const JoinNetworkForm = () => (
     name="waves-gatsby-code"
     netlify-honeypot="bot-field"
     data-netlify="true"
+    css={css`
+      background: tomato;
+    `}
   >
     <input
       css={css`
