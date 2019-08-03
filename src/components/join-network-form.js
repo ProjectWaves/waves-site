@@ -23,6 +23,7 @@ const JoinNetworkForm = () => {
     <form
       netlify-honeypot="bot-field"
       data-netlify="true"
+      method="post"
       css={css`
         max-width: 600px;
         margin: 2rem auto;
