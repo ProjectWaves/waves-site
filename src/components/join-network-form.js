@@ -4,9 +4,7 @@ import { css } from '@emotion/core';
 const JoinNetworkForm = () => (
   <div
     css={css`
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      max-width: 30vw;
     `}
   >
     <form
@@ -20,7 +18,9 @@ const JoinNetworkForm = () => (
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: papayawhip;
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 2rem;
         label {
           font-size: 1.5rem;
           margin-bottom: 0.5rem;
@@ -53,7 +53,14 @@ const JoinNetworkForm = () => (
         required
       />
       <label for="address">Enter your street address:</label>
-      <textarea name="address" id="address" rows="5" cols="33" placeholder="1234 Street City, State 11111" required />
+      <textarea
+        name="address"
+        id="address"
+        rows="5"
+        cols="33"
+        placeholder="1234 Street City, State 11111"
+        required
+      />
       <label for="phone">Enter your phone number:</label>
       <input
         type="tel"
@@ -63,11 +70,17 @@ const JoinNetworkForm = () => (
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
       />
       <label for="email">Enter your email address if you have one:</label>
-        <input type="email" name="email" id="email" placeholder="name@email.com" size="50"/>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="name@email.com"
+        size="50"
+      />
       <button
         css={css`
-          color: #121212;
-          background: #e5f8ff;
+          color: #fafafa;
+          background: #121212;
           padding: 1rem;
           font-size: 2rem;
           margin-top: 1rem;
@@ -77,9 +90,9 @@ const JoinNetworkForm = () => (
           text-transform: none;
 
           &:hover {
-            color: #e5f8ff;
-            background: #121212;
-            border: 2px solid #e5f8ff;
+            color: #fafafa;
+            background: #595959;
+            border: 2px solid #595959;
             cursor: pointer;
           }
 

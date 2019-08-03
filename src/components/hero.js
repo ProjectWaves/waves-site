@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import { useSpring, animated, config, useTransition } from 'react-spring';
 import { css, jsx, keyframes } from '@emotion/core';
 import styled from '@emotion/styled';
-import NetworkStatus from './network-status';
 import Header from './header';
 import { GhostButton } from './elements/buttons';
 import VisuallyHidden from '@reach/visually-hidden';
 import { DialogContent, DialogOverlay } from '@reach/dialog';
 import heroImg from '../images/waves-hero.jpg';
 import WaveSection from './wave-section';
-import JoinNetworkForm from './join-network-form--archived';
+import JoinNetworkForm from './join-network-form';
 
 /* TODO: Refactor this component
   - Split out the modal and form into separate components
@@ -65,8 +64,6 @@ const Hero = () => {
   return (
     <React.Fragment>
       <Masthead>
-        {/* <WaveSection /> */}
-        <NetworkStatus status="5" />
         <Header siteTitle="Waves" />
         <CTAContainer>
           <animated.h2
@@ -196,7 +193,7 @@ const Hero = () => {
                       />
                     </svg>
                   </CloseButton>
-                  <JoinNetworkForm />
+                  <h1>TEST</h1>
                 </div>
               </AnimatedStyledDialogContent>
             </AnimatedStyledDialogOverlay>
