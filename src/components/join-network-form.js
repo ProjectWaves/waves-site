@@ -21,11 +21,10 @@ const JoinNetworkForm = () => {
 
   return (
     <form
-      netlify-honeypot="bot-field"
       data-netlify="true"
-      method="POST"
-      name="waves-login"
-      action="#"
+      name="waves-connected"
+      method="post"
+      // netlify-honeypot="bot-field"
       css={css`
         max-width: 600px;
         margin: 2rem auto;
@@ -60,7 +59,7 @@ const JoinNetworkForm = () => {
           justify-content: center;
         `}
       >
-        <input type="hidden" name="bot-field" />
+        {/* <input type="hidden" name="bot-field" /> */}
         <label for="name">Enter your full name:</label>
         <input
           type="text"
