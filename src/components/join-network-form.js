@@ -7,31 +7,6 @@ const JoinNetworkForm = () => (
     name="waves-connected"
     data-netlify="true"
     netlify-honeypot="bot-field"
-    css={css`
-      max-width: 600px;
-      margin: 2rem auto;
-      label {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
-      input,
-      textarea {
-        font-size: 1.5rem;
-        border-radius: 0.5rem;
-        border: 2px solid rgba(0, 0, 0, 0.2);
-        padding: 0.5rem;
-        margin-bottom: 1.5rem;
-
-        &:focus {
-          outline: 2px solid var(--primary-color);
-        }
-      }
-      input::placeholder,
-      textarea::placeholder {
-        font-size: 1.5rem;
-        color: #777;
-      }
-    `}
   >
     <div
       css={css`
@@ -86,7 +61,6 @@ const JoinNetworkForm = () => (
       >
         Join Now
       </button>
-      <input type="reset" value="Clear" />
     </div>
   </form>
 );
