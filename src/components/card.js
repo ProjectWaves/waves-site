@@ -31,7 +31,8 @@ const Card = ({ fluid, title, copy, featured }) => (
             width: 100%;
             height: 100%;
             max-height: 800px;
-            object-fit: cover;
+            /* object-fit: cover; */
+            object-position: 50% 10%;
           `}
         />
       )}

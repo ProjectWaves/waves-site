@@ -45,7 +45,7 @@ const SectionContainer = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 20vh;
-  margin-top: -22rem;
+  /* margin-top: -22rem; */
   z-index: 1000;
 
   @media only screen and (max-width: 1000px) {
