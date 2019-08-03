@@ -2,6 +2,11 @@ import React from 'react';
 import { useForm } from '../utilities/hooks';
 import { css } from '@emotion/core';
 
+/* Leaving support in for React stateful forms, but
+  we're going to use Netlify for now. Commenting out the
+  React specific items and adding the Netlify form support
+*/
+
 const JoinNetworkForm = () => {
   const confirmEntry = () => {
     console.log(`
@@ -16,6 +21,8 @@ const JoinNetworkForm = () => {
 
   return (
     <form
+      netlify-honeypot="bot-field"
+      data-netlify="true"
       css={css`
         max-width: 600px;
         margin: 2rem auto;
@@ -41,7 +48,7 @@ const JoinNetworkForm = () => {
           color: #777;
         }
       `}
-      onSubmit={handleSubmit}
+      // onSubmit={handleSubmit}
     >
       <div
         css={css`
@@ -50,6 +57,7 @@ const JoinNetworkForm = () => {
           justify-content: center;
         `}
       >
+        <input type="hidden" name="bot-field" />
         <label for="name">Enter your full name:</label>
         <input
           type="text"

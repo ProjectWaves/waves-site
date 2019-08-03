@@ -46,8 +46,10 @@ const CardSection = () => {
       >
         <Card
           fluid={cardOneImage.childImageSharp.fluid}
-          title={'ASDF'}
-          copy={'ADSFASDFADSF'}
+          title={'Internet Access is a Human Right'}
+          copy={
+            'Waves not only stands for Net Neutrality, but is committed to making all members of the network aware of any potential changes.'
+          }
         />
         <Card
           fluid={cardOneImage.childImageSharp.fluid}
