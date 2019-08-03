@@ -9,7 +9,7 @@ const CardSection = () => {
   const { cardOneImage, cardTwoImage, cardThreeImage } = useStaticQuery(
     graphql`
       query {
-        cardImageOne: file(relativePath: { eq: "waves-access-point.jpg" }) {
+        cardOneImage: file(relativePath: { eq: "waves-access-point.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 800) {
               ...GatsbyImageSharpFluid
@@ -24,14 +24,42 @@ const CardSection = () => {
     <section
       css={css`
         background: #f0f4f8;
+        padding: 2rem 4rem;
         min-height: 40vh;
+
+        @media only screen and (max-width: 1000px) {
+          margin: 0 auto;
+        }
       `}
     >
-      <Card
-        fluid={cardImageOne.childImageSharp.fluid}
-        title={'ASDF'}
-        copy={'ADSFASDFADSF'}
-      />
+      <div
+        css={css`
+          display: grid;
+          grid-template-columns: repeat(3, minmax(400px, 1fr));
+          grid-column-gap: 2rem;
+          margin: 0 auto;
+
+          @media only screen and (max-width: 1000px) {
+            grid-template-columns: 1fr;
+          }
+        `}
+      >
+        <Card
+          fluid={cardOneImage.childImageSharp.fluid}
+          title={'ASDF'}
+          copy={'ADSFASDFADSF'}
+        />
+        <Card
+          fluid={cardOneImage.childImageSharp.fluid}
+          title={'ASDF'}
+          copy={'ADSFASDFADSF'}
+        />
+        <Card
+          fluid={cardOneImage.childImageSharp.fluid}
+          title={'ASDF'}
+          copy={'ADSFASDFADSF'}
+        />
+      </div>
     </section>
   );
 };

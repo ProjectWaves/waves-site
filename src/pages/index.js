@@ -11,6 +11,7 @@ import {
 } from '../components/elements/layout-components';
 import Hero from '../components/hero';
 import ConnectedSection from '../components/connected-section';
+import CardSection from '../components/card-section';
 import ResearchSection from '../components/research-section';
 import AccessSection from '../components/access-section';
 import InfoFooter from '../components/info-footer';
@@ -30,6 +31,7 @@ const IndexPage = () => {
           <ContentWrapper>
             <ConnectedSection />
           </ContentWrapper>
+          <CardSection />
           <ResearchSection />
           <AccessSection />
         </AppWrapper>
