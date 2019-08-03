@@ -97,7 +97,7 @@ const JoinNetworkForm = () => {
           value={input.email}
           placeholder="name@email.com"
         />
-        <input
+        <button
           type="submit"
           css={css`
             color: #121212;
