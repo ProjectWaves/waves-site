@@ -9,7 +9,7 @@ import VisuallyHidden from '@reach/visually-hidden';
 import { DialogContent, DialogOverlay } from '@reach/dialog';
 import heroImg from '../images/waves-hero.jpg';
 import WaveSection from './wave-section';
-import JoinNetworkForm from './join-network-form';
+import JoinNetworkForm from './join-network-form--archived';
 
 /* TODO: Refactor this component
   - Split out the modal and form into separate components
