@@ -10,7 +10,6 @@ const Card = ({ fluid, title, copy, featured }) => (
       align-items: center;
       background: #ffffff;
       border-radius: 16px;
-      min-width: 440px;
     `}
   >
     <div
@@ -44,7 +43,7 @@ const Card = ({ fluid, title, copy, featured }) => (
     >
       <h3
         css={css`
-          font-size: 3rem;
+          font-size: 2.5rem;
         `}
       >
         {title}

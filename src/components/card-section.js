@@ -9,7 +9,27 @@ const CardSection = () => {
   const { cardOneImage, cardTwoImage, cardThreeImage } = useStaticQuery(
     graphql`
       query {
-        cardOneImage: file(relativePath: { eq: "waves-access-point.jpg" }) {
+        cardOneImage: file(
+          relativePath: { eq: "jr-korpa-wave-texture-unsplash.jpg" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1000, maxHeight: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        cardTwoImage: file(
+          relativePath: { eq: "israel-palacio-electricity-unsplash.jpg" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1000, maxHeight: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        cardThreeImage: file(
+          relativePath: { eq: "tim-marshall-water-texture-unsplash.jpg" }
+        ) {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 800) {
               ...GatsbyImageSharpFluid
@@ -41,24 +61,25 @@ const CardSection = () => {
 
           @media only screen and (max-width: 1000px) {
             grid-template-columns: 1fr;
+            grid-gap: 2rem;
           }
         `}
       >
         <Card
           fluid={cardOneImage.childImageSharp.fluid}
-          title={'Internet Access is a Human Right'}
+          title={'Why Internet Matters'}
           copy={
             'Waves not only stands for Net Neutrality, but is committed to making all members of the network aware of any potential changes.'
           }
         />
         <Card
-          fluid={cardOneImage.childImageSharp.fluid}
+          fluid={cardTwoImage.childImageSharp.fluid}
           title={'Get the Facts'}
           copy={`Comcast is available throughout Baltimore, however their pricing makes them inaccessible to many families. Per the Deutsch Foundation's Digital Access and Equity Report for Baltimore City 2017 report, 75,000 homes lack internet access.`}
           featured
         />
         <Card
-          fluid={cardOneImage.childImageSharp.fluid}
+          fluid={cardThreeImage.childImageSharp.fluid}
           title={'Availability ≠ Accessibility'}
           copy={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ut ut curabitur cursus massa gravida praesent nunc.'
