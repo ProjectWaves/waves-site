@@ -64,8 +64,8 @@ const JoinNetworkForm = () => {
         <input
           type="text"
           name="name"
-          onChange={handleChange}
-          value={input.name}
+          // onChange={handleChange}
+          // value={input.name}
           placeholder="First Last"
           required
         />
@@ -75,8 +75,8 @@ const JoinNetworkForm = () => {
           name="address"
           rows="5"
           cols="33"
-          onChange={handleChange}
-          value={input.address}
+          // onChange={handleChange}
+          // value={input.address}
           placeholder="1234 Street Baltimore MD, 21202"
         />
         <label for="phone">Enter your phone number (optional):</label>
@@ -84,8 +84,8 @@ const JoinNetworkForm = () => {
           type="tel"
           id="phone"
           name="phone"
-          onChange={handleChange}
-          value={input.phone}
+          // onChange={handleChange}
+          // value={input.phone}
           placeholder="410-555-5555"
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         />
@@ -94,8 +94,8 @@ const JoinNetworkForm = () => {
           type="email"
           name="email"
           size="50"
-          onChange={handleChange}
-          value={input.email}
+          // onChange={handleChange}
+          // value={input.email}
           placeholder="name@email.com"
         />
         <button
