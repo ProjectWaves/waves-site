@@ -228,7 +228,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-size: cover;
 
   @media only screen and (max-width: 1000px) {
-    background: url(${heroImg});
+    /* background: url(${heroImg});
     background-repeat: no-repeat;
     background: linear-gradient(
         90deg,
@@ -239,7 +239,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       url(${heroImg});
     background-size: cover;
     background-position: 70%;
-    overflow: hidden;
+    overflow: hidden; */
   }
   svg {
     margin: 0;

@@ -34,9 +34,10 @@ const IndexPage = () => {
           <JoinNetworkForm />
           <CardSection />
           <AccessSection />
+
+          <InfoFooter />
+          <Footer />
         </AppWrapper>
-        <InfoFooter />
-        <Footer />
       </Layout>
     </React.Fragment>
   );
