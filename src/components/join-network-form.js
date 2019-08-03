@@ -99,7 +99,7 @@ const JoinNetworkForm = () => {
           placeholder="name@email.com"
         />
         <button
-          type="submit"
+          // type="submit"
           css={css`
             color: #121212;
             background: #e5f8ff;
