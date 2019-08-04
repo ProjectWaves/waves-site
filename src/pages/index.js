@@ -13,6 +13,7 @@ import Hero from '../components/hero';
 import ConnectedSection from '../components/connected-section';
 import CardSection from '../components/card-section';
 import AccessSection from '../components/access-section';
+import LiteBeamProductSection from '../components/litebeam-product-section';
 import InfoFooter from '../components/info-footer';
 import Footer from '../components/footer';
 import SEO from '../components/seo';
@@ -28,11 +29,12 @@ const IndexPage = () => {
             keywords={[`gatsby`, `application`, `react`]}
           />
           <Hero />
-          <ContentWrapper>
+          {/* <ContentWrapper>
             <ConnectedSection />
-          </ContentWrapper>
-          <CardSection />
+          </ContentWrapper> */}
           <AccessSection />
+          <LiteBeamProductSection />
+          <CardSection />
 
           <InfoFooter />
           <Footer />

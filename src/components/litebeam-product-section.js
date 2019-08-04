@@ -4,11 +4,11 @@ import Img from 'gatsby-image';
 import { css } from '@emotion/core';
 import { useSpring, animated, config } from 'react-spring';
 
-const AccessSection = () => {
-  const { accessPointImage } = useStaticQuery(
+const LiteBeamProductSection = () => {
+  const { litebeamImage } = useStaticQuery(
     graphql`
       query {
-        accessPointImage: file(relativePath: { eq: "keytech-install.jpg" }) {
+        litebeamImage: file(relativePath: { eq: "litebeam.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 1000) {
               ...GatsbyImageSharpFluid
@@ -26,32 +26,15 @@ const AccessSection = () => {
         align-items: center;
         min-height: 40vh;
         background: #fff;
-        margin: 4rem 5rem;
+        margin: 5rem 5rem;
 
         @media only screen and (max-width: 1000px) {
           margin-top: 0;
           grid-template-columns: 1fr;
         }
       `}
-      id="access-section"
+      id="litebeam-product-section"
     >
-      <div
-        css={css`
-          width: 100%;
-          height: 100%;
-        `}
-      >
-        <Img
-          fluid={accessPointImage.childImageSharp.fluid}
-          css={css`
-            border-radius: 8px;
-            box-shadow: 0px 5px 10px rgba(123, 167, 255, 0.4);
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          `}
-        />
-      </div>
       <div
         css={css`
           display: flex;
@@ -72,7 +55,7 @@ const AccessSection = () => {
             }
           `}
         >
-          Connecting Communities in Baltimore and Beyond
+          Pricing Should Never Be the Barrier to Access
         </h2>
         <p
           css={css`
@@ -87,8 +70,7 @@ const AccessSection = () => {
             }
           `}
         >
-          Waves not only stands for Net Neutrality, but is committed to making
-          all members of the network aware of any potential changes.{' '}
+          Get connected and stop overpaying for Internet.
         </p>
         <button
           css={css`
@@ -123,8 +105,25 @@ const AccessSection = () => {
           Learn More
         </button>
       </div>
+      <div
+        css={css`
+          width: 100%;
+          height: 100%;
+        `}
+      >
+        <Img
+          fluid={litebeamImage.childImageSharp.fluid}
+          css={css`
+            border-radius: 8px;
+            box-shadow: 0px 5px 10px rgba(123, 167, 255, 0.4);
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+          `}
+        />
+      </div>
     </section>
   );
 };
 
-export default AccessSection;
+export default LiteBeamProductSection;
