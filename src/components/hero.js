@@ -73,7 +73,7 @@ const Hero = () => {
             // }}
             css={css`
               font-weight: bold;
-              color: rgba(189, 195, 199, 1);
+              color: #ffffff;
               font-size: 4rem;
               @media only screen and (max-width: 1000px) {
                 text-align: center;

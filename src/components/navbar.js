@@ -16,25 +16,26 @@ const Navbar = props => (
           color={props.color}
           hovercolor={props.hovercolor}
           activeStyle={activeStyles}
-          to="/blog"
+          to="/about"
         >
           About
         </SiteNavLink>
       </SiteNavEntry>
       <SiteNavEntry>
-        <SiteNavLink activeStyle={activeStyles} to="/mission">
-          Mission
+        <SiteNavLink activeStyle={activeStyles} to="/join-the-net">
+          Join the Net
         </SiteNavLink>
       </SiteNavEntry>
       <SiteNavEntry>
-        <SiteNavLink activeStyle={activeStyles} to="/donate">
+        <SiteNavAnchor
+          color="var(--primary-color)"
+          activeStyle={activeStyles}
+          href="https://digitalharbor.org/donate"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Donate
-        </SiteNavLink>
-      </SiteNavEntry>
-      <SiteNavEntry>
-        <SiteNavLink activeStyle={activeStyles} to="/research">
-          Research
-        </SiteNavLink>
+        </SiteNavAnchor>
       </SiteNavEntry>
     </SiteNavList>
   </SiteNavContainer>
@@ -86,6 +87,27 @@ const SiteNavLink = styled(Link)`
   margin-left: 0px;
   color: ${props => props.color || '#fff'};
   font-size: 1.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: ${props => props.hovercolor || '#0091c9'};
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1000px) {
+    padding-bottom: 0px;
+  }
+`;
+
+const SiteNavAnchor = styled.a`
+  list-style-type: none;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  color: ${props => props.color || '#fff'};
+  font-size: 1.5rem;
+  font-weight: bolder;
   text-decoration: none;
   transition: color 0.5s ease;
 

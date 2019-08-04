@@ -5,7 +5,7 @@ import VisuallyHidden from '@reach/visually-hidden';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { useSpring, animated, config } from 'react-spring';
-// import Navbar from './navbar';
+import Navbar from './navbar';
 // import NavSlider from './nav-slider';
 
 const Header = ({ siteTitle }) => {
@@ -70,7 +70,7 @@ const Header = ({ siteTitle }) => {
           />
         </animated.svg>
       </Link>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <button
         css={css`
           z-index: 200;
