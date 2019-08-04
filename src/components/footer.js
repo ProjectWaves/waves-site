@@ -10,6 +10,7 @@ const Footer = () => (
       align-items: center;
       justify-content: center;
       background: rgba(0, 0, 0, 1);
+      /* background: #121212; */
       width: 100%;
     `}
   >

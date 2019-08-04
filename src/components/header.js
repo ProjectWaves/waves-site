@@ -104,6 +104,7 @@ const StyledHeader = styled.header`
   align-items: center;
   /* background: ${props => props.bgcolor || 'rgba(0,0,0,0)'}; */
   background: rgba(0,0,0,1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
   padding: 1rem 0;
   margin-bottom: 1rem;
   z-index: 1000;
