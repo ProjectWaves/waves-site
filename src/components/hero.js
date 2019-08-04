@@ -161,7 +161,7 @@ const Hero = () => {
             </animated.p>
           </div>
           {/* <PrimaryCTAButton onClick={() => setShowModal(true)}> */}
-          <Link to="/join-the-net">
+          <Link to="/join-the-network">
             <PrimaryCTAButton>Join the Network</PrimaryCTAButton>
           </Link>
         </CTAContainer>
