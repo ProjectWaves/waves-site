@@ -24,7 +24,7 @@ const LiteBeamProductSection = () => {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        min-height: 40vh;
+        min-height: 0vh;
         background: #fff;
         margin: 5rem 5rem;
 

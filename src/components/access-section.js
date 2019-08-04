@@ -88,6 +88,10 @@ const AccessSection = () => {
           `}
         >
           Waves is a Community ISP focused on providing Internet access to all.
+          Over one third of the Baltimore City population is without Internet
+          access. Waves builds relationships with community organizers across
+          the city and focus on lighting up access to residential areas that are
+          classified as Internet Deserts.
         </p>
       </div>
     </section>

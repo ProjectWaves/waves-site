@@ -44,7 +44,7 @@ const CardSection = () => {
         background: #f0f4f8;
         padding: 2rem 4rem;
         min-height: 40vh;
-
+        margin-top: -20vh;
         @media only screen and (max-width: 1000px) {
           margin: 0 auto;
         }
