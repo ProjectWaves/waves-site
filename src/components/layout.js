@@ -32,6 +32,7 @@ const Layout = ({ children }) => (
             }
             :root {
               --primary-color: #7ba7ff;
+              --secondary-color: #ef4e4e;
               --white: #fffaff;
             }
             *,
