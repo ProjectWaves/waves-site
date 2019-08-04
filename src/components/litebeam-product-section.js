@@ -70,7 +70,9 @@ const LiteBeamProductSection = () => {
             }
           `}
         >
-          Get connected and stop overpaying for Internet.
+          $120 install fee.
+          <br />
+          Minimum $5 donation per month.
         </p>
         <button
           css={css`
