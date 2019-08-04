@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSpring, animated, config, useTransition } from 'react-spring';
 import { css, jsx, keyframes } from '@emotion/core';
+import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Header from './header';
 import { GhostButton } from './elements/buttons';
@@ -159,9 +160,10 @@ const Hero = () => {
               the world.
             </animated.p>
           </div>
-          <PrimaryCTAButton onClick={() => setShowModal(true)}>
-            Join the Network
-          </PrimaryCTAButton>
+          {/* <PrimaryCTAButton onClick={() => setShowModal(true)}> */}
+          <Link to="/join-the-net">
+            <PrimaryCTAButton>Join the Network</PrimaryCTAButton>
+          </Link>
         </CTAContainer>
       </Masthead>
       {formTransition.map(
