@@ -34,6 +34,6 @@ module.exports = {
         icon: `src/images/waves-logo.ico`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    // 'gatsby-plugin-offline',
   ],
 };
