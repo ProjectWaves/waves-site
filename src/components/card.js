@@ -66,6 +66,7 @@ const Card = ({ fluid, title, copy, featured }) => (
           border: 1px solid #000000;
           border-radius: 16px;
           padding: 1rem 2rem;
+          margin-bottom: 2rem;
           width: 100%;
           transition: all ease-in-out 500ms;
 
