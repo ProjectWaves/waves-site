@@ -29,13 +29,13 @@ const IndexPage = () => {
             keywords={[`gatsby`, `application`, `react`]}
           />
           <Hero />
-          {/* <ContentWrapper>
+
+          <ContentWrapper>
             <ConnectedSection />
-          </ContentWrapper> */}
+          </ContentWrapper>
           <AccessSection />
           <LiteBeamProductSection />
           <CardSection />
-
           <InfoFooter />
           <Footer />
         </AppWrapper>

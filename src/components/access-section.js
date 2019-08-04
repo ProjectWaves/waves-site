@@ -87,8 +87,7 @@ const AccessSection = () => {
             }
           `}
         >
-          Waves not only stands for Net Neutrality, but is committed to making
-          all members of the network aware of any potential changes.{' '}
+          Waves is a Community ISP focused on providing Internet access to all.
         </p>
         <button
           css={css`
