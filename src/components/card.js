@@ -61,10 +61,9 @@ const Card = ({ fluid, title, copy, featured }) => (
         css={css`
           text-transform: none;
           font-size: 2rem;
-          background: #000;
+          background: #000000;
           color: #fff;
-          border: 2px solid;
-          border-color: #000;
+          border: 1px solid #000000;
           border-radius: 16px;
           padding: 1rem 2rem;
           width: 100%;
@@ -76,10 +75,10 @@ const Card = ({ fluid, title, copy, featured }) => (
           }
 
           &:hover {
-            color: #ffffff;
-            background: #121212;
-            border: 2px solid;
-            border-color: #121212;
+            color: #000000;
+            background: #ffffff;
+            border: 1px solid;
+            border-color: #000000;
             cursor: pointer;
           }
         `}
