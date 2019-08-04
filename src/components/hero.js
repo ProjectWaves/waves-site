@@ -89,7 +89,7 @@ const Hero = () => {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-              margin-top: 5vh;
+              margin-top: 20vh;
               @media only screen and (max-width: 1000px) {
                 span {
                   font-weight: bolder;

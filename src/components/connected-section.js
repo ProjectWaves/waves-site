@@ -6,24 +6,37 @@ import { useSpring, animated, config } from 'react-spring';
 import styled from '@emotion/styled';
 
 const ConnectedSection = () => {
-  const { saveTheNetImage } = useStaticQuery(
+  // const { saveTheNetImage } = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       saveTheNetImage: file(
+  //         relativePath: {
+  //           eq: "Open-Internet-4-All-Hashtag-Backbone-Campaign-flickr.jpg"
+  //         }
+  //       ) {
+  //         childImageSharp {
+  //           fluid(maxWidth: 1000, maxHeight: 300) {
+  //             ...GatsbyImageSharpFluid
+  //           }
+  //         }
+  //       }
+  //     }
+  //   `
+  // );
+
+  const { noNetDinoImage } = useStaticQuery(
     graphql`
       query {
-        saveTheNetImage: file(
-          relativePath: {
-            eq: "Open-Internet-4-All-Hashtag-Backbone-Campaign-flickr.jpg"
-          }
-        ) {
+        noNetDinoImage: file(relativePath: { eq: "no-net-dino-1.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000, maxHeight: 300) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 800, height: 600) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
       }
     `
   );
-
   const fadeInSection = useSpring({
     from: { opacity: 0, transform: 'translate3d(0%,50%,0)' },
     to: { opacity: 1, transform: 'translate3d(0%, 0%, 0%' },
@@ -88,7 +101,7 @@ const ConnectedSection = () => {
             `}
           >
             <Img
-              fluid={saveTheNetImage.childImageSharp.fluid}
+              fixed={noNetDinoImage.childImageSharp.fixed}
               css={css`
                 border-radius: 8px;
                 box-shadow: 0px 5px 10px rgba(123, 167, 255, 0.4);
