@@ -77,10 +77,9 @@ const Card = ({ fluid, title, copy, featured }) => (
 
           &:hover {
             color: #ffffff;
-
-            background: #243b53;
+            background: #121212;
             border: 2px solid;
-            border-color: #243b53;
+            border-color: #121212;
             cursor: pointer;
           }
         `}
