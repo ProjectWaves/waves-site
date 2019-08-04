@@ -10,7 +10,7 @@ const SocialLinks = () => (
       target="_blank"
       rel="nofollow noopener"
     >
-      <Icon color="#E96544" type="facebook" />
+      <Icon color="#ffffff" type="facebook" />
     </a>
 
     <a
@@ -19,7 +19,7 @@ const SocialLinks = () => (
       target="_blank"
       rel="nofollow noopener"
     >
-      <Icon color="#E96544" type="twitter" />
+      <Icon color="#ffffff" type="twitter" />
     </a>
     <a
       href="https://www.youtube.com/user/DHFBaltimore"
@@ -27,7 +27,7 @@ const SocialLinks = () => (
       target="_blank"
       rel="nofollow noopener"
     >
-      <Icon color="#E96544" type="youtube" />
+      <Icon color="#ffffff" type="youtube" />
     </a>
     <a
       href="https://www.flickr.com/photos/digitalharbor/"
@@ -35,7 +35,7 @@ const SocialLinks = () => (
       target="_blank"
       rel="nofollow noopener"
     >
-      <Icon color="#E96544" type="flickr" />
+      <Icon color="#ffffff" type="flickr" />
     </a>
     <a
       href="https://www.instagram.com/dhfbaltimore/"
@@ -43,7 +43,7 @@ const SocialLinks = () => (
       target="_blank"
       rel="nofollow noopener"
     >
-      <Icon color="#E96544" type="instagram" />
+      <Icon color="#ffffff" type="instagram" />
     </a>
   </LinkContainer>
 );
@@ -61,7 +61,7 @@ const LinkContainer = styled.div`
   }
 
   path:hover {
-    fill: #fafafa;
+    fill: var(--primary-color);
     transition: all 0.3s ease-in-out;
     pointer-events: all;
   }

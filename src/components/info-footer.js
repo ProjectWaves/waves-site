@@ -21,7 +21,7 @@ const FooterWrapper = styled.div`
   justify-content: space-evenly;
   padding: 3rem 0;
   margin: 0 auto;
-  background: #002432;
+  background: rgba(0, 0, 0, 1);
   width: 100%;
 `;
 

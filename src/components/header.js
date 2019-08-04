@@ -93,6 +93,9 @@ Header.defaultProps = {
 };
 
 const StyledHeader = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   min-width: 100vw;
   padding-left: 5rem;
@@ -103,6 +106,7 @@ const StyledHeader = styled.header`
   background: rgba(0,0,0,1);
   padding: 1rem 0;
   margin-bottom: 1rem;
+  z-index: 1000;
 
   svg {
     margin-left: 3.8rem;

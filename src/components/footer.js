@@ -9,7 +9,7 @@ const Footer = () => (
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      background: #002432;
+      background: rgba(0, 0, 0, 1);
       width: 100%;
     `}
   >
