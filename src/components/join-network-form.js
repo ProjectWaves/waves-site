@@ -8,10 +8,11 @@ const JoinNetworkForm = () => (
     `}
   >
     <form
-      method="post"
       name="wavesInterestForm"
-      netlify-honeypot="bot-field"
+      method="post"
+      action="/thank-you"
       data-netlify="true"
+      netlify-honeypot="bot-field"
       css={css`
         max-width: 600px;
         margin: 2rem auto;
