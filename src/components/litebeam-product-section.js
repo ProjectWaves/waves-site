@@ -74,38 +74,6 @@ const LiteBeamProductSection = () => {
           <br />
           Minimum $5 donation per month.
         </p>
-        <button
-          css={css`
-            text-transform: none;
-            font-size: 2rem;
-            /* background: var(--primary-color); */
-            background: #000;
-            color: #fff;
-            border: 2px solid;
-            border-color: #000;
-            /* border-color: var(--primary-color); */
-            border-radius: 16px;
-            padding: 1rem 2rem;
-            max-width: 800px;
-            transition: all ease-in-out 500ms;
-
-            @media only screen and (max-width: 1000px) {
-              margin-top: 8rem;
-              max-width: 100%;
-            }
-
-            &:hover {
-              color: #ffffff;
-
-              background: #243b53;
-              border: 2px solid;
-              border-color: #243b53;
-              cursor: pointer;
-            }
-          `}
-        >
-          Learn More
-        </button>
       </div>
       <div
         css={css`
