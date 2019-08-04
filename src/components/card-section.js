@@ -9,9 +9,7 @@ const CardSection = () => {
   const { cardOneImage, cardTwoImage, cardThreeImage } = useStaticQuery(
     graphql`
       query {
-        cardOneImage: file(
-          relativePath: { eq: "jr-korpa-wave-texture-unsplash.jpg" }
-        ) {
+        cardOneImage: file(relativePath: { eq: "save-the-net-protest.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 800) {
               ...GatsbyImageSharpFluid
@@ -19,7 +17,7 @@ const CardSection = () => {
           }
         }
         cardTwoImage: file(
-          relativePath: { eq: "israel-palacio-electricity-unsplash.jpg" }
+          relativePath: { eq: "bridge-the-digital-divide.jpg" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 800) {
@@ -74,16 +72,14 @@ const CardSection = () => {
         />
         <Card
           fluid={cardTwoImage.childImageSharp.fluid}
-          title={'Get the Facts'}
-          copy={`Comcast is available throughout Baltimore, however their pricing makes them inaccessible to many families. Per the Deutsch Foundation's Digital Access and Equity Report for Baltimore City 2017 report, 75,000 homes lack internet access.`}
+          title={'Bridge the Digital Divide'}
+          copy={`Per the Deutsch Foundation's Digital Access and Equity Report for Baltimore City 2017 report, 75,000 homes lack internet access.`}
           featured
         />
         <Card
           fluid={cardThreeImage.childImageSharp.fluid}
           title={'Availability ≠ Accessibility'}
-          copy={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ut ut curabitur cursus massa gravida praesent nunc.'
-          }
+          copy={`Comcast is available throughout Baltimore, however their pricing makes them inaccessible to many families.`}
         />
       </div>
     </section>
