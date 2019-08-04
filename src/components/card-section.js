@@ -26,7 +26,7 @@ const CardSection = () => {
           }
         }
         cardThreeImage: file(
-          relativePath: { eq: "tim-marshall-water-texture-unsplash.jpg" }
+          relativePath: { eq: "kholodnitskiy-maksim-railroad-unsplash.jpg" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 800) {
