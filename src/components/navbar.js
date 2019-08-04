@@ -4,8 +4,8 @@ import styled from '@emotion/styled';
 import { css, jsx } from '@emotion/core';
 
 const activeStyles = {
-  color: '#e96544',
-  fontWeight: 'bold',
+  color: '#fafafa',
+  fontWeight: 'bolder',
 };
 
 const Navbar = props => (
@@ -87,7 +87,7 @@ const SiteNavLink = styled(Link)`
   margin-left: 0px;
   color: ${props => props.color || '#fff'};
   font-size: 1.5rem;
-  font-weight: bolder;
+  font-weight: lighter;
   text-decoration: none;
   transition: color 0.5s ease;
 
@@ -107,7 +107,7 @@ const SiteNavAnchor = styled.a`
   margin-left: 0px;
   color: ${props => props.color || '#fff'};
   font-size: 1.5rem;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   text-decoration: none;
   transition: color 0.5s ease;
 

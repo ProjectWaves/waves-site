@@ -8,7 +8,7 @@ import { useSpring, animated, config } from 'react-spring';
 import Navbar from './navbar';
 // import NavSlider from './nav-slider';
 
-const Header = ({ siteTitle }) => {
+const Header = props => {
   const [isNavOpen, setNavOpen] = useState(false);
 
   const fadeInLogo = useSpring({
@@ -99,7 +99,8 @@ const StyledHeader = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0);
+  /* background: ${props => props.bgcolor || 'rgba(0,0,0,0)'}; */
+  background: rgba(0,0,0,1);
   padding: 1rem 0;
   margin-bottom: 1rem;
 
