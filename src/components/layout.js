@@ -24,7 +24,6 @@ const Layout = ({ children }) => (
               height: 100%;
               margin: 0;
               padding: 0;
-              overflow: hidden;
               /* font-size: 62.5%; */
               box-sizing: border-box;
               -ms-text-size-adjust: 100%;
