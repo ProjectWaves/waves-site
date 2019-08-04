@@ -31,7 +31,6 @@ const IndexPage = () => {
           <ContentWrapper>
             <ConnectedSection />
           </ContentWrapper>
-          <JoinNetworkForm />
           <CardSection />
           <AccessSection />
 

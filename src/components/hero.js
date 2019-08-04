@@ -205,7 +205,6 @@ const Hero = () => {
                       />
                     </svg>
                   </CloseButton>
-                  <JoinNetworkForm />
                 </div>
               </AnimatedStyledDialogContent>
             </AnimatedStyledDialogOverlay>
