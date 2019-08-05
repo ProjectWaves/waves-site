@@ -58,7 +58,7 @@ const Card = ({ fluid, title, copy, linkTo }) => (
       >
         {copy}
       </p>
-      <Link to="/{linkTo}">
+      <Link to={linkTo}>
         <button
           css={css`
             text-transform: none;
