@@ -27,6 +27,15 @@ const AboutPage = () => {
     }
   `);
 
+  const fadeInMessage = useSpring({
+    from: {
+      opacity: 0,
+    },
+    to: { opacity: 1 },
+    config: { mass: 1.25, tension: 50, friction: 20 },
+    delay: 250,
+  });
+
   return (
     <React.Fragment>
       <Layout>
@@ -72,15 +81,17 @@ const AboutPage = () => {
               }
             `}
           >
-            <span
+            <animated.span
               css={css`
                 font-style: italic;
                 font-size: 2.5rem;
+                color: #3a3a3a;
               `}
+              style={fadeInMessage}
             >
               If something is to be truly community-led, the community must come
               together to bridge the inequity.
-            </span>
+            </animated.span>
             <hr
               css={css`
                 margin: 2rem auto;
