@@ -75,12 +75,13 @@ const CardSection = () => {
           fluid={cardTwoImage.childImageSharp.fluid}
           title={'Bridge the Digital Divide'}
           copy={`Per the Deutsch Foundation's Digital Access and Equity Report for Baltimore City 2017 report, 75,000 homes lack internet access.`}
-          featured
+          linkTo="/bridge-the-digital-divide"
         />
         <Card
           fluid={cardThreeImage.childImageSharp.fluid}
           title={'Availability ≠ Accessibility'}
           copy={`Comcast is available throughout Baltimore, however their pricing makes them inaccessible to many families.`}
+          linkTo="/availability-is-not-accessibility"
         />
       </div>
     </section>
