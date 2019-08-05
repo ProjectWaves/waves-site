@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 const JoinNetworkForm = () => (
   <div
     css={css`
-      max-width: 30vw;
+      max-width: 93.75%;
     `}
   >
     <form
@@ -32,8 +32,8 @@ const JoinNetworkForm = () => (
           font-size: 1.5rem;
           border: 2px solid rgba(0, 0, 0, 0.2);
           border-radius: 0.5rem;
-          padding: 0.5rem;
-          margin-bottom: 1.5rem;
+          padding: 1rem;
+          margin-bottom: 2rem;
         }
         input::placeholder,
         textarea::placeholder {
@@ -42,12 +42,17 @@ const JoinNetworkForm = () => (
         }
       `}
     >
+      <h2
+        css={css`
+          font-size: 2.5rem;
+          text-align: center;
+        `}
+      >
+        Waves Interest Form
+      </h2>
       <input type="hidden" name="bot-field" />
       <label for="name">Enter your full name:</label>
       <input
-        css={css`
-          color: red;
-        `}
         type="text"
         name="name"
         id="name"

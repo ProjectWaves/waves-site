@@ -9,8 +9,7 @@ import {
   AppWrapper,
   ContentWrapper,
 } from '../components/elements/layout-components';
-import CardSection from '../components/card-section';
-import AccessSection from '../components/access-section';
+import Header from '../components/header';
 import InfoFooter from '../components/info-footer';
 import Footer from '../components/footer';
 import JoinNetworkForm from '../components/join-network-form';
@@ -20,8 +19,19 @@ const JoinTheNetworkPage = () => {
     <React.Fragment>
       <Layout>
         <AppWrapper>
-          <ContentWrapper>
-            <JoinNetworkForm />
+          <Header />
+          <ContentWrapper allMargin="20vh auto">
+            <main
+              css={css`
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: tomato;
+              `}
+            >
+              <JoinNetworkForm />
+            </main>
           </ContentWrapper>
           <InfoFooter />
           <Footer />

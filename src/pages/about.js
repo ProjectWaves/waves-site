@@ -12,7 +12,6 @@ import {
 import Header from '../components/header';
 import InfoFooter from '../components/info-footer';
 import Footer from '../components/footer';
-import JoinNetworkForm from '../components/join-network-form';
 
 const AboutPage = () => {
   const { aboutImageFeatured, adamProfileImage } = useStaticQuery(graphql`

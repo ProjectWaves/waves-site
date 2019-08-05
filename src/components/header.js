@@ -26,7 +26,9 @@ const Header = props => {
   return (
     <StyledHeader>
       <Link to="/" style={{ textDecoration: 'none' }}>
-        <VisuallyHidden>Home</VisuallyHidden>
+        <VisuallyHidden>
+          <h1>Waves Home</h1>
+        </VisuallyHidden>
         <animated.svg
           style={fadeInLogo}
           css={css`
