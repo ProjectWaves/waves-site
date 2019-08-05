@@ -24,6 +24,10 @@ const AboutPage = () => {
               max-width: 60%;
               margin: 20vh auto;
 
+              h2 {
+                color: #000;
+                font-size: 4rem;
+              }
               p {
                 color: #000;
                 font-size: 2rem;
@@ -31,6 +35,7 @@ const AboutPage = () => {
               }
             `}
           >
+            <h2>From the Waves Team</h2>
             <p>
               My name is Adam Bouhmad, and I founded Waves in response to the
               repeal of Net Neutrality back in 2018. Recently, the UN declared
@@ -44,14 +49,22 @@ const AboutPage = () => {
               practices of companies like Comcast, Time Warner, AT&T, and
               Verizon.
             </p>
-            <blockquote>
+            <blockquote
+              css={css`
+                font-size: 2rem;
+                line-height: 3rem;
+                font-weight: 300;
+                padding-left: 1rem;
+                border-left: 2px solid var(--secondary-color);
+              `}
+            >
               “The rich are getting gouged, the poor are very often left out,
               and this means that we’re creating, yet again, two Americas, and
-              deepening inequality through this communications inequality,”
-              Crawford tells Bill.” - Susan Crawford
+              deepening inequality through this communications inequality,” -
+              Susan Crawford
             </blockquote>
             <p>
-              Providing aservice is one thing. Comcast claims they’re available
+              Providing a service is one thing. Comcast claims they’re available
               throughout the city, and to be fair, they are. Thanks to the 2016
               Comcast Franchise Agreement with Baltimore City, Comcast is
               available throughout the city. However, there is a big difference
