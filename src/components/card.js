@@ -1,8 +1,9 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import { Link } from 'gatsby';
 import { css } from '@emotion/core';
 
-const Card = ({ fluid, title, copy, featured }) => (
+const Card = ({ fluid, title, copy, linkTo }) => (
   <div
     css={css`
       display: flex;
@@ -57,35 +58,37 @@ const Card = ({ fluid, title, copy, featured }) => (
       >
         {copy}
       </p>
-      <button
-        css={css`
-          text-transform: none;
-          font-size: 2rem;
-          background: #000000;
-          color: #fff;
-          border: 1px solid #000000;
-          border-radius: 16px;
-          padding: 1rem 2rem;
-          margin-bottom: 2rem;
-          width: 100%;
-          transition: all ease-in-out 500ms;
+      <Link to="/{linkTo}">
+        <button
+          css={css`
+            text-transform: none;
+            font-size: 2rem;
+            background: #000000;
+            color: #fff;
+            border: 1px solid #000000;
+            border-radius: 16px;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            width: 100%;
+            transition: all ease-in-out 500ms;
 
-          @media only screen and (max-width: 1000px) {
-            margin-top: 8rem;
-            max-width: 100%;
-          }
+            @media only screen and (max-width: 1000px) {
+              margin-top: 8rem;
+              max-width: 100%;
+            }
 
-          &:hover {
-            color: #000000;
-            background: #ffffff;
-            border: 1px solid;
-            border-color: #000000;
-            cursor: pointer;
-          }
-        `}
-      >
-        Learn More
-      </button>
+            &:hover {
+              color: #000000;
+              background: #ffffff;
+              border: 1px solid;
+              border-color: #000000;
+              cursor: pointer;
+            }
+          `}
+        >
+          Learn More
+        </button>
+      </Link>
     </div>
   </div>
 );

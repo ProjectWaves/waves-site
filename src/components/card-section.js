@@ -69,6 +69,7 @@ const CardSection = () => {
           copy={
             'Waves not only stands for Net Neutrality, but is committed to making all members of the network aware of any potential changes.'
           }
+          linkTo="/why-intenret-matters"
         />
         <Card
           fluid={cardTwoImage.childImageSharp.fluid}
