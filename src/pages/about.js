@@ -15,11 +15,18 @@ import Footer from '../components/footer';
 import JoinNetworkForm from '../components/join-network-form';
 
 const AboutPage = () => {
-  const { aboutImageFeatured } = useStaticQuery(graphql`
+  const { aboutImageFeatured, adamProfileImage } = useStaticQuery(graphql`
     query {
       aboutImageFeatured: file(relativePath: { eq: "roof-access-point.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      adamProfileImage: file(relativePath: { eq: "adam-profile.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000, maxHeight: 1000, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -147,12 +154,58 @@ const AboutPage = () => {
                 disconnected populations.
               </p>
               <h2>From the Waves Team</h2>
-              <p>
-                My name is Adam Bouhmad, and I founded Waves in response to the
-                repeal of Net Neutrality back in 2018. Recently, the UN declared
-                that Internet access is a human right -- Internet access is
-                paramount to succeed in today’s society.
-              </p>
+              <section
+                css={css`
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  align-items: center;
+                  margin: 4rem auto;
+                  @media only screen and (max-width: 1000px) {
+                    margin-top: 0;
+                    grid-template-columns: 1fr;
+                  }
+                `}
+              >
+                <p
+                  css={css`
+                    margin: 0 auto;
+                  `}
+                >
+                  <div
+                    css={css`
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                      height: 40%;
+                      margin: 0 auto;
+                    `}
+                  >
+                    My name is Adam Bouhmad, and I founded Waves in response to
+                    the repeal of Net Neutrality back in 2018. Recently, the UN
+                    declared that Internet access is a human right -- Internet
+                    access is paramount to succeed in today’s society.
+                  </div>
+                </p>
+                <div
+                  css={css`
+                    width: 100%;
+                    height: 100%;
+                  `}
+                >
+                  <Img
+                    fluid={adamProfileImage.childImageSharp.fluid}
+                    css={css`
+                      border-radius: 8px;
+                      box-shadow: 0px 5px 10px rgba(123, 167, 255, 0.4);
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      margin-left: 2rem;
+                    `}
+                  />
+                </div>
+              </section>
               <p>
                 Susan Crawford has written and spoken extensively how the US has
                 fallen far behind the rest of the industrialized nations in
