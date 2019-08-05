@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import Img from 'gatsby-image';
 import { css } from '@emotion/core';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated, config } from 'react-spring';
+
 import Layout from '../components/layout';
 import {
   AppWrapper,
@@ -14,11 +16,34 @@ import Footer from '../components/footer';
 import JoinNetworkForm from '../components/join-network-form';
 
 const AboutPage = () => {
+  const { aboutImageFeatured } = useStaticQuery(graphql`
+    query {
+      aboutImageFeatured: file(relativePath: { eq: "roof-access-point.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000, maxHeight: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <React.Fragment>
       <Layout>
         <AppWrapper>
           <Header />
+          <Img
+            fluid={aboutImageFeatured.childImageSharp.fluid}
+            css={css`
+              border-radius: 16px 16px 0 0;
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+              width: 100%;
+              height: 100%;
+              max-height: 800px;
+              object-position: 50% 10%;
+            `}
+          />
           <main
             css={css`
               max-width: 60%;
