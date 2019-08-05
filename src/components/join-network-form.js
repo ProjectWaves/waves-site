@@ -20,8 +20,8 @@ const JoinNetworkForm = () => (
         flex-direction: column;
         justify-content: center;
         background: #ffffff;
-        background: papayawhip;
         border-radius: 16px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         padding: 2rem;
         label {
           font-size: 1.5rem;
