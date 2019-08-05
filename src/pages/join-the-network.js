@@ -5,10 +5,7 @@ import { css, jsx } from '@emotion/core';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated, config } from 'react-spring';
 import Layout from '../components/layout';
-import {
-  AppWrapper,
-  ContentWrapper,
-} from '../components/elements/layout-components';
+import { AppWrapper } from '../components/elements/layout-components';
 import Header from '../components/header';
 import InfoFooter from '../components/info-footer';
 import Footer from '../components/footer';
@@ -18,24 +15,21 @@ const JoinTheNetworkPage = () => {
   return (
     <React.Fragment>
       <Layout>
-        <AppWrapper>
-          <Header />
-          <ContentWrapper allMargin="20vh auto">
-            <main
-              css={css`
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                background: tomato;
-              `}
-            >
-              <JoinNetworkForm />
-            </main>
-          </ContentWrapper>
-          <InfoFooter />
-          <Footer />
-        </AppWrapper>
+        <Header />
+        <section
+          css={css`
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: #fff;
+          `}
+        >
+          <JoinNetworkForm />
+        </section>
+        <InfoFooter />
+        <Footer />
       </Layout>
     </React.Fragment>
   );

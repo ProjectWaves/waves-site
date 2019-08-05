@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 const JoinNetworkForm = () => (
   <div
     css={css`
-      max-width: 93.75%;
+      width: 93.75%;
     `}
   >
     <form
@@ -22,7 +22,7 @@ const JoinNetworkForm = () => (
         background: #ffffff;
         border-radius: 16px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        padding: 2rem;
+        padding: 4rem;
         label {
           font-size: 1.5rem;
           margin-bottom: 0.5rem;
