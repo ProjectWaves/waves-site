@@ -20,7 +20,7 @@ const AboutPage = () => {
     query {
       aboutImageFeatured: file(relativePath: { eq: "roof-access-point.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000, maxHeight: 1000) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -33,21 +33,33 @@ const AboutPage = () => {
       <Layout>
         <AppWrapper>
           <Header />
-          <Img
-            fluid={aboutImageFeatured.childImageSharp.fluid}
+          <div
             css={css`
-              border-radius: 16px 16px 0 0;
-              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
               width: 100%;
-              height: 100%;
-              max-height: 800px;
-              object-position: 50% 10%;
+              height: 500px;
+
+              img {
+                margin-bottom: 0 !important;
+              }
             `}
-          />
+          >
+            <Img
+              fluid={aboutImageFeatured.childImageSharp.fluid}
+              alt="Adam on rooftop with an access point directed toward Baltimore City"
+              css={css`
+                border-radius: 16px 16px 0 0;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+              `}
+            />
+          </div>
           <main
             css={css`
               max-width: 60%;
-              margin: 20vh auto;
+              margin: 4rem auto;
 
               h2 {
                 color: #000;
@@ -60,6 +72,30 @@ const AboutPage = () => {
               }
             `}
           >
+            <h2>About Waves</h2>
+
+            <p>
+              Roughly one-third of Baltimore City does not have access to
+              broadband Internet in their homes. As described in The Deutsch
+              Foundation’s Digital Access and Equity Report in Baltimore City
+              2017, the internet is arguably the most important communication
+              tool of the 21st century and, therefore, lack of access is a
+              critical opportunity gap that disproportionately affects
+              low-income and minority households.
+            </p>
+            <p>
+              Waves is{' '}
+              <a
+                href="https://digitalharbor.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Digital Harbor Foundation’s
+              </a>{' '}
+              proposed approach to bridge this divide through a community-driven
+              network committed to providing highly available, transparent,
+              reliable internet to Baltimore’s disconnected populations.
+            </p>
             <h2>From the Waves Team</h2>
             <p>
               My name is Adam Bouhmad, and I founded Waves in response to the
