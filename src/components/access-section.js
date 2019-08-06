@@ -26,7 +26,7 @@ const AccessSection = () => {
         align-items: center;
         min-height: 40vh;
         background: #fff;
-        margin: 4rem 5rem;
+        margin: 10rem 5rem;
 
         @media only screen and (max-width: 1000px) {
           margin-top: 0;

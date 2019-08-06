@@ -26,7 +26,7 @@ const LiteBeamProductSection = () => {
         align-items: center;
         min-height: 0vh;
         background: #fff;
-        margin: 5rem 5rem;
+        margin: 10rem 5rem;
 
         @media only screen and (max-width: 1000px) {
           margin-top: 0;

@@ -11,13 +11,6 @@ import heroImg from '../images/waves-hero.jpg';
 import WaveSection from './wave-section';
 import JoinNetworkForm from './join-network-form';
 
-/* TODO: Refactor this component
-  - Split out the modal and form into separate components
-  - State needs to be handled for form and modal:
-  - Hook for opening/closing modal and then all the state for the form's logic
-  - Figure out the best way to handle this
-*/
-
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
 

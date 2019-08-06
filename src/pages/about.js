@@ -72,6 +72,10 @@ const AboutPage = () => {
               max-width: 60%;
               margin: 4rem auto;
 
+              @media only screen and (max-width: 1000px) {
+                max-width: 100%;
+              }
+
               h2 {
                 color: #000;
                 font-size: 4rem;
@@ -80,7 +84,7 @@ const AboutPage = () => {
               p {
                 color: #000;
                 font-size: 2rem;
-                line-height: 3rem;
+                line-height: 3.75rem;
               }
             `}
           >
@@ -89,6 +93,11 @@ const AboutPage = () => {
                 font-style: italic;
                 font-size: 2.5rem;
                 color: #3a3a3a;
+                @media only screen and (max-width: 1000px) {
+                  display: block;
+                  font-size: 2rem;
+                  margin: 2rem;
+                }
               `}
               style={fadeInMessage}
             >
@@ -157,7 +166,7 @@ const AboutPage = () => {
                   align-items: center;
                   margin: 4rem auto;
                   @media only screen and (max-width: 1000px) {
-                    margin-top: 0;
+                    margin: 0;
                     grid-template-columns: 1fr;
                   }
                 `}
@@ -187,6 +196,9 @@ const AboutPage = () => {
                   css={css`
                     width: 100%;
                     height: 100%;
+                    @media only screen and (max-width: 1000px) {
+                      padding: 4rem 0;
+                    }
                   `}
                 >
                   <Img
@@ -198,6 +210,9 @@ const AboutPage = () => {
                       height: 100%;
                       object-fit: cover;
                       margin-left: 2rem;
+
+                      @media only screen and (max-width: 1000px) {
+                        margin: 0;
                     `}
                   />
                 </div>
