@@ -38,6 +38,9 @@ const ThankYouPage = () => {
             justify-content: center;
             min-height: 100vh;
             background: #fff;
+            @media only screen and (max-width: 1000px) {
+              padding: 0 2rem;
+            }
           `}
         >
           <animated.h2
