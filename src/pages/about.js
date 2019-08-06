@@ -30,8 +30,6 @@ const AboutPage = () => {
     }
   `);
 
-  const [on, setToggle] = useState(false);
-
   const fadeInMessage = useSpring({
     from: {
       opacity: 0,
@@ -41,14 +39,8 @@ const AboutPage = () => {
     delay: 250,
   });
 
-  const enterAnimation = useSpring({
-    opacity: on ? 1 : 0,
-    background: on ? 'red' : 'blue',
-    config: config.default,
-  });
-
   return (
-    <React.Fragment>
+    <div>
       <Layout>
         <AppWrapper>
           <Header />
@@ -245,6 +237,7 @@ const AboutPage = () => {
                 price gouging these providers engage in.
               </p>
               <div>
+                <Waypoint onEnter={() => console.log('waypoint entered')} />
                 <p>
                   When folks talk about 21st-century skills, the fascinating
                   thing is that we’re already 20% of the way into the 21st
@@ -260,7 +253,7 @@ const AboutPage = () => {
           <Footer />
         </AppWrapper>
       </Layout>
-    </React.Fragment>
+    </div>
   );
 };
 

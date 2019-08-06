@@ -10,7 +10,6 @@ import LiteBeamProductSection from '../components/litebeam-product-section';
 import InfoFooter from '../components/info-footer';
 import Footer from '../components/footer';
 import SEO from '../components/seo';
-import JoinNetworkForm from '../components/join-network-form';
 import DigitalStewardsSection from '../components/digital-stewards-section';
 
 const IndexPage = () => {
