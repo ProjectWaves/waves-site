@@ -44,6 +44,7 @@ const DigitalStewardsSection = () => {
           justify-content: center;
           height: 40%;
           margin: 0 auto;
+          max-width: 70%;
         `}
       >
         <h2
