@@ -41,8 +41,9 @@ const CardSection = () => {
   return (
     <section
       css={css`
-        background: #f0f4f8;
-        padding: 2rem 4rem;
+        /* background: #f0f4f8; */
+        background: #fff;
+        padding: 8rem 4rem;
         min-height: 40vh;
         margin-top: -20vh;
         @media only screen and (max-width: 1000px) {
@@ -50,6 +51,15 @@ const CardSection = () => {
         }
       `}
     >
+      <h2
+        css={css`
+          padding-bottom: 2rem;
+          font-size: 6rem;
+          text-align: center;
+        `}
+      >
+        Waves Core Values
+      </h2>
       <div
         css={css`
           display: grid;

@@ -39,13 +39,7 @@ const ResearchSection = () => {
 
   return (
     <React.Fragment>
-      <Waypoint
-        topOffset="50%"
-        onEnter={() => {
-          if (!on) setToggle(true);
-        }}
-      />
-
+      <Waypoint onEnter={() => console.log('waypoint hit')} />
       <AnimatedSectionContainer
         style={{ opacity: opacity }}
         id="research-section"

@@ -10,6 +10,7 @@ const Card = ({ fluid, title, copy, linkTo }) => (
       flex-direction: column;
       align-items: center;
       background: #ffffff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       border-radius: 16px;
     `}
   >

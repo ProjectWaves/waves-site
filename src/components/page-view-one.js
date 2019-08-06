@@ -5,47 +5,42 @@ import { css } from '@emotion/core';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated, config } from 'react-spring';
 import Layout from '../components/layout';
-import { AppWrapper } from '../components/elements/layout-components';
+import {
+  AppWrapper,
+  ContentWrapper,
+} from '../components/elements/layout-components';
 import Header from '../components/header';
 import InfoFooter from '../components/info-footer';
 import Footer from '../components/footer';
 
-const AboutPage = () => {
-  const { aboutImageFeatured, adamProfileImage } = useStaticQuery(graphql`
-    query {
-      aboutImageFeatured: file(relativePath: { eq: "roof-access-point.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 2000, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      adamProfileImage: file(relativePath: { eq: "adam-profile.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000, maxHeight: 1000, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+const PageViewOne = () => {
+  // const { aboutImageFeatured, adamProfileImage } = useStaticQuery(graphql`
+  //   query {
+  //     aboutImageFeatured: file(relativePath: { eq: "roof-access-point.jpg" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 2000, quality: 100) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //     adamProfileImage: file(relativePath: { eq: "adam-profile.jpg" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 1000, maxHeight: 1000, quality: 100) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
-  const [on, setToggle] = useState(false);
-
-  const fadeInMessage = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: { opacity: 1 },
-    config: { mass: 1.25, tension: 50, friction: 20 },
-    delay: 250,
-  });
-
-  const enterAnimation = useSpring({
-    opacity: on ? 1 : 0,
-    background: on ? 'red' : 'blue',
-    config: config.default,
-  });
+  // const fadeInMessage = useSpring({
+  //   from: {
+  //     opacity: 0,
+  //   },
+  //   to: { opacity: 1 },
+  //   config: { mass: 1.25, tension: 50, friction: 20 },
+  //   delay: 250,
+  // });
 
   return (
     <React.Fragment>
@@ -62,7 +57,7 @@ const AboutPage = () => {
               }
             `}
           >
-            <Img
+            {/* <Img
               fluid={aboutImageFeatured.childImageSharp.fluid}
               alt="Adam on rooftop with an access point directed toward Baltimore City"
               css={css`
@@ -73,7 +68,7 @@ const AboutPage = () => {
                 object-fit: cover;
                 overflow: hidden;
               `}
-            />
+            /> */}
           </div>
           <main
             css={css`
@@ -244,16 +239,14 @@ const AboutPage = () => {
                 equitable internet choices in Baltimore paired with the unruly
                 price gouging these providers engage in.
               </p>
-              <div>
-                <p>
-                  When folks talk about 21st-century skills, the fascinating
-                  thing is that we’re already 20% of the way into the 21st
-                  century. We’ve talked about the problem for decades, but let's
-                  start focusing on solutions. Together, we can build out
-                  community wireless across Baltimore where the main focus isn’t
-                  profitability -- but rather the human aspect.
-                </p>
-              </div>
+              <p>
+                When folks talk about 21st-century skills, the fascinating thing
+                is that we’re already 20% of the way into the 21st century.
+                We’ve talked about the problem for decades, but let's start
+                focusing on solutions. Together, we can build out community
+                wireless across Baltimore where the main focus isn’t
+                profitability -- but rather the human aspect.
+              </p>
             </article>
           </main>
           <InfoFooter />
@@ -264,4 +257,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default PageViewOne;
