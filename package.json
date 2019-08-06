@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-styled-components",
+  "name": "Waves",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and styled-components",
-  "version": "0.1.0",
-  "author": "Blake Noll <nollblake@gmail.com>",
+  "description": "Waves is a community ISP focused on providing high quality, high-availability, transparent internet to the Baltimore community in a scalable, cost-effective manner.",
+  "version": "1.0.0",
+  "author": "Jonathan Prozzi <jonathanprozzi@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
@@ -54,11 +54,5 @@
   },
   "bugs": {
     "url": "https://github.com/blakenoll/gatsby-starter-styled-components/issues"
-  },
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
-  ]
+  }
 }

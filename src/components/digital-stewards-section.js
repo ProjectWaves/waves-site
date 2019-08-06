@@ -64,7 +64,6 @@ const DigitalStewardsSection = () => {
             font-size: 2rem;
             padding-top: 0;
             padding-bottom: 1.5rem;
-            padding-left: 4rem;
             padding-right: 4rem;
             color: #222;
             @media only screen and (max-width: 1000px) {
@@ -72,8 +71,8 @@ const DigitalStewardsSection = () => {
             }
           `}
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
-          expedita vel veritatis vitae quis sint illum.{' '}
+          Digital Stewards are selected and trained commuity leaders and are the
+          crucial human infrastructure of Waves.
         </p>
       </div>
       <div

@@ -56,7 +56,7 @@ const LiteBeamProductSection = () => {
         css={css`
           display: flex;
           flex-direction: column;
-          align-items: center;
+          /* align-items: center; */
           justify-content: center;
           height: 40%;
           margin: 0 auto;
@@ -80,7 +80,6 @@ const LiteBeamProductSection = () => {
             padding-top: 0;
             padding-bottom: 1.5rem;
             padding-left: 4rem;
-            padding-right: 4rem;
             color: #222;
             @media only screen and (max-width: 1000px) {
               padding: 0;
