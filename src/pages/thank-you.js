@@ -1,70 +1,98 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import { css } from '@emotion/core';
-import { Waypoint } from 'react-waypoint';
 import { useSpring, animated, config } from 'react-spring';
 import Layout from '../components/layout';
-import {
-  AppWrapper,
-  ContentWrapper,
-} from '../components/elements/layout-components';
 import Header from '../components/header';
 import InfoFooter from '../components/info-footer';
 import Footer from '../components/footer';
-import JoinNetworkForm from '../components/join-network-form';
 
 const ThankYouPage = () => {
+  const fadeQuarterDelay = useSpring({
+    from: {
+      opacity: 0,
+    },
+    to: { opacity: 1 },
+    config: { mass: 1.25, tension: 50, friction: 20 },
+    delay: 250,
+  });
+
+  const fadeHalfDelay = useSpring({
+    from: {
+      opacity: 0,
+    },
+    to: { opacity: 1 },
+    config: { mass: 1.25, tension: 50, friction: 20 },
+    delay: 500,
+  });
+
   return (
     <React.Fragment>
       <Layout>
-        <AppWrapper>
-          <Header />
-          <ContentWrapper>
-            <main
-              css={css`
-                background: #121212;
-              `}
-            >
-              <p
-                css={css`
-                  color: #fff;
-                `}
-              >
-                My name is Adam Bouhmad, and I founded Waves in response to the
-                repeal of Net Neutrality back in 2018. Recently, the UN declared
-                that Internet access is a human right -- Internet access is
-                paramount to succeed in today’s society. Susan Crawford has
-                written and spoken extensively how the US has fallen far behind
-                the rest of the industrialized nations in terms of public access
-                to Broadband Internet because of the monopolistic practices of
-                companies like Comcast, Time Warner, AT&T, and Verizon. “The
-                rich are getting gouged, the poor are very often left out, and
-                this means that we’re creating, yet again, two Americas, and
-                deepening inequality through this communications inequality,”
-                Crawford tells Bill.” - Susan Crawford Providing a service is
-                one thing. Comcast claims they’re available throughout the city,
-                and to be fair, they are. Thanks to the 2016 Comcast Franchise
-                Agreement with Baltimore City, Comcast is available throughout
-                the city. However, there is a big difference between
-                availability and accessibility -- availability does not equal
-                accessibility in terms of pricing and quality of service. Waves
-                is a response to this; the lack of equitable internet choices in
-                Baltimore paired with the unruly price gouging these providers
-                engage in. When folks talk about 21st-century skills, the
-                fascinating thing is that we’re already 20% of the way into the
-                21st century. We’ve talked about the problem for decades, but
-                let's start focusing on solutions. Together, we can build out
-                community wireless across Baltimore where the main focus isn’t
-                profitability -- but rather the human aspect.
-              </p>
-            </main>
-          </ContentWrapper>
-          <InfoFooter />
-          <Footer />
-        </AppWrapper>
+        <Header />
+        <div
+          css={css`
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #fff;
+          `}
+        >
+          <animated.h2
+            css={css`
+              font-size: 4rem;
+              color: #121212;
+            `}
+            style={fadeQuarterDelay}
+          >
+            Thank You.
+          </animated.h2>
+          <animated.p
+            css={css`
+              font-size: 2rem;
+              padding-left: 1rem;
+              color: #121212;
+            `}
+            style={fadeHalfDelay}
+          >
+            We're glad that you're interested in the Waves community-driven
+            network.
+          </animated.p>
+          <AnimatedLink
+            css={css`
+              list-style-type: none;
+              padding-bottom: 5px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              color: #121212;
+              font-size: 2rem;
+              font-weight: lighter;
+              text-decoration: underline;
+              transition: color 0.5s ease;
+
+              &:hover {
+                color: ${props => props.hovercolor || '#0091c9'};
+                cursor: pointer;
+              }
+              @media only screen and (max-width: 1000px) {
+                padding-bottom: 0px;
+              }
+            `}
+            style={fadeHalfDelay}
+            to="/"
+          >
+            Explore the rest of the site.
+          </AnimatedLink>
+        </div>
+        <InfoFooter />
+        <Footer />
       </Layout>
     </React.Fragment>
   );
 };
 
 export default ThankYouPage;
+
+const AnimatedLink = animated(Link);

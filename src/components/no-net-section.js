@@ -10,7 +10,7 @@ const NoNetSection = () => {
       query {
         noNetDinoImage: file(relativePath: { eq: "no-net-dino.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000, maxHeight: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }

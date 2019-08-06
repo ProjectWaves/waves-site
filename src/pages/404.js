@@ -25,7 +25,7 @@ const NotFoundPage = () => (
           justify-content: center;
         `}
       >
-        <h1
+        <h2
           css={css`
             font-size: 4rem;
             color: #fafafa;
@@ -38,7 +38,7 @@ const NotFoundPage = () => (
           `}
         >
           404
-        </h1>
+        </h2>
         <p
           css={css`
             font-size: 2rem;
