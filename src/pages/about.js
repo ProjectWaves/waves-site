@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { css } from '@emotion/core';
-import { Waypoint } from 'react-waypoint';
 import { useSpring, animated, config } from 'react-spring';
 import Layout from '../components/layout';
 import { AppWrapper } from '../components/elements/layout-components';
@@ -213,6 +212,7 @@ const AboutPage = () => {
 
                       @media only screen and (max-width: 1000px) {
                         margin: 0;
+                      }
                     `}
                   />
                 </div>
@@ -252,7 +252,6 @@ const AboutPage = () => {
                 price gouging these providers engage in.
               </p>
               <div>
-                <Waypoint onEnter={() => console.log('waypoint entered')} />
                 <p>
                   When folks talk about 21st-century skills, the fascinating
                   thing is that we’re already 20% of the way into the 21st
