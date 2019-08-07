@@ -66,7 +66,7 @@ const SiteNavList = styled.ul`
 const SiteNavEntry = styled.li`
   list-style-type: none;
   display: inline;
-  /* padding: 0 2rem; */
+  padding: 0 2rem;
 
   @media only screen and (max-width: 1000px) {
     padding-left: 0;
