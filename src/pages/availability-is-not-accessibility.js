@@ -14,7 +14,7 @@ const AvailabilityIsNotAccessibilityPage = () => {
     <React.Fragment>
       <Layout>
         <AppWrapper>
-          {/* <Header /> */}
+          <Header />
           <main
             css={css`
               max-width: 60%;
@@ -144,8 +144,8 @@ const AvailabilityIsNotAccessibilityPage = () => {
             </div>
             <Waypoint
               debug
-              scrollableAncestor={window}
               topOffset="20%"
+              scrollableAncestor={global.window}
               onEnter={() => console.log('waypoint has been entered')}
               onLeave={() => console.log('waypoint has been left')}
             />
