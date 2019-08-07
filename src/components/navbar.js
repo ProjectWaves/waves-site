@@ -49,18 +49,12 @@ const SiteNavContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 2rem;
-  padding-right: 4rem;
 
   @media only screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
-
     width: 100%;
-    padding-top: 0;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    /* border-top: 2px solid rgba(0, 0, 0, 0.3); */
+    /* padding: 1rem; */
   }
 `;
 
@@ -72,7 +66,7 @@ const SiteNavList = styled.ul`
 const SiteNavEntry = styled.li`
   list-style-type: none;
   display: inline;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 
   @media only screen and (max-width: 1000px) {
     padding-left: 0;
@@ -107,7 +101,7 @@ const SiteNavAnchor = styled.a`
   margin-left: 0px;
   color: ${props => props.color || '#fff'};
   font-size: 1.5rem;
-  /* font-weight: bolder; */
+
   text-decoration: none;
   transition: color 0.5s ease;
 
@@ -117,26 +111,5 @@ const SiteNavAnchor = styled.a`
   }
   @media only screen and (max-width: 1000px) {
     padding-bottom: 0px;
-  }
-`;
-
-const SiteNavLinkCTA = styled(SiteNavLink)`
-  background: #fcece8;
-  color: #e86544;
-  border: 2px solid #e86544;
-  border-radius: 10px;
-  padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  transition: all 0.5s ease;
-
-  &:hover {
-    background: #e86544;
-    border: 2px solid #e86544;
-    color: #fcece8;
-  }
-
-  @media only screen and (max-width: 1000px) {
-    padding: 1rem;
   }
 `;
