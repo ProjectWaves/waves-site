@@ -22,7 +22,7 @@ module.exports = {
         pathToConfigModule: `src/utilities/typography`,
       },
     },
-    `gatsby-plugin-transition-link`,
+    // `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
