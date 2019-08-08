@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Waypoint } from 'react-waypoint';
 import { useSpring, animated, config } from 'react-spring';
 import Layout from '../components/layout';
 import { AppWrapper } from '../components/elements/layout-components';
