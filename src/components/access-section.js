@@ -39,7 +39,7 @@ const AccessSection = () => {
         css={css`
           display: grid;
           grid-template-columns: 1fr 1fr;
-          align-items: center;
+          /* align-items: center; */
           min-height: 40vh;
           background: #fff;
           margin: 10rem 5rem;
@@ -48,14 +48,19 @@ const AccessSection = () => {
             margin-top: 0;
             grid-template-columns: 1fr;
           }
+
+          img {
+            margin-bottom: 0 !important;
+          }
         `}
         style={enterLeft}
         id="access-section"
       >
         <div
           css={css`
-            width: 100%;
-            height: 100%;
+            width: 60%;
+            height: 60%;
+            justify-self: start;
           `}
         >
           <Img
@@ -63,8 +68,6 @@ const AccessSection = () => {
             css={css`
               border-radius: 8px;
               box-shadow: 0px 5px 10px rgba(123, 167, 255, 0.4);
-              width: 100%;
-              height: 100%;
               object-fit: cover;
             `}
           />
@@ -73,7 +76,7 @@ const AccessSection = () => {
           css={css`
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-self: center;
             height: 40%;
             margin: 0 auto;
             max-width: 70%;
