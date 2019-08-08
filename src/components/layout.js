@@ -20,10 +20,10 @@ const Layout = ({ children }) => (
         <Global
           styles={css`
             html {
-              /* width: 100%;
+              width: 100%;
               height: 100%;
               margin: 0;
-              padding: 0; */
+              padding: 0;
               box-sizing: border-box;
               -ms-text-size-adjust: 100%;
               -webkit-text-size-adjust: 100%;
