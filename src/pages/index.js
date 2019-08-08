@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import Layout from '../components/layout';
-import { AppWrapper } from '../components/elements/layout-components';
+import {
+  AppWrapper,
+  ContentWrapper,
+} from '../components/elements/layout-components';
 import Hero from '../components/hero';
 import CardSection from '../components/card-section';
 import AccessSection from '../components/access-section';
@@ -21,9 +24,11 @@ const IndexPage = () => {
             keywords={[`gatsby`, `application`, `react`]}
           />
           <Hero />
-          <AccessSection />
-          <DigitalStewardsSection />
-          <LiteBeamProductSection />
+          <ContentWrapper>
+            <AccessSection />
+            <DigitalStewardsSection />
+            <LiteBeamProductSection />
+          </ContentWrapper>
           <CardSection />
           <InfoFooter />
           <Footer />
