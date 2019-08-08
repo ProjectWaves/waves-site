@@ -25,6 +25,7 @@ const AccessSection = () => {
   const enterLeft = useSpring({
     opacity: on ? 1 : 0,
     transform: on ? `translate3d(0,0,0)` : `translate3d(-100%, 0, 0)`,
+    config: { mass: 1.25, tension: 70, friction: 20 },
   });
 
   return (
@@ -39,7 +40,8 @@ const AccessSection = () => {
         css={css`
           display: grid;
           grid-template-columns: 1fr 1fr;
-          /* align-items: center; */
+          grid-template-rows: 1fr;
+          grid-row-gap: 1rem;
           min-height: 40vh;
           background: #fff;
           margin: 10rem 5rem;
@@ -58,8 +60,8 @@ const AccessSection = () => {
       >
         <div
           css={css`
-            width: 60%;
-            height: 60%;
+            width: 100%;
+            height: 100%;
             justify-self: start;
           `}
         >
@@ -72,14 +74,15 @@ const AccessSection = () => {
             `}
           />
         </div>
+
         <div
           css={css`
             display: flex;
             flex-direction: column;
             align-self: center;
-            height: 40%;
+            height: 50%;
             margin: 0 auto;
-            max-width: 70%;
+            /* max-width: 70%; */
           `}
         >
           <h2
