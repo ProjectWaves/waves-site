@@ -59,7 +59,7 @@ const Card = ({ fluid, title, copy, linkTo }) => (
       >
         {copy}
       </p>
-      <Link to={linkTo}>
+      <a href={linkTo} target="_blank" rel="noopener noreferrer">
         <button
           css={css`
             text-transform: none;
@@ -89,7 +89,7 @@ const Card = ({ fluid, title, copy, linkTo }) => (
         >
           Learn More
         </button>
-      </Link>
+      </a>
     </div>
   </div>
 );

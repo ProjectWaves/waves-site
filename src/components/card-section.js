@@ -95,7 +95,7 @@ const CardSection = () => {
             copy={
               'Waves not only stands for Net Neutrality, but is committed to making all members of the network aware of any potential changes.'
             }
-            linkTo="/why-internet-matters"
+            linkTo="https://www.internetsociety.org/resources/doc/2017/a-brave-new-world-how-the-internet-affects-societies/"
           />
           <Card
             fluid={cardTwoImage.childImageSharp.fluid}
