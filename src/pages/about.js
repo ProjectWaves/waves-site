@@ -151,17 +151,9 @@ const AboutPage = () => {
               minority households.
             </p>
             <p>
-              Waves is{' '}
-              <a
-                href="https://digitalharbor.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Digital Harbor Foundation’s
-              </a>{' '}
-              proposed approach to bridge this divide through a community-driven
+              Waves is our proposed approach to bridge this divide through a community-driven
               network committed to providing highly available, transparent,
-              reliable internet to Baltimore’s disconnected populations.
+              reliable internet to Baltimore.
             </p>
             <h2>From the Waves Team</h2>
             <Waypoint
