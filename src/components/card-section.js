@@ -92,22 +92,20 @@ const CardSection = () => {
           <Card
             fluid={cardOneImage.childImageSharp.fluid}
             title={'Why Internet Matters'}
-            copy={
-              'Waves not only stands for Net Neutrality, but is committed to making all members of the network aware of any potential changes.'
-            }
-            linkTo="https://www.internetsociety.org/resources/doc/2017/a-brave-new-world-how-the-internet-affects-societies/"
+            copy={`Per the UN, Internet Access is classified as a Human Right. Internet Access enables freedom and opportunity in the 21st Century.`}
+            linkTo="https://www.businessinsider.com/un-says-internet-access-is-a-human-right-2016-7"
           />
           <Card
             fluid={cardTwoImage.childImageSharp.fluid}
             title={'Bridge the Digital Divide'}
             copy={`Per the Deutsch Foundation's Digital Access and Equity Report for Baltimore City 2017 report, 75,000 homes lack internet access.`}
-            linkTo="/bridge-the-digital-divide"
+            linkTo="https://www.rwdfoundation.org/news/2017/10/19/the-digital-access-and-equity-report-in-baltimore-city-2017"
           />
           <Card
             fluid={cardThreeImage.childImageSharp.fluid}
             title={'Availability ≠ Accessibility'}
             copy={`Comcast is available throughout Baltimore, however their pricing makes them inaccessible to many families.`}
-            linkTo="/availability-is-not-accessibility"
+            linkTo="https://tlpc.colorado.edu/tlpc-releases-white-paper-for-eff-reevaluating-sharing-obligations-for-the-modern-u-s-wireline-broadband-market/"
           />
         </div>
       </animated.section>

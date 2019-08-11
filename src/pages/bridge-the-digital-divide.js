@@ -25,7 +25,7 @@ const BridgeDigitalDividePage = () => {
             `}
           >
             <p>
-              My name is Adam Bouhmad, and I founded Waves in response to the
+              My name is Adam Bouhmad, and I started Waves in response to the
               repeal of Net Neutrality back in 2018. Recently, the UN declared
               that Internet access is a human right -- Internet access is
               paramount to succeed in today’s society. Susan Crawford has

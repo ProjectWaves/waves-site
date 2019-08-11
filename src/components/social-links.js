@@ -14,8 +14,8 @@ const SocialLinks = () => (
     </a>
 
     <a
-      href="https://twitter.com/DHFBaltimore"
-      aria-label="Find Digital Harbor Foundation on Twitter"
+      href="https://twitter.com/WavesMesh"
+      aria-label="Find Waves on Twitter"
       target="_blank"
       rel="nofollow noopener"
     >

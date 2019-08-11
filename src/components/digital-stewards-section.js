@@ -87,8 +87,7 @@ const DigitalStewardsSection = () => {
               }
             `}
           >
-            Digital Stewards are selected and trained commuity leaders and are
-            the crucial human infrastructure of Waves.
+            Digital Stewards are Community Leaders, Activists, and Technologists who are passionate about democratizing access in the very communities they live in and serve. Stewards are trained and coordinate volunteer-led installs, do community outreach, and run digital equity meetups in their communities.
           </p>
         </div>
         <div
