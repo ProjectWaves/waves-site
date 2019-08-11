@@ -103,9 +103,11 @@ const LiteBeamProductSection = () => {
               }
             `}
           >
-            $120 install fee.
+            Financial capacity should never be a barrier to access to the Internet. When you schedule an install, 
+            a Digital Steward will coordinate with the volunteer team to get you connected. Equipment costs are $120, but are Pay-What-You-Can, 
+            down to the dollar.
             <br />
-            Minimum $5 donation per month.
+            Once you're connected, our recommended monthly donation is $20, but we ask that you give a minimum monthly donation of $5.
           </p>
         </div>
       </animated.section>
