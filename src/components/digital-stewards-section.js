@@ -47,7 +47,7 @@ const DigitalStewardsSection = () => {
           margin: 4rem 5rem;
 
           @media only screen and (max-width: 1000px) {
-            margin-top: 0;
+            margin: 2rem;
             grid-template-columns: 1fr;
             grid-template-areas:
               'photo'
