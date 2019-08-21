@@ -64,14 +64,14 @@ const Card = ({ fluid, title, copy, linkTo }) => (
           css={css`
             text-transform: none;
             font-size: 2rem;
-            background: #2d3748;
-            color: #fff;
-            border: 1px solid #2d3748;
+            background: #4a5568;
+            color: #f7fafc;
+            border: 1px solid #4a5568;
             border-radius: 16px;
             padding: 1rem 2rem;
             margin-bottom: 2rem;
             width: 100%;
-            transition: all ease-in-out 500ms;
+            transition: all ease-in-out 300ms;
 
             @media only screen and (max-width: 1000px) {
               margin-top: 8rem;
@@ -80,7 +80,7 @@ const Card = ({ fluid, title, copy, linkTo }) => (
 
             &:hover {
               background: #1a202c;
-              color: #fff;
+              color: #f7fafc;
               border: 1px solid;
               border-color: #1a202c;
               cursor: pointer;
