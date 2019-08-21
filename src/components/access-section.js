@@ -36,12 +36,12 @@ const AccessSection = () => {
           if (!on) toggle(true);
         }}
       />
-      <animated.section
+      <section
         css={css`
           display: grid;
           grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr;
           grid-row-gap: 1rem;
+          grid-template-areas: 'photo copy';
           min-height: 40vh;
           background: #fff;
           margin: 10rem 5rem;
@@ -55,7 +55,7 @@ const AccessSection = () => {
             margin-bottom: 0 !important;
           }
         `}
-        style={enterLeft}
+        // style={enterLeft}
         id="access-section"
       >
         <div
@@ -63,6 +63,7 @@ const AccessSection = () => {
             width: 100%;
             height: 100%;
             justify-self: start;
+            grid-area: photo;
           `}
         >
           <Img
@@ -79,9 +80,10 @@ const AccessSection = () => {
           css={css`
             display: flex;
             flex-direction: column;
-            align-self: center;
+            /* align-self: center; */
             height: 50%;
             margin: 0 auto;
+            grid-area: copy;
             /* max-width: 70%; */
           `}
         >
@@ -117,7 +119,7 @@ const AccessSection = () => {
             residential areas that are classified as Internet Deserts.
           </p>
         </div>
-      </animated.section>
+      </section>
     </React.Fragment>
   );
 };

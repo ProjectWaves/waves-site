@@ -40,6 +40,7 @@ const DigitalStewardsSection = () => {
         css={css`
           display: grid;
           grid-template-columns: 1fr 1fr;
+          grid-template-areas: 'photo copy';
           align-items: center;
           min-height: 40vh;
           background: #fff;
@@ -50,7 +51,7 @@ const DigitalStewardsSection = () => {
             grid-template-columns: 1fr;
           }
         `}
-        style={enterRight}
+        // style={enterRight}
         id="digital-stewards-section"
       >
         <div
@@ -61,6 +62,7 @@ const DigitalStewardsSection = () => {
             height: 40%;
             margin: 0 auto;
             max-width: 70%;
+            grid-area: copy;
           `}
         >
           <h2
@@ -87,13 +89,18 @@ const DigitalStewardsSection = () => {
               }
             `}
           >
-            Digital Stewards are Community Leaders, Activists, and Technologists who are passionate about democratizing access in the very communities they live in and serve. Stewards are trained and coordinate volunteer-led installs, do community outreach, and run digital equity meetups in their communities.
+            Digital Stewards are Community Leaders, Activists, and Technologists
+            who are passionate about democratizing access in the very
+            communities they live in and serve. Stewards are trained and
+            coordinate volunteer-led installs, do community outreach, and run
+            digital equity meetups in their communities.
           </p>
         </div>
         <div
           css={css`
             width: 100%;
             height: 100%;
+            grid-area: photo;
           `}
         >
           <Img

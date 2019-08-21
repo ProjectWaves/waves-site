@@ -151,9 +151,9 @@ const AboutPage = () => {
               minority households.
             </p>
             <p>
-              Waves is our proposed approach to bridge this divide through a community-driven
-              network committed to providing highly available, transparent,
-              reliable internet to Baltimore.
+              Waves is our proposed approach to bridge this divide through a
+              community-driven network committed to providing highly available,
+              transparent, reliable internet to Baltimore.
             </p>
             <h2>From the Waves Team</h2>
             <Waypoint
@@ -174,7 +174,7 @@ const AboutPage = () => {
                   grid-template-columns: 1fr;
                 }
               `}
-              style={enterAnimation}
+              // style={enterAnimation}
             >
               <div
                 css={css`

@@ -39,6 +39,7 @@ const LiteBeamProductSection = () => {
         css={css`
           display: grid;
           grid-template-columns: 1fr 1fr;
+          grid-template-areas: 'copy photo';
           align-items: center;
           min-height: 0vh;
           background: #fff;
@@ -49,13 +50,14 @@ const LiteBeamProductSection = () => {
             grid-template-columns: 1fr;
           }
         `}
-        style={enterLeft}
+        // style={enterLeft}
         id="litebeam-product-section"
       >
         <div
           css={css`
             width: 100%;
             height: 100%;
+            grid-area: photo;
           `}
         >
           <Img
@@ -77,6 +79,7 @@ const LiteBeamProductSection = () => {
             height: 40%;
             margin: 0 auto;
             max-width: 70%;
+            grid-area: copy;
           `}
         >
           <h2
@@ -103,8 +106,11 @@ const LiteBeamProductSection = () => {
               }
             `}
           >
-            Financial capacity should never be a barrier to access to the Internet. When you schedule an install, 
-            a Digital Steward will coordinate with the volunteer team to get you connected. Equipment Costs and monthly donations are Pay-What-You-Can, recommended amounts are $120 for Install, $20 for monthly donation.
+            Financial capacity should never be a barrier to access to the
+            Internet. When you schedule an install, a Digital Steward will
+            coordinate with the volunteer team to get you connected. Equipment
+            Costs and monthly donations are Pay-What-You-Can, recommended
+            amounts are $120 for Install, $20 for monthly donation.
           </p>
         </div>
       </animated.section>

@@ -65,7 +65,7 @@ const CardSection = () => {
             margin: 0 auto;
           }
         `}
-        style={enterUpward}
+        // style={enterUpward}
       >
         <h2
           css={css`
