@@ -42,6 +42,7 @@ const Layout = ({ children }) => (
             body {
               margin: 0;
               padding: 0;
+              overflow-x: hidden;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smoosthing: grayscale;
             }

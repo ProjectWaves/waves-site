@@ -80,11 +80,8 @@ const AccessSection = () => {
           css={css`
             display: flex;
             flex-direction: column;
-            /* align-self: center; */
-            height: 50%;
             margin: 0 auto;
             grid-area: copy;
-            /* max-width: 70%; */
           `}
         >
           <h2

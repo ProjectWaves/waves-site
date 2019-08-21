@@ -39,9 +39,8 @@ const LiteBeamProductSection = () => {
         css={css`
           display: grid;
           grid-template-columns: 1fr 1fr;
-          grid-template-areas: 'copy photo';
-          align-items: center;
-          min-height: 0vh;
+          grid-template-areas: 'photo copy';
+
           background: #fff;
           margin: 10rem 5rem;
 
@@ -58,6 +57,7 @@ const LiteBeamProductSection = () => {
             width: 100%;
             height: 100%;
             grid-area: photo;
+            justify-self: start;
           `}
         >
           <Img
@@ -75,10 +75,6 @@ const LiteBeamProductSection = () => {
           css={css`
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            height: 40%;
-            margin: 0 auto;
-            max-width: 70%;
             grid-area: copy;
           `}
         >

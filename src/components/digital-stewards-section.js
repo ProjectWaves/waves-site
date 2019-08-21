@@ -40,8 +40,8 @@ const DigitalStewardsSection = () => {
         css={css`
           display: grid;
           grid-template-columns: 1fr 1fr;
-          grid-template-areas: 'photo copy';
-          align-items: center;
+          grid-template-areas: 'copy photo';
+
           min-height: 40vh;
           background: #fff;
           margin: 4rem 5rem;
@@ -58,10 +58,8 @@ const DigitalStewardsSection = () => {
           css={css`
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            height: 40%;
+            justify-self: start;
             margin: 0 auto;
-            max-width: 70%;
             grid-area: copy;
           `}
         >
