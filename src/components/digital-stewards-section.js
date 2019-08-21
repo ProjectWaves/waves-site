@@ -49,6 +49,9 @@ const DigitalStewardsSection = () => {
           @media only screen and (max-width: 1000px) {
             margin-top: 0;
             grid-template-columns: 1fr;
+            grid-template-areas:
+              'photo'
+              'copy';
           }
         `}
         // style={enterRight}

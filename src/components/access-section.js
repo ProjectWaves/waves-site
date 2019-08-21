@@ -49,8 +49,9 @@ const AccessSection = () => {
           @media only screen and (max-width: 1000px) {
             margin-top: 0;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas: 'photo copy';
+            grid-template-areas:
+              'photo'
+              'copy';
           }
 
           img {
