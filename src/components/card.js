@@ -64,9 +64,9 @@ const Card = ({ fluid, title, copy, linkTo }) => (
           css={css`
             text-transform: none;
             font-size: 2rem;
-            background: #000000;
+            background: #2d3748;
             color: #fff;
-            border: 1px solid #000000;
+            border: 1px solid #2d3748;
             border-radius: 16px;
             padding: 1rem 2rem;
             margin-bottom: 2rem;
@@ -79,10 +79,10 @@ const Card = ({ fluid, title, copy, linkTo }) => (
             }
 
             &:hover {
-              color: #000000;
-              background: #ffffff;
+              background: #1a202c;
+              color: #fff;
               border: 1px solid;
-              border-color: #000000;
+              border-color: #1a202c;
               cursor: pointer;
             }
           `}
