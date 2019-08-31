@@ -56,7 +56,7 @@ const ThankYouPage = () => {
             css={css`
               font-size: 2rem;
               padding-left: 1rem;
-              color: #121212;
+              color: #fafafa;
             `}
             style={fadeHalfDelay}
           >
