@@ -56,8 +56,8 @@ const CardSection = () => {
       />
       <animated.section
         css={css`
-          /* background: #f0f4f8; */
-          background: #fff;
+          background: #f0f4f8;
+          /* background: #fff; */
           padding: 8rem 4rem;
           min-height: 40vh;
           margin-top: -20vh;
@@ -73,6 +73,10 @@ const CardSection = () => {
             padding-bottom: 2rem;
             font-size: 6rem;
             text-align: center;
+            @media only screen and (max-width: 1000px) {
+              font-size: 4rem;
+              text-align: left;
+            }
           `}
         >
           Waves Core Values

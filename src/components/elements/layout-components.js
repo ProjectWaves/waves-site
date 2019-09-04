@@ -19,6 +19,7 @@ export const ContentWrapper = styled.div`
   @media only screen and (max-width: 1000px) {
     width: 100%;
     max-width: 100%;
+    margin-bottom: 2rem;
   }
 `;
 
