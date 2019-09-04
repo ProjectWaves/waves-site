@@ -64,7 +64,6 @@ const AboutPage = () => {
             fluid={aboutImageFeatured.childImageSharp.fluid}
             alt="Adam on rooftop with an access point directed toward Baltimore City"
             css={css`
-              border-radius: 16px 16px 0 0;
               box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
               width: 100%;
               height: 100%;
