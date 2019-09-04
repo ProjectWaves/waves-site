@@ -68,11 +68,10 @@ const Hero = () => {
               font-weight: bold;
               color: #ffffff;
               font-size: 4rem;
-              margin-top: 4rem;
+              margin-top: 2rem;
               @media only screen and (max-width: 1000px) {
                 text-align: center;
-                margin-top: 0;
-                margin-bottom: 4rem;
+                margin-bottom: 2rem;
               }
             `}
           >
@@ -85,6 +84,7 @@ const Hero = () => {
               align-items: flex-start;
               margin-top: 20vh;
               @media only screen and (max-width: 1000px) {
+                margin-top: 10vh;
                 span {
                   font-weight: bolder;
                 }
@@ -160,7 +160,7 @@ const Hero = () => {
           </Link>
         </CTAContainer>
       </Masthead>
-      {formTransition.map(
+      {/* {formTransition.map(
         ({ item, key, props }) =>
           item && (
             <AnimatedStyledDialogOverlay
@@ -203,7 +203,7 @@ const Hero = () => {
               </AnimatedStyledDialogContent>
             </AnimatedStyledDialogOverlay>
           )
-      )}
+      )} */}
     </React.Fragment>
   );
 };
@@ -273,8 +273,8 @@ const PrimaryCTAButton = styled(GhostButton)`
   margin-top: 8rem;
   max-width: 200px;
   @media only screen and (max-width: 1000px) {
-    margin-top: 8rem;
     max-width: 100%;
+    margin-bottom: 4rem;
   }
 
   &:hover {

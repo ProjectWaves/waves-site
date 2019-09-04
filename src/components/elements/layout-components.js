@@ -16,6 +16,10 @@ export const ContentWrapper = styled.div`
   width: 80%;
   max-width: 80%;
   margin: ${props => props.allMargin || '10vh auto'};
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 export const ImageContainer = styled.div`
