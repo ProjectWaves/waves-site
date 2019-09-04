@@ -12,6 +12,9 @@ const Card = ({ fluid, title, copy, linkTo }) => (
       background: #ffffff;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       border-radius: 16px;
+      @media only screen and (max-width: 1000px) {
+        border-radius: 8px;
+      }
     `}
   >
     <div

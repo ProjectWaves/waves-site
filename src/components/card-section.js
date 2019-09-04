@@ -63,6 +63,7 @@ const CardSection = () => {
           margin-top: -20vh;
           @media only screen and (max-width: 1000px) {
             margin: 0 auto;
+            padding: 1rem;
           }
         `}
         // style={enterUpward}
