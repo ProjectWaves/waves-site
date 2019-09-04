@@ -44,6 +44,9 @@ const Card = ({ fluid, title, copy, linkTo }) => (
     <div
       css={css`
         margin: 2rem 4rem;
+        @media only screen and (max-width: 1000px) {
+          margin: 1rem 2rem;
+        }
       `}
     >
       <h3
@@ -58,6 +61,9 @@ const Card = ({ fluid, title, copy, linkTo }) => (
           font-size: 2rem;
           line-height: 3rem;
           padding-bottom: 2rem;
+          @media only screen and (max-width: 1000px) {
+            padding-bottom: 0;
+          }
         `}
       >
         {copy}
@@ -77,7 +83,7 @@ const Card = ({ fluid, title, copy, linkTo }) => (
             transition: all ease-in-out 300ms;
 
             @media only screen and (max-width: 1000px) {
-              margin-top: 8rem;
+              margin-top: 2rem;
               max-width: 100%;
             }
 
