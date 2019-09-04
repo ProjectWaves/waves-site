@@ -58,6 +58,11 @@ const ConnectedSection = () => {
           padding: 0;
           margin: 0;
           z-index: 1000;
+          @media only screen and (max-width: 1000px) {
+            padding: 0;
+            padding-top: 2rem;
+            margin: 0;
+          }
         `}
       >
         Availability ≠{' '}
@@ -127,6 +132,11 @@ const ConnectedSection = () => {
                 font-size: 2rem;
                 color: #000;
                 z-index: 1000;
+                @media only screen and (max-width: 1000px) {
+                  padding: 0;
+                  padding-top: 2rem;
+                  margin: 0;
+                }
               `}
             >
               Comcast is available throughout Baltimore, however their pricing

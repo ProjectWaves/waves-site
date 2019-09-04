@@ -69,7 +69,7 @@ const LiteBeamProductSection = () => {
               border-radius: 8px;
               box-shadow: 0px 5px 10px rgba(123, 167, 255, 0.4);
               width: 100%;
-              height: 80%;
+              /* height: 80%; */
               object-fit: cover;
             `}
           />
@@ -87,6 +87,7 @@ const LiteBeamProductSection = () => {
               padding: 0 4rem;
               @media only screen and (max-width: 1000px) {
                 padding: 0;
+                padding-top: 2rem;
                 margin: 0;
               }
             `}
@@ -102,6 +103,8 @@ const LiteBeamProductSection = () => {
               color: #222;
               @media only screen and (max-width: 1000px) {
                 padding: 0;
+                padding-top: 2rem;
+                margin: 0;
               }
             `}
           >

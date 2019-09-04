@@ -72,6 +72,7 @@ const DigitalStewardsSection = () => {
               padding: 0;
               @media only screen and (max-width: 1000px) {
                 padding: 0;
+                padding-top: 2rem;
                 margin: 0;
               }
             `}
@@ -87,6 +88,8 @@ const DigitalStewardsSection = () => {
               color: #222;
               @media only screen and (max-width: 1000px) {
                 padding: 0;
+                padding-top: 2rem;
+                margin: 0;
               }
             `}
           >

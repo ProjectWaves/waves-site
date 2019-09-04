@@ -93,6 +93,7 @@ const AccessSection = () => {
               padding: 0 4rem;
               @media only screen and (max-width: 1000px) {
                 padding: 0;
+                padding-top: 2rem;
                 margin: 0;
               }
             `}
@@ -109,6 +110,7 @@ const AccessSection = () => {
               color: #222;
               @media only screen and (max-width: 1000px) {
                 padding: 0;
+                padding-top: 2rem;
               }
             `}
           >
