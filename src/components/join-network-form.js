@@ -50,6 +50,7 @@ const JoinNetworkForm = () => (
       >
         Waves Interest Form
       </h2>
+      <input type="hidden" name="wavesInterestForm" value="wavesInterestForm" />
       <input type="hidden" name="bot-field" />
       <label for="name">Enter your full name:</label>
       <input
