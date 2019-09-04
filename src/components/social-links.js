@@ -4,6 +4,15 @@ import Icon from './elements/icon';
 
 const SocialLinks = () => (
   <LinkContainer>
+      <a
+      href="https://github.com/ProjectWaves"
+      aria-label="Find Waves on GitHub"
+      target="_blank"
+      rel="nofollow noopener"
+    >
+      <Icon color="var(--primary-color)" type="github" />
+    </a>
+
     <a
       href="https://www.facebook.com/DigitalHarbor"
       aria-label="Find Digital Harbor Foundation on Facebook"
