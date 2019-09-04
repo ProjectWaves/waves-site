@@ -88,7 +88,7 @@ const CardSection = () => {
             grid-column-gap: 2rem;
             margin: 0 auto;
 
-            @media only screen and (max-width: 1000px) {
+            @media only screen and (max-width: 1050px) {
               grid-template-columns: 1fr;
               grid-gap: 2rem;
             }
