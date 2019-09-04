@@ -56,12 +56,31 @@ const ThankYouPage = () => {
             css={css`
               font-size: 2rem;
               padding-left: 1rem;
-              color: #fafafa;
+              color: #333;
+              text-align: center;
             `}
             style={fadeHalfDelay}
           >
-            We're glad that you're interested in the Waves community-driven
-            network.
+            We're glad that you're interested in the{' '}
+            <span
+              css={css`
+                color: var(--primary-color);
+                font-weight: bolder;
+              `}
+            >
+              Waves
+            </span>{' '}
+            community-driven network.
+            <br />A{' '}
+            <span
+              css={css`
+                color: var(--primary-color);
+                font-weight: bolder;
+              `}
+            >
+              Digital Steward
+            </span>{' '}
+            will contact you shortly.
           </animated.p>
           <AnimatedLink
             css={css`
