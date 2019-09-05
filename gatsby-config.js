@@ -34,15 +34,15 @@ module.exports = {
         icon: `src/images/waves-logo.ico`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-mdx`,
-    {
-      resolve: `gatsby-theme-mdx-deck`,
-      options: {
-        mdx: true,
-        contentPath: 'decks',
-        basePath: '',
-      },
-    },
+    // `gatsby-plugin-mdx`,
+    // {
+    //   resolve: `gatsby-theme-mdx-deck`,
+    //   options: {
+    //     mdx: true,
+    //     contentPath: 'decks',
+    //     basePath: '',
+    //   },
+    // },
     // 'gatsby-plugin-offline',
   ],
 };
