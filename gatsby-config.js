@@ -35,7 +35,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-mdx`,
-    `gatsby-theme-mdx-deck`,
+    {
+      resolve: `gatsby-theme-mdx-deck`,
+      options: {
+        mdx: true,
+        contentPath: 'decks',
+        basePath: '',
+      },
+    },
     // 'gatsby-plugin-offline',
   ],
 };
