@@ -34,6 +34,14 @@ const FAQPage = () => (
         I strongly believe that pricing should not be a barrier to internet
         access.{' '}
       </p>
+      <h2>2. Can we sign up now, if not when?</h2>
+      <p>
+        Yes! People can begin signing up, and you can do so via phone(443
+        681-9384), email(install@projectwaves.net), or ideally through the
+        submission form: projectwaves.net/join-the-network. The more folks that
+        sign up & show interest in a community, the more of a motivator it will
+        be to work on delivering service to that area.
+      </p>
     </ContentWrapper>
     <InfoFooter />
     <Footer />
