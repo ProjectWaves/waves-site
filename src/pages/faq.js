@@ -16,12 +16,13 @@ const FAQPage = () => (
           /* max-width: 60%; */
           padding: 4rem;
           @media only screen and (max-width: 1000px) {
-            max-width: 100%;
+            padding: 0;
           }
 
           h2 {
             color: #000;
             font-size: 4rem;
+            font-weight: 500;
             margin-top: 3rem;
           }
         `}
@@ -68,21 +69,23 @@ const FAQPage = () => (
           />
           <section
             css={css`
-              max-width: 60%;
+              max-width: 860px;
               margin: 0 auto;
               padding: 2rem 4rem;
 
+              @media only screen and (max-width: 1000px) {
+                max-width: 93.75%;
+                padding: 0 2rem;
+              }
+
               p {
-                color: #000;
+                color: #333;
                 font-size: 2rem;
                 line-height: 3.75rem;
               }
             `}
           >
-            <h2>
-              1. What is your product (Internet), what speeds will you provide
-              (and how does that compare to your competition){' '}
-            </h2>
+            <h2>1. What is your product, and what speeds will you provide?</h2>
             <p>
               The goal when connecting any individual is to make sure they're
               getting high-speed internet(25mb+) with no data cap, and no
@@ -94,7 +97,7 @@ const FAQPage = () => (
               installation fees, however, are Pay-What-You-Can, as I strongly
               believe that pricing should not be a barrier to internet access.{' '}
             </p>
-            <h2>2. Can we sign up now, if not when?</h2>
+            <h2>2. Can I sign up now?</h2>
             <p>
               Yes! People can begin signing up, and you can do so via phone(443
               681-9384), email(install@projectwaves.net), or ideally through the
@@ -102,11 +105,7 @@ const FAQPage = () => (
               that sign up & show interest in a community, the more of a
               motivator it will be to work on delivering service to that area.
             </p>
-            <h2>
-              3. What is required to sign up, i.e: who do we contact, what
-              equipment will we need to install, will we be responsible for
-              installing ourselves or will someone have to come to our house?
-            </h2>
+            <h2>3. What is required to sign up?</h2>
             <p>
               Contact goes through email, phone, or the submission form. For
               questions, those can be directed towards install@projectwaves.net,
@@ -126,7 +125,7 @@ const FAQPage = () => (
               to connect to the network.{' '}
             </p>
 
-            <h2>4. How secure is the internet connection?</h2>
+            <h2>4. How secure is the Internet connection?</h2>
             <p>
               We do not keep logs of anything in the network. However anyone
               along the route chain could view unencrypted data or metadata
