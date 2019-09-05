@@ -45,6 +45,7 @@ const FAQPage = () => (
           <p
             css={css`
               color: #555;
+              padding-bottom: 2rem;
               font-size: 2rem;
               text-align: center;
             `}
@@ -69,7 +70,7 @@ const FAQPage = () => (
             css={css`
               max-width: 60%;
               margin: 0 auto;
-              padding: 4rem;
+              padding: 2rem 4rem;
 
               p {
                 color: #000;
