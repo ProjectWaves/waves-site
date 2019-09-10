@@ -5,19 +5,16 @@ const kebabCase = require('lodash.kebabcase');
 
 // Pre-run checks
 exports.onPreBootstrap = ({ store }, options) => {
-  const { program } = store.getState();
-
-  const contentPath = options.contentPath || 'blog';
-  const dir = path.join(program.directory, contentPath);
-
-  // if the specified path doesn't exist, let's create it
-  if (!fs.existsSync(dir)) {
-    mkdirp.sync(dir);
-  }
+  // const { program } = store.getState();
+  // const contentPath = options.contentPath || 'blog';
+  // const dir = path.join(program.directory, contentPath);
+  // // if the specified path doesn't exist, let's create it
+  // if (!fs.existsSync(dir)) {
+  //   mkdirp.sync(dir);
+  // }
 };
 
 exports.onCreateNode = ({ node, actions }, options) => {
-  const { createNodeField } = actions;
   const contentPath = options.contentPath || 'blog';
   let slug;
 
@@ -32,12 +29,12 @@ exports.onCreateNode = ({ node, actions }, options) => {
       Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
     ) {
       // if slug exists in frontmatter, use it
-      slug = `/${kebabCase(node.frontmatter.slug)}`;
+      slug = `/${contentPath}/${kebabCase(node.frontmatter.slug)}`;
     } else if (
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
     ) {
-      slug = `/${kebabCase(node.frontmatter.title)}`;
+      slug = `/${contentPath}/${kebabCase(node.frontmatter.title)}`;
     }
     // TODO: Handle errors if frontmatter doesn't have slug OR title
 
@@ -45,7 +42,7 @@ exports.onCreateNode = ({ node, actions }, options) => {
     actions.createNodeField({
       node,
       name: 'slug',
-      value: `${contentPath}${slug}`,
+      value: `${slug}`,
     });
   }
 };
