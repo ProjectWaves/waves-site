@@ -4,16 +4,13 @@ const mkdirp = require('mkdirp');
 const kebabCase = require('lodash.kebabcase');
 
 // Pre-run checks
-
-exports.onPreBootstrap = ({ store }) => {
+exports.onPreBootstrap = ({ store }, options) => {
   const { program } = store.getState();
 
-  const contentPath = 'blog';
-
+  const contentPath = options.contentPath || 'blog';
   const dir = path.join(program.directory, contentPath);
 
-  // If we forgot to create /blog, let's make it
-
+  // if the specified path doesn't exist, let's create it
   if (!fs.existsSync(dir)) {
     mkdirp.sync(dir);
   }
@@ -21,7 +18,7 @@ exports.onPreBootstrap = ({ store }) => {
 
 exports.onCreateNode = ({ node, actions }, options) => {
   const { createNodeField } = actions;
-  const contentPath = options.contentPath || 'content';
+  const contentPath = options.contentPath || 'blog';
   let slug;
 
   if (node.internal.type !== 'Mdx') {
@@ -55,7 +52,6 @@ exports.onCreateNode = ({ node, actions }, options) => {
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-
   const result = await graphql(`
     query {
       allMdx {
@@ -72,11 +68,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `);
 
   if (result.errors) {
-    reporter.panic('There was an error loading the MDX posts.', result.errors);
+    reporter.panic('There was an error loading the MDX files.', result.errors);
   }
 
   result.data.allMdx.nodes.forEach(node => {
-    createPath({
+    createPage({
       path: node.fields.slug,
       component: require.resolve('./src/templates/post-template.js'),
       context: { slug: node.fields.slug },

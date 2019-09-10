@@ -13,6 +13,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `blog`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
@@ -34,6 +40,7 @@ module.exports = {
         icon: `src/images/waves-logo.ico`, // This path is relative to the root of the site.
       },
     },
+
     `gatsby-plugin-mdx`,
     // {
     //   resolve: `gatsby-theme-mdx-deck`,
