@@ -16,7 +16,10 @@ export const query = graphql`
 
 const PostTemplate = ({ data }) => (
   <div>
-    <PostLayout title={data.mdx.title} body={data.mdx.body}></PostLayout>
+    <PostLayout
+      title={data.mdx.frontmatter.title}
+      body={data.mdx.body}
+    ></PostLayout>
   </div>
 );
 
