@@ -27,6 +27,11 @@ const Navbar = props => (
         </SiteNavLink>
       </SiteNavEntry>
       <SiteNavEntry>
+        <SiteNavLink activeStyle={activeStyles} to="/faq">
+          FAQ
+        </SiteNavLink>
+      </SiteNavEntry>
+      <SiteNavEntry>
         <SiteNavAnchor
           color="var(--primary-color)"
           activeStyle={activeStyles}
