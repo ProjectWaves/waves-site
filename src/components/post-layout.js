@@ -7,6 +7,7 @@ import Header from '../components/header';
 import InfoFooter from '../components/info-footer';
 import Footer from '../components/footer';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { checkPropTypes } from 'prop-types';
 
 const PostLayout = ({ title, body }) => (
   <Layout>
@@ -86,7 +87,7 @@ const PostLayout = ({ title, body }) => (
               }
             `}
           >
-            <MDXRenderer>{body}</MDXRenderer>
+            <MDXRenderer title={title}>{body}</MDXRenderer>
           </section>
         </article>
       </main>
