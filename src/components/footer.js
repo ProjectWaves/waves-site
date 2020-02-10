@@ -49,7 +49,7 @@ const Footer = () => (
           color: #fafafa;
         `}
       >
-        © 2019
+        © {new Date().getFullYear()}
       </span>
       <div
         css={css`
