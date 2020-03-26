@@ -19,9 +19,9 @@ const FAQPage = () => (
             padding: 0;
           }
 
-          h2 {
+          h3 {
             color: #000;
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 500;
             margin-top: 3rem;
           }
@@ -33,21 +33,22 @@ const FAQPage = () => (
             border-radius: 1rem;
           `}
         >
-          <h1
+          <h2
             css={css`
               color: #000;
-              font-size: 5rem;
+              font-size: 4rem;
               text-align: center;
               margin-top: 2rem;
             `}
           >
             Frequently Asked Questions
-          </h1>
+          </h2>
           <p
             css={css`
               color: #555;
               padding-bottom: 2rem;
               font-size: 2rem;
+              line-height: 3rem;
               text-align: center;
             `}
           >
@@ -80,12 +81,12 @@ const FAQPage = () => (
 
               p {
                 color: #333;
-                font-size: 2rem;
-                line-height: 3.75rem;
+                font-size: 1.6rem;
+                line-height: 3rem;
               }
             `}
           >
-            <h2>1. What is your product, and what speeds will you provide?</h2>
+            <h3>1. What is your product, and what speeds will you provide?</h3>
             <p>
               The goal when connecting any individual is to make sure they're
               getting high-speed internet(25mb+) with no data cap, and no
@@ -97,7 +98,7 @@ const FAQPage = () => (
               installation fees, however, are Pay-What-You-Can, as I strongly
               believe that pricing should not be a barrier to internet access.{' '}
             </p>
-            <h2>2. Can I sign up now?</h2>
+            <h3>2. Can I sign up now?</h3>
             <p>
               Yes! People can begin signing up, and you can do so via phone(443
               681-9384), email(install@projectwaves.net), or ideally through the
@@ -105,7 +106,7 @@ const FAQPage = () => (
               that sign up & show interest in a community, the more of a
               motivator it will be to work on delivering service to that area.
             </p>
-            <h2>3. What is required to sign up?</h2>
+            <h3>3. What is required to sign up?</h3>
             <p>
               Contact goes through email, phone, or the submission form. For
               questions, those can be directed towards install@projectwaves.net,
@@ -125,7 +126,7 @@ const FAQPage = () => (
               to connect to the network.{' '}
             </p>
 
-            <h2>4. How secure is the Internet connection?</h2>
+            <h3>4. How secure is the Internet connection?</h3>
             <p>
               We do not keep logs of anything in the network. However anyone
               along the route chain could view unencrypted data or metadata

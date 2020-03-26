@@ -88,8 +88,8 @@ const AboutPage = () => {
 
             p {
               color: #000;
-              font-size: 2rem;
-              line-height: 3.75rem;
+              font-size: 1.6rem;
+              line-height: 3rem;
             }
           `}
         >
