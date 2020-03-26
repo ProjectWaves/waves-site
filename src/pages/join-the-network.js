@@ -24,6 +24,11 @@ const JoinTheNetworkPage = () => {
             max-width: 960px;
             margin: 0 auto;
             background: #fff;
+
+            @media only screen and (max-width: 1000px) {
+              margin: 0 auto;
+              max-width: 100%;
+            }
             h2 {
               color: #000;
               font-size: 4rem;

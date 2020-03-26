@@ -21,7 +21,9 @@ const JoinNetworkForm = () => (
         justify-content: center;
         background: #ffffff;
         border-radius: 16px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.25),
+          0 15px 12px rgba(0, 0, 0, 0.125);
         padding: 4rem;
         label {
           font-size: 1.5rem;
@@ -39,6 +41,9 @@ const JoinNetworkForm = () => (
         textarea::placeholder {
           font-size: 1.5rem;
           color: #777;
+        }
+
+        @media only screen and (max-width: 1000px) {
         }
       `}
     >
@@ -110,7 +115,7 @@ const JoinNetworkForm = () => (
         `}
         type="submit"
       >
-        Join Now
+        Request Access
       </button>
     </form>
   </div>
