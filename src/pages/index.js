@@ -20,7 +20,7 @@ const IndexPage = () => {
       <Layout>
         <AppWrapper>
           <SEO
-            title="Waves Community WiFi"
+            title="Waves Movement"
             keywords={[`gatsby`, `application`, `react`]}
           />
           <Hero />
