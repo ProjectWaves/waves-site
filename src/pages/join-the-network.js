@@ -16,6 +16,7 @@ const JoinTheNetworkPage = () => {
         <Header />
         <main
           css={css`
+            margin-top: 90px;
             display: flex;
             flex-direction: column;
             align-items: center;

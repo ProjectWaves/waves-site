@@ -42,6 +42,8 @@ const Layout = ({ children }) => (
             body {
               margin: 0;
               padding: 0;
+              height: 100%;
+              min-height: 100%;
               overflow-x: hidden;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smoosthing: grayscale;

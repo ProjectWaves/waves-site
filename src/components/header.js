@@ -111,16 +111,17 @@ const StyledHeader = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  /* min-width: 100vw; */
+  /* position: fixed; */
+  /* top: 0px; */
+  /* width: 100%; */
+  /* height: 90px; */
+  min-width: 100vw;
+  max-width: 100%;
+  z-index: 1000;
   background: rgba(0, 0, 0, 1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
   padding: 1rem 0;
   padding-left: 5rem;
-  z-index: 1000;
-
   @media only screen and (max-width: 1000px) {
     flex-direction: column;
     padding: 0;
