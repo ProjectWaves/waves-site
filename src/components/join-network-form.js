@@ -14,17 +14,25 @@ const JoinNetworkForm = () => (
       data-netlify="true"
       netlify-honeypot="bot-field"
       css={css`
-        max-width: 600px;
-        margin: 2rem auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 4rem;
         background: #ffffff;
         border-radius: 16px;
-        /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.25),
           0 15px 12px rgba(0, 0, 0, 0.125);
-        padding: 4rem;
+
+        @media only screen and (max-width: 1000px) {
+          border: none;
+          padding: 0rem;
+          margin: 0 auto;
+          box-shadow: none;
+          border-radius: 0;
+          max-width: 100%;
+        }
         label {
           font-size: 1.5rem;
           margin-bottom: 0.5rem;
@@ -41,9 +49,6 @@ const JoinNetworkForm = () => (
         textarea::placeholder {
           font-size: 1.5rem;
           color: #777;
-        }
-
-        @media only screen and (max-width: 1000px) {
         }
       `}
     >

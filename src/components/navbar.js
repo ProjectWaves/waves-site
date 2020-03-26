@@ -23,7 +23,7 @@ const Navbar = props => (
       </SiteNavEntry>
       <SiteNavEntry>
         <SiteNavLink activeStyle={activeStyles} to="/join-the-network">
-          Join the Network
+          Join the Movement
         </SiteNavLink>
       </SiteNavEntry>
       <SiteNavEntry>
