@@ -41,7 +41,7 @@ module.exports = {
       },
     },
 
-    `gatsby-plugin-mdx`,
+    // `gatsby-plugin-mdx`,
     // {
     //   resolve: `gatsby-theme-mdx-deck`,
     //   options: {
