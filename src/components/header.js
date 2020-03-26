@@ -107,19 +107,21 @@ Header.defaultProps = {
 };
 
 const StyledHeader = styled.header`
-  position: sticky;
-  top: 0;
   display: flex;
-  min-width: 100vw;
-  padding-left: 5rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* position: fixed; */
+  /* top: 0px; */
+  /* width: 100%; */
+  /* height: 90px; */
+  min-width: 100vw;
+  max-width: 100%;
+  z-index: 1000;
   background: rgba(0, 0, 0, 1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
   padding: 1rem 0;
-  z-index: 1000;
-
+  padding-left: 5rem;
   @media only screen and (max-width: 1000px) {
     flex-direction: column;
     padding: 0;
