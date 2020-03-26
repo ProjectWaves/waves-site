@@ -48,11 +48,11 @@ const JoinNetworkForm = () => (
           text-align: center;
         `}
       >
-        Waves Interest Form
+        Waves Internet Access
       </h2>
       <input type="hidden" name="form-name" value="wavesInterestForm" />
       <input type="hidden" name="bot-field" />
-      <label for="name">Enter your full name:</label>
+      <label for="name">Enter your full name (required):</label>
       <input
         type="text"
         name="name"
@@ -60,7 +60,7 @@ const JoinNetworkForm = () => (
         placeholder="First Last"
         required
       />
-      <label for="address">Enter your street address:</label>
+      <label for="address">Enter your street address (required):</label>
       <textarea
         name="address"
         id="address"
