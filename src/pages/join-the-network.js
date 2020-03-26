@@ -22,8 +22,24 @@ const JoinTheNetworkPage = () => {
             justify-content: center;
             padding: 2rem;
             background: #fff;
+            h2 {
+              color: #000;
+              font-size: 4rem;
+            }
+            h3 {
+              color: #000;
+              font-size: 3.2rem;
+            }
+
+            p {
+              color: #000;
+              font-size: 2rem;
+              line-height: 3.75rem;
+            }
           `}
         >
+          <h2></h2>
+
           <JoinNetworkForm />
         </section>
         <InfoFooter />
