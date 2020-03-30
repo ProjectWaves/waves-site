@@ -82,15 +82,20 @@ const VolunteerPage = () => (
               p {
                 color: #333;
                 font-size: 1.6rem;
-                line-height: 3rem;
+                line-height: 2.4rem;
+              }
+
+              iframe {
+                background: transparent;
+                border: 1px solid #ccc;
+                border-radius: 4px;
               }
             `}
           >
             <h3>Introduce Yourself</h3>
             <p>
-              Waves is working to establish a volunteer network. Thank you for
-              your interest in contributing to the Waves movement to get
-              families and communities connected.
+              Thank you for your interest in contributing to the Waves movement
+              to get families and communities connected.
             </p>
             <p>
               Please fill out this brief form with your contact information and
@@ -101,6 +106,16 @@ const VolunteerPage = () => (
               A Digital Steward will contact you with more information about the
               next steps. Thank you.
             </p>
+            <div>
+              <iframe
+                class="airtable-embed"
+                src="https://airtable.com/embed/shrgqx7aywkniDsLE?backgroundColor=cyanLight"
+                frameborder="0"
+                onmousewheel=""
+                width="100%"
+                height="533"
+              ></iframe>
+            </div>
           </section>
         </article>
       </main>
