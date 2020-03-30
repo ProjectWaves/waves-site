@@ -29,7 +29,7 @@ const ConnectedSection = () => {
       query {
         noNetDinoImage: file(relativePath: { eq: "no-net-dino-1.jpg" }) {
           childImageSharp {
-            fixed(width: 800, height: 600) {
+            fixed(width: 454, height: 600) {
               ...GatsbyImageSharpFixed
             }
           }

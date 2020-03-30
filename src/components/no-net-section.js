@@ -8,9 +8,7 @@ const NoNetSection = () => {
   const { noNetDinoImage } = useStaticQuery(
     graphql`
       query {
-        noNetDinoImage: file(
-          relativePath: { eq: "deutsch-foundation-2017-report.jpg" }
-        ) {
+        noNetDinoImage: file(relativePath: { eq: "no-net-dino.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
