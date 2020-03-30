@@ -98,21 +98,22 @@ const JoinNetworkForm = () => (
       <button
         css={css`
           color: var(--primary-color);
-          background: var(--gray-800);
+          /* background: var(--gray-800); */
+          background: #2d3748;
           padding: 1rem;
           font-size: 2rem;
           margin-top: 1rem;
-          border: 2px solid var(--gray-800);
+          border: 2px solid #2d3748;
           border-radius: 1rem;
           transition: all ease-in-out 0.3s;
           text-transform: none;
           &:hover {
-            background: var(--gray-900);
+            background: #1a202c;
             cursor: pointer;
           }
 
           &:focus {
-            outline: 0.5px dashed var(--gray-900);
+            outline: 0.5px dashed #1a202c;
           }
         `}
         type="submit"
