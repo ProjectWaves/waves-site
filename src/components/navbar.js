@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from '@emotion/styled';
-import { css, jsx } from '@emotion/core';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "@emotion/styled";
+import { css, jsx } from "@emotion/core";
 
 const activeStyles = {
-  color: '#fafafa',
-  fontWeight: 'bolder',
+  color: "#fafafa",
+  fontWeight: "bolder",
 };
 
-const Navbar = props => (
+const Navbar = (props) => (
   <SiteNavContainer>
     <SiteNavList>
       <SiteNavEntry>
@@ -35,7 +35,7 @@ const Navbar = props => (
         <SiteNavAnchor
           color="var(--primary-color)"
           activeStyle={activeStyles}
-          href="https://digitalharbor.org/donate"
+          href="https://www.digitalharbor.org/project-waves-donation/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -85,14 +85,14 @@ const SiteNavLink = styled(Link)`
   padding-bottom: 5px;
   margin-bottom: 0px;
   margin-left: 0px;
-  color: ${props => props.color || '#fff'};
+  color: ${(props) => props.color || "#fff"};
   font-size: 1.5rem;
   font-weight: lighter;
   text-decoration: none;
   transition: color 0.5s ease;
 
   &:hover {
-    color: ${props => props.hovercolor || '#0091c9'};
+    color: ${(props) => props.hovercolor || "#0091c9"};
     cursor: pointer;
   }
   @media only screen and (max-width: 1000px) {
@@ -105,14 +105,14 @@ const SiteNavAnchor = styled.a`
   padding-bottom: 5px;
   margin-bottom: 0px;
   margin-left: 0px;
-  color: ${props => props.color || '#fff'};
+  color: ${(props) => props.color || "#fff"};
   font-size: 1.5rem;
 
   text-decoration: none;
   transition: color 0.5s ease;
 
   &:hover {
-    color: ${props => props.hovercolor || '#0091c9'};
+    color: ${(props) => props.hovercolor || "#0091c9"};
     cursor: pointer;
   }
   @media only screen and (max-width: 1000px) {
