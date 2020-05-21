@@ -41,7 +41,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "format": "prettier --write src/**/*.{js,jsx}",
@@ -51,9 +51,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/blakenoll/gatsby-starter-styled-components"
+    "url": "https://github.com/ProjectWaves/waves-site"
   },
   "bugs": {
-    "url": "https://github.com/blakenoll/gatsby-starter-styled-components/issues"
+    "url": "https://github.com/ProjectWaves/waves-site/issues"
   }
 }
