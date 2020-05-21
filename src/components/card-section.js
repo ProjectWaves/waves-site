@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import { Waypoint } from 'react-waypoint';
-import { css } from '@emotion/core';
-import { useSpring, animated, config } from 'react-spring';
-import Card from '../components/card';
+import React, { useState } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import { Waypoint } from "react-waypoint";
+import { css } from "@emotion/core";
+import { useSpring, animated, config } from "react-spring";
+import Card from "../components/card";
 
 const CardSection = () => {
   const [on, toggle] = useState(false);
@@ -88,7 +88,7 @@ const CardSection = () => {
             grid-column-gap: 2rem;
             margin: 0 auto;
 
-            @media only screen and (max-width: 1050px) {
+            @media only screen and (max-width: 1100px) {
               grid-template-columns: 1fr;
               grid-gap: 2rem;
             }
@@ -96,19 +96,19 @@ const CardSection = () => {
         >
           <Card
             fluid={cardOneImage.childImageSharp.fluid}
-            title={'Why Internet Matters'}
+            title={"Why Internet Matters"}
             copy={`Per the UN, Internet Access is classified as a Human Right. Internet Access enables freedom and opportunity in the 21st Century.`}
             linkTo="https://www.businessinsider.com/un-says-internet-access-is-a-human-right-2016-7"
           />
           <Card
             fluid={cardTwoImage.childImageSharp.fluid}
-            title={'Bridge the Digital Divide'}
+            title={"Bridge the Digital Divide"}
             copy={`Per the Deutsch Foundation's Digital Access and Equity Report for Baltimore City 2017 report, 75,000 homes lack internet access.`}
             linkTo="https://www.rwdfoundation.org/news/2017/10/19/the-digital-access-and-equity-report-in-baltimore-city-2017"
           />
           <Card
             fluid={cardThreeImage.childImageSharp.fluid}
-            title={'Availability ≠ Accessibility'}
+            title={"Availability ≠ Accessibility"}
             copy={`Comcast is available throughout Baltimore, however their pricing makes them inaccessible to many families.`}
             linkTo="https://tlpc.colorado.edu/tlpc-releases-white-paper-for-eff-reevaluating-sharing-obligations-for-the-modern-u-s-wireline-broadband-market/"
           />

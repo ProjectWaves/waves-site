@@ -1,7 +1,7 @@
-import React from 'react';
-import Img from 'gatsby-image';
-import { Link } from 'gatsby';
-import { css } from '@emotion/core';
+import React from "react";
+import Img from "gatsby-image";
+import { Link } from "gatsby";
+import { css } from "@emotion/core";
 
 const Card = ({ fluid, title, copy, linkTo }) => (
   <div
@@ -12,8 +12,10 @@ const Card = ({ fluid, title, copy, linkTo }) => (
       background: #ffffff;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       border-radius: 16px;
-      @media only screen and (max-width: 1000px) {
+      @media only screen and (max-width: 1100px) {
         border-radius: 8px;
+        max-width: 80%;
+        margin: 0 auto;
       }
     `}
   >
@@ -82,7 +84,7 @@ const Card = ({ fluid, title, copy, linkTo }) => (
             width: 100%;
             transition: all ease-in-out 300ms;
 
-            @media only screen and (max-width: 1000px) {
+            @media only screen and (max-width: 1100px) {
               margin-top: 2rem;
               max-width: 100%;
             }
