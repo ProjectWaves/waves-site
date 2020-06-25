@@ -147,12 +147,15 @@ const AboutPage = () => {
               , the internet is arguably the most important communication tool
               of the 21st century and, therefore, lack of access is a critical
               opportunity gap that disproportionately affects low-income and
-              minority households.
+              minority households. 
             </p>
             <p>
               Waves is our proposed approach to bridge this divide through a
               community-driven network committed to providing highly available,
               transparent, reliable internet to Baltimore.
+            </p>
+            <p> 
+              Waves was founded in 2018 as a response to the FCC's repeal of Net Neutrality. 
             </p>
             <h2>From the Waves Team</h2>
             <Waypoint
@@ -162,62 +165,17 @@ const AboutPage = () => {
                 if (!on) toggle(true);
               }}
             />
-            <animated.section
-              css={css`
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                align-items: center;
-                margin: 4rem auto;
-                @media only screen and (max-width: 1000px) {
-                  margin: 0;
-                  grid-template-columns: 1fr;
-                }
-              `}
-              // style={enterAnimation}
-            >
-              <div
-                css={css`
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  height: 40%;
-                  margin: 0 auto;
-                `}
-              >
-                <p>
-                  My name is Adam Bouhmad, and I founded Waves in response to
-                  the repeal of Net Neutrality back in 2018. Recently, the UN
-                  declared that Internet access is a human right -- Internet
-                  access is paramount to succeed in today’s society.
+             
+            <p>
+                  Equitable access to high-speed Internet has never been more essential for citizens of Baltimore.  
+                 </p>
+            <p>We are in an unprecedented time where households across the socioeconomic spectrum need access to telecommunications at a scale never previously expected to ensure their basic safety, well-being, and financial security. 
+              The combined isolating nature and prolonged length of the COVID-19 pandemic has created a 
+              situation in which the Internet has become an even more essential tool in both providing rapid, localized updates to a constantly evolving crisis and in 
+              maintaining the quality of life as it is crucial to helping individuals and communities stay connected to remote education and telework opportunities, reducing social isolation, and providing up-to-date health information. The pressing need for affordable, quality internet access during the COVID-19 pandemic has led institutions ranging from the FCC to 
+              public school systems to acknowledge how the Digital Divide puts disadvantaged communities at an even greater risk of profound educational, economic, and social alienation as better-resourced portions of society shift to operating remotely under quarantine. 
+              This further deepening of the Digital Divide will prove especially damaging if, as some experts predict, the increased reliance on digital technologies in education and employment continues long after the COVID-19 pandemic ends. 
                 </p>
-              </div>
-              <div
-                css={css`
-                  width: 100%;
-                  height: 100%;
-                  @media only screen and (max-width: 1000px) {
-                    padding: 4rem 0;
-                  }
-                `}
-              >
-                <Img
-                  fluid={adamProfileImage.childImageSharp.fluid}
-                  css={css`
-                    border-radius: 8px;
-                    box-shadow: 0px 5px 10px rgba(123, 167, 255, 0.4);
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    margin-left: 2rem;
-
-                    @media only screen and (max-width: 1000px) {
-                      margin: 0;
-                    }
-                  `}
-                />
-              </div>
-            </animated.section>
             <p>
               Susan Crawford has written and spoken extensively how the US has
               fallen far behind the rest of the industrialized nations in terms
@@ -257,8 +215,8 @@ const AboutPage = () => {
                 When folks talk about 21st-century skills, the fascinating thing
                 is that we’re already 20% of the way into the 21st century.
                 We’ve talked about the problem for decades, but let's start
-                focusing on solutions. Together, we can build out community
-                wireless across Baltimore where the main focus isn’t
+                focusing on solutions. Together, we can build out community-owned
+                networks across Baltimore where the main focus isn’t
                 profitability -- but rather the human aspect.
               </p>
             </div>
