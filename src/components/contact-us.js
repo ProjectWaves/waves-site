@@ -1,5 +1,5 @@
-import React from 'react';
-import { css } from '@emotion/core';
+import React from "react";
+import { css } from "@emotion/core";
 
 const ContactUs = () => (
   <div
@@ -31,11 +31,12 @@ const ContactUs = () => (
         color: #e5f8ff;
       `}
     >
+      Fiscal Sponsor
+      <br />
       Digital Harbor Foundation
       <br />
       1045 Light St. Baltimore, MD 21230
       <br />
-      443-681-9384
       <br />
     </p>
     <a

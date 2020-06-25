@@ -1,8 +1,8 @@
-import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
-import { Global, css } from '@emotion/core';
-import styled from '@emotion/styled';
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
+import PropTypes from "prop-types";
+import { Global, css } from "@emotion/core";
+import styled from "@emotion/styled";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -15,11 +15,11 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <React.Fragment>
         <Global
           styles={css`
-            html { overflow-y: hidden !important; } {
+            html {
               width: 100%;
               height: 100%;
               margin: 0;

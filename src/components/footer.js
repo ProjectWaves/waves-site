@@ -1,5 +1,5 @@
-import React from 'react';
-import { css } from '@emotion/core';
+import React from "react";
+import { css } from "@emotion/core";
 
 const Footer = () => (
   <footer
@@ -90,7 +90,7 @@ const Footer = () => (
           color: #fafafa;
         `}
       >
-        All rights reserved.
+        <br />
       </span>
     </span>
   </footer>
