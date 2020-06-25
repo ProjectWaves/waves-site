@@ -25,7 +25,7 @@ const SocialLinks = () => (
       </a>
 
       <a
-        href="https://www.flickr.com/photos/digitalharbor/"
+        href="https://www.flickr.com/photos/digitalharbor/albums/72157714851026012"
         aria-label="Find Digital Harbor Foundation on Flickr"
         target="_blank"
         rel="nofollow noopener"
