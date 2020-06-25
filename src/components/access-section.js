@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { Waypoint } from 'react-waypoint';
-import Img from 'gatsby-image';
-import { css } from '@emotion/core';
-import { useSpring, animated, config } from 'react-spring';
+import React, { useState } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { Waypoint } from "react-waypoint";
+import Img from "gatsby-image";
+import { css } from "@emotion/core";
+import { useSpring, animated, config } from "react-spring";
 
 const AccessSection = () => {
   const { accessPointImage } = useStaticQuery(
@@ -41,7 +41,7 @@ const AccessSection = () => {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-row-gap: 1rem;
-          grid-template-areas: 'photo copy';
+          grid-template-areas: "photo copy";
           min-height: 40vh;
           background: #fff;
           margin: 10rem 5rem;
@@ -50,8 +50,8 @@ const AccessSection = () => {
             margin: 2rem;
             grid-template-columns: 1fr;
             grid-template-areas:
-              'photo'
-              'copy';
+              "photo"
+              "copy";
           }
 
           img {
@@ -98,7 +98,7 @@ const AccessSection = () => {
               }
             `}
           >
-            Connecting Communities in Baltimore
+            Connecting Communities Across Baltimore
           </h2>
           <p
             css={css`
