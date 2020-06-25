@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import nsfLogo from "../../src/images/nsf-logo-black.png";
 import abellFoundationLogo from "../../src/images/abell-foundation-logo-black.png";
 import goldsekerLogo from "../../src/images/goldseker-logo-black.png";
@@ -53,7 +54,10 @@ const SponsorsSection = () => {
             }
           `}
         >
-          Sponsors working to bridge the Digital Divide across Baltimore
+          We would like to thank our generous supporters who have helped us grow
+          and kept our core operations running. <Link to="/donate">Donate</Link>{" "}
+          to Project Waves and help propel our mission for equitable &
+          accessible internet forward!
         </span>
       </div>
       <div
