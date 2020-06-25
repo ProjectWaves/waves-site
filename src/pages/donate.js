@@ -8,19 +8,20 @@ import InfoFooter from "../components/info-footer";
 import Footer from "../components/footer";
 import DonorboxEmbed from "../components/donorbox-embed";
 import { AppWrapper } from "../components/elements/layout-components";
+import wavesTeamRooftop from "../../src/images/waves-team-rooftop.jpg";
 
 const DonatePage = () => {
-  const { wavesTeamRooftop } = useStaticQuery(graphql`
-    query {
-      wavesTeamRooftop: file(relativePath: { eq: "waves-team-rooftop.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 2000, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+  // const { wavesTeamRooftop } = useStaticQuery(graphql`
+  //   query {
+  //     wavesTeamRooftop: file(relativePath: { eq: "waves-team-rooftop.jpg" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 2000, quality: 100) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
   return (
     <React.Fragment>
       <Layout>
@@ -36,8 +37,8 @@ const DonatePage = () => {
               }
             `}
           >
-            <Img
-              fluid={wavesTeamRooftop.childImageSharp.fluid}
+            <img
+              src={wavesTeamRooftop}
               alt="Waves team on rooftop in Baltimore City"
               css={css`
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
