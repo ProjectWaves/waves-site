@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { Waypoint } from 'react-waypoint';
-import Img from 'gatsby-image';
-import { css } from '@emotion/core';
-import { useSpring, animated, config } from 'react-spring';
+import React, { useState } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { Waypoint } from "react-waypoint";
+import Img from "gatsby-image";
+import { css } from "@emotion/core";
+import { useSpring, animated, config } from "react-spring";
 
 const DigitalStewardsSection = () => {
   const { digitalStewardsImage } = useStaticQuery(
@@ -40,7 +40,7 @@ const DigitalStewardsSection = () => {
         css={css`
           display: grid;
           grid-template-columns: 1fr 1fr;
-          grid-template-areas: 'copy photo';
+          grid-template-areas: "copy photo";
 
           min-height: 40vh;
           background: #fff;
@@ -50,8 +50,8 @@ const DigitalStewardsSection = () => {
             margin: 2rem;
             grid-template-columns: 1fr;
             grid-template-areas:
-              'photo'
-              'copy';
+              "photo"
+              "copy";
           }
         `}
         // style={enterRight}

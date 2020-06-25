@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { Waypoint } from 'react-waypoint';
-import Img from 'gatsby-image';
-import { css } from '@emotion/core';
-import { useSpring, animated, config } from 'react-spring';
+import React, { useState } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { Waypoint } from "react-waypoint";
+import Img from "gatsby-image";
+import { css } from "@emotion/core";
+import { useSpring, animated, config } from "react-spring";
 
 const LiteBeamProductSection = () => {
   const { litebeamImage } = useStaticQuery(
@@ -39,7 +39,7 @@ const LiteBeamProductSection = () => {
         css={css`
           display: grid;
           grid-template-columns: 1fr 1fr;
-          grid-template-areas: 'photo copy';
+          grid-template-areas: "photo copy";
 
           background: #fff;
           margin: 10rem 5rem;
@@ -48,8 +48,8 @@ const LiteBeamProductSection = () => {
             margin: 2rem;
             grid-template-columns: 1fr;
             grid-template-areas:
-              'photo'
-              'copy';
+              "photo"
+              "copy";
           }
         `}
         // style={enterLeft}
