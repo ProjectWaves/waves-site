@@ -1,11 +1,12 @@
 import React from "react";
-import lakelandLogo from "../../src/images/lakeland-steam-logo-black.png";
-import dhfLogo from "../../src/images/dhf-longform-lockup-black.png";
-import fullblastLogo from "../../src/images/full-blast-steam-logo-black.png";
-import citySchoolsLogo from "../../src/images/city-schools-logo-black.png";
+import nsfLogo from "../../src/images/nsf-logo-black.png";
+import abellFoundationLogo from "../../src/images/abell-foundation-logo-black.png";
+import goldsekerLogo from "../../src/images/goldseker-logo-black.png";
+import franceMerrickLogo from "../../src/images/france-merrick-logo-black.png";
+import zenimaxLogo from "../../src/images/zenimax-logo-black.png";
 import { css } from "@emotion/core";
 
-const PartnersSection = () => {
+const SponsorsSection = () => {
   return (
     <section
       css={css`
@@ -88,7 +89,7 @@ const PartnersSection = () => {
                 margin-right: 0;
               }
             `}
-            src={lakelandLogo}
+            src={nsfLogo}
           />
         </div>
         <div
@@ -107,7 +108,7 @@ const PartnersSection = () => {
               max-width: 100%;
               object-fit: contain;
             `}
-            src={dhfLogo}
+            src={abellFoundationLogo}
           />
         </div>
         <div
@@ -126,7 +127,7 @@ const PartnersSection = () => {
               max-width: 100%;
               object-fit: contain;
             `}
-            src={fullblastLogo}
+            src={goldsekerLogo}
           />
         </div>
         <div
@@ -148,7 +149,29 @@ const PartnersSection = () => {
                 margin-right: 0;
               }
             `}
-            src={citySchoolsLogo}
+            src={franceMerrickLogo}
+          />
+        </div>
+        <div
+          css={css`
+            @media only screen and (max-width: 1000px) {
+              max-width: 100%;
+              margin-right: 0;
+            }
+          `}
+        >
+          <img
+            css={css`
+              width: 100%;
+              height: 100%;
+              max-width: 100%;
+              object-fit: contain;
+              @media only screen and (max-width: 1000px) {
+                max-width: 100%;
+                margin-right: 0;
+              }
+            `}
+            src={zenimaxLogo}
           />
         </div>
       </div>
@@ -156,4 +179,4 @@ const PartnersSection = () => {
   );
 };
 
-export default PartnersSection;
+export default SponsorsSection;
