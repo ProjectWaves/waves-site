@@ -1,10 +1,10 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import lakelandLogo from "../../src/images/lakeland-steam-logo-white.png";
-import dhfLogo from "../../src/images/dhf-longform-lockup-white.png";
-import fullblastLogo from "../../src/images/full-blast-steam-logo-white.png";
-import citySchoolsLogo from "../../src/images/city-schools-logo-white.png";
+import lakelandLogo from "../../src/images/lakeland-steam-logo-black.png";
+import dhfLogo from "../../src/images/dhf-longform-lockup-black.png";
+import fullblastLogo from "../../src/images/full-blast-steam-logo-black.png";
+import citySchoolsLogo from "../../src/images/city-schools-logo-black.png";
 import { css } from "@emotion/core";
 
 const PartnersSection = () => {
@@ -15,7 +15,7 @@ const PartnersSection = () => {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: #000;
+        background: #fff;
         padding: 4rem 4rem;
         width: 100%;
       `}
@@ -30,7 +30,7 @@ const PartnersSection = () => {
         <h2
           css={css`
             font-size: 4rem;
-            color: white;
+            color: black;
             margin-bottom: 0;
             text-align: center;
             @media only screen and (max-width: 1000px) {
@@ -47,7 +47,7 @@ const PartnersSection = () => {
             font-size: 2rem;
             padding-top: 0;
             padding-bottom: 2rem;
-            color: #f7fafc;
+            color: #333;
             @media only screen and (max-width: 1000px) {
               padding: 0;
               margin: 0;
