@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
-import { css, jsx } from "@emotion/core";
-import { Waypoint } from "react-waypoint";
-import { useSpring, animated, config } from "react-spring";
+import { css } from "@emotion/core";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import InfoFooter from "../components/info-footer";
 import Footer from "../components/footer";
+import DonorboxEmbed from "../components/donorbox-embed";
 
 const DonatePage = () => {
   return (
@@ -48,7 +46,13 @@ const DonatePage = () => {
             }
           `}
         >
-          donate!
+          <div
+            css={css`
+              min-height: 80vh;
+            `}
+          >
+            <DonorboxEmbed />
+          </div>
         </main>
         <InfoFooter />
         <Footer />
