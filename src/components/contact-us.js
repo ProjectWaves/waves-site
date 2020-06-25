@@ -37,6 +37,7 @@ const ContactUs = () => (
       <br />
       1045 Light St. Baltimore, MD 21230
       <br />
+      EIN: 45-2536579
       <br />
     </p>
     <a
