@@ -31,6 +31,7 @@ const PartnersSection = () => {
             font-size: 4rem;
             color: black;
             margin-bottom: 0;
+            padding-bottom: 1rem;
             text-align: center;
             @media only screen and (max-width: 1000px) {
               padding: 0;
@@ -60,10 +61,10 @@ const PartnersSection = () => {
       <div
         css={css`
           display: grid;
-
           grid-template-columns: 1fr 1fr 1fr 1fr;
           grid-gap: 2rem;
           padding: 4rem 0;
+          max-width: 1080px;
           @media only screen and (max-width: 1000px) {
             grid-template-columns: 1fr;
             margin: 0 auto;

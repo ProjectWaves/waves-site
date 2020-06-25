@@ -32,6 +32,7 @@ const SponsorsSection = () => {
             font-size: 4rem;
             color: black;
             margin-bottom: 0;
+            padding-bottom: 1rem;
             text-align: center;
             @media only screen and (max-width: 1000px) {
               padding: 0;
@@ -45,8 +46,7 @@ const SponsorsSection = () => {
         <span
           css={css`
             font-size: 2rem;
-            padding-top: 0;
-            padding-bottom: 2rem;
+            padding: 2rem 0;
             color: #333;
             @media only screen and (max-width: 1000px) {
               padding: 0;
@@ -63,9 +63,12 @@ const SponsorsSection = () => {
       <div
         css={css`
           display: grid;
+          align-items: center;
+          justify-content: center;
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 2rem;
           padding: 4rem 0;
+          max-width: 1080px;
           @media only screen and (max-width: 1000px) {
             grid-template-columns: 1fr;
             margin: 0 auto;
@@ -74,7 +77,12 @@ const SponsorsSection = () => {
       >
         <div
           css={css`
-            max-width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            height: 200px;
             margin-right: 2rem;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
@@ -97,7 +105,12 @@ const SponsorsSection = () => {
         </div>
         <div
           css={css`
-            max-width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            height: 200px;
             margin-right: 2rem;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
@@ -117,7 +130,12 @@ const SponsorsSection = () => {
         </div>
         <div
           css={css`
-            max-width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+
             margin-right: 2rem;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
@@ -137,7 +155,12 @@ const SponsorsSection = () => {
         </div>
         <div
           css={css`
-            max-width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            max-width: 100%;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
               margin-right: 0;
@@ -160,7 +183,12 @@ const SponsorsSection = () => {
         </div>
         <div
           css={css`
-            max-width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            max-width: 100%;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
               margin-right: 0;
