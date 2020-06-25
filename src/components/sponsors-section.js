@@ -14,7 +14,7 @@ const SponsorsSection = () => {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: #fff;
+        background: #f0f4f8;
         padding: 4rem 4rem;
         width: 100%;
       `}
@@ -39,7 +39,7 @@ const SponsorsSection = () => {
             }
           `}
         >
-          Partners
+          Sponsors
         </h2>
         <span
           css={css`
@@ -53,15 +53,13 @@ const SponsorsSection = () => {
             }
           `}
         >
-          Partner organizations working to bridge the Digital Divide across
-          Baltimore
+          Sponsors working to bridge the Digital Divide across Baltimore
         </span>
       </div>
       <div
         css={css`
           display: grid;
-
-          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 2rem;
           padding: 4rem 0;
           @media only screen and (max-width: 1000px) {
@@ -72,6 +70,7 @@ const SponsorsSection = () => {
       >
         <div
           css={css`
+            max-width: 75%;
             margin-right: 2rem;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
@@ -94,6 +93,7 @@ const SponsorsSection = () => {
         </div>
         <div
           css={css`
+            max-width: 75%;
             margin-right: 2rem;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
@@ -113,6 +113,7 @@ const SponsorsSection = () => {
         </div>
         <div
           css={css`
+            max-width: 75%;
             margin-right: 2rem;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
@@ -132,6 +133,7 @@ const SponsorsSection = () => {
         </div>
         <div
           css={css`
+            max-width: 75%;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
               margin-right: 0;
@@ -154,6 +156,7 @@ const SponsorsSection = () => {
         </div>
         <div
           css={css`
+            max-width: 75%;
             @media only screen and (max-width: 1000px) {
               max-width: 100%;
               margin-right: 0;

@@ -14,6 +14,7 @@ import Footer from "../components/footer";
 import SEO from "../components/seo";
 import DigitalStewardsSection from "../components/digital-stewards-section";
 import PartnersSection from "../components/partners-section";
+import SponsorsSection from "../components/sponsors-section";
 
 const IndexPage = () => {
   return (
@@ -32,6 +33,7 @@ const IndexPage = () => {
             <LiteBeamProductSection />
           </ContentWrapper>
           <CardSection />
+          <SponsorsSection />
           <InfoFooter />
           <Footer />
         </AppWrapper>

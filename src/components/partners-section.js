@@ -13,7 +13,8 @@ const PartnersSection = () => {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: #fff;
+        /* background: #fff; */
+        background: #f0f4f8;
         padding: 4rem 4rem;
         width: 100%;
       `}

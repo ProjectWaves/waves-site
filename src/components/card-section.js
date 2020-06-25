@@ -56,7 +56,7 @@ const CardSection = () => {
       />
       <animated.section
         css={css`
-          background: #f0f4f8;
+          /* background: #f0f4f8; */
           /* background: #fff; */
           padding: 8rem 4rem;
           min-height: 40vh;
