@@ -98,7 +98,7 @@ const AccessSection = () => {
               }
             `}
           >
-            Connecting Communities in Baltimore and Beyond
+            Connecting Communities in Baltimore
           </h2>
           <p
             css={css`

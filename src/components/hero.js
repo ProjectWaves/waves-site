@@ -76,7 +76,7 @@ const Hero = () => {
               }
             `}
           >
-            Pay What You Can Internet Access
+            A Community-Owned Network
           </animated.h2>
           <div
             css={css`
