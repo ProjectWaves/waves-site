@@ -32,15 +32,13 @@ const Navbar = (props) => (
         </SiteNavLink>
       </SiteNavEntry>
       <SiteNavEntry>
-        <SiteNavAnchor
+        <SiteNavLink
           color="var(--primary-color)"
           activeStyle={activeStyles}
-          href="https://www.digitalharbor.org/project-waves-donation/"
-          target="_blank"
-          rel="noopener noreferrer"
+          to="/donate"
         >
           Donate
-        </SiteNavAnchor>
+        </SiteNavLink>
       </SiteNavEntry>
     </SiteNavList>
   </SiteNavContainer>
