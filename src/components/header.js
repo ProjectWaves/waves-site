@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import VisuallyHidden from '@reach/visually-hidden';
-import styled from '@emotion/styled';
-import { css } from '@emotion/core';
-import { useSpring, animated, config } from 'react-spring';
-import Navbar from './navbar';
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import VisuallyHidden from "@reach/visually-hidden";
+import styled from "@emotion/styled";
+import { css } from "@emotion/core";
+import { useSpring, animated, config } from "react-spring";
+import Navbar from "./navbar";
 // import NavSlider from './nav-slider';
 
-const Header = props => {
+const Header = (props) => {
   const [isNavOpen, setNavOpen] = useState(false);
 
   const fadeInLogo = useSpring({
@@ -111,10 +111,6 @@ const StyledHeader = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
-  /* top: 0px; */
-  /* width: 100%; */
-  /* height: 90px; */
   min-width: 100vw;
   max-width: 100%;
   z-index: 1000;
