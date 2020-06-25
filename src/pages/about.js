@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
-import { css } from '@emotion/core';
-import { Waypoint } from 'react-waypoint';
-import { useSpring, animated, config } from 'react-spring';
-import Layout from '../components/layout';
-import { AppWrapper } from '../components/elements/layout-components';
-import Header from '../components/header';
-import InfoFooter from '../components/info-footer';
-import Footer from '../components/footer';
+import React, { useState } from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import Img from "gatsby-image";
+import { css } from "@emotion/core";
+import { Waypoint } from "react-waypoint";
+import { useSpring, animated, config } from "react-spring";
+import Layout from "../components/layout";
+import { AppWrapper } from "../components/elements/layout-components";
+import Header from "../components/header";
+import InfoFooter from "../components/info-footer";
+import Footer from "../components/footer";
 
 const AboutPage = () => {
   const [on, toggle] = useState(false);
@@ -134,7 +134,7 @@ const AboutPage = () => {
             <h2>About Waves</h2>
             <p>
               Roughly one-third of Baltimore City does not have access to
-              broadband Internet in their homes. As described in{' '}
+              broadband Internet in their homes. As described in{" "}
               <a
                 href="https://www.rwdfoundation.org/news/2017/10/19/the-digital-access-and-equity-report-in-baltimore-city-2017"
                 target="_blank"
