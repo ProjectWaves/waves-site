@@ -10,8 +10,9 @@ const Card = ({ fluid, title, copy, linkTo }) => (
       flex-direction: column;
       align-items: center;
       background: #ffffff;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-      border-radius: 16px;
+      border: 2px solid #f0f4f8;
+      /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+      border-radius: 8px;
       @media only screen and (max-width: 1100px) {
         border-radius: 8px;
         max-width: 80%;
@@ -26,13 +27,14 @@ const Card = ({ fluid, title, copy, linkTo }) => (
         max-width: 100%;
         max-height: 100%;
         padding-bottom: 1rem;
+        overflow: hidden;
       `}
     >
       {fluid && (
         <Img
           fluid={fluid}
           css={css`
-            border-radius: 16px 16px 0 0;
+            border-radius: 8px 8px 0 0;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             width: 100%;
             height: 100%;
@@ -78,7 +80,7 @@ const Card = ({ fluid, title, copy, linkTo }) => (
             background: #4a5568;
             color: #f7fafc;
             border: 1px solid #4a5568;
-            border-radius: 16px;
+            border-radius: 8px;
             padding: 1rem 2rem;
             margin-bottom: 2rem;
             width: 100%;
