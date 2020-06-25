@@ -77,7 +77,7 @@ const DigitalStewardsSection = () => {
               }
             `}
           >
-            Hyper-local Connectivity
+            Democratizing Access to Information
           </h2>
           <p
             css={css`
@@ -95,7 +95,7 @@ const DigitalStewardsSection = () => {
           >
             From Southern Park Heights all the way to Lakeland, Waves is comprised of Community Leaders, Activists, and Technologists from across Baltimore City.
             We're passionate about democratizing access in the very
-            communities we live in and serve. The Waves team is trained to
+            neighborhoods we live in and serve. The Waves team is trained to
             coordinate installations, do community outreach, and run
             digital equity meetups.
           </p>
